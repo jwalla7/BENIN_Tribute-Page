@@ -1,54 +1,69 @@
-const scrollOffset = 100;
+// DID YOU KNOW THAT? OBSERVER
+const didyouPage = document.querySelector('.one');
+const didyouIntro = document.getElementById('introPara');
+const didyouPara = document.getElementById('subIntroPara');
 
-const scrollElement = document.querySelector('.js-scroll');
-
-const elementInView = (el, dividend = 1) => {
-    const elementTop = el.getBoundingClientRect().top;
-
-    return (
-        elementTop <=
-        ((window.innerHeight || document.documentElement.clientHeight) / dividend)
-    );
-};
-
-const elementOutofView = (el) => {
-    const elementTop = el.getBoundingClientRect().top;
-
-    return (
-        elementTop > (window.innerHeight || document.documentElement.clientHeight)
-    );
-};
-
-const displayScrollElement = () => {
-    scrollElement.classList.add('scrolled');
+const threshold = {
+    rootMargin: '0% 0% 0% 0%',
+    threshold: 0
 }
 
-const hideScrollElement = () => {
-    scrollElement.classList.remove('scrolled');
-}
+const didYouKnowObserver = new IntersectionObserver ((entries) => {
+    entries.forEach(entry => {
 
-const handleScrollAnimation = () => {
-    scrollElements.forEach((el) => {
-        if (elementInView(el, 1.25)) {
-            displayScrollElement(el); 
-         } else if (elementOutofView(el)) {
-                hideScrollElement(el)
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                didyouIntro.style.visibility = '';
+                didyouIntro.style.animation = 'slide-in-bottom 1.5s ease-in-out';
+                setTimeout(() => {
+                    didyouPara.style.visibility = '';
+                    didyouPara.style.animation = 'slide-in-right 1.5s ease-in-out';
+                        }, 700);
+            }, 500)
+        } else {
+            didyouIntro.style.animation = '';
+            didyouIntro.style.visibility = 'hidden';
+            didyouPara.style.animation = '';
+            didyouPara.style.visibility = 'hidden';
         }
     })
+}, threshold)
+didYouKnowObserver.observe(didyouPage);
+
+// PEOPLE OF A MULTITUDE OBSERVER
+const peoplePage = document.querySelector('.three');
+const peopleIntro = document.querySelector('.peopleIntro');
+const peopleLeft = document.querySelector('.subPeopleIntroLeft');
+const peopleRight = document.querySelector('.subPeopleIntroRight');
+
+const threshold1 = {
+    rootMargin: '5% 0% 0% -5%',
+    threshold: 0
 }
 
-window.addEventListener('scroll', () => {
-    handleScrollAnimation();
-})
-
-
-
-// document.getElementById('currentTime').innerHTML = `Today is : ${daylist[day]}.`
-// var today= new Date();
-// var day= today.getDay();
-// var daylist= [ ' Sunday', ' Monday', ' Tuesday', ' Wednesday',  ' Thursday', ' Friday', ' Saturday'];
-// console.log(`Today is : ${daylist[day]}.`);
-// var hour= today.getHours();
-// var minute= today.getMinutes();
-// var second= today.getSeconds();
-// var timeConver= (hour >= 12)? ' PM ' : ' AM '; hour = (hour >= 12)? hour - 12: hour;
+const thePeopleObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            
+            setTimeout(() => {
+                peopleIntro.style.visibility = '';
+                peopleIntro.style.animation = 'fade-in 1.5s ease-in';
+                peopleLeft.style.visibility = '';
+                peopleLeft.style.animation = 'slide-in-left 2s ease-in-out';
+                
+                setTimeout(() => {
+                    peopleRight.style.visibility = '';
+                    peopleRight.style.animation = 'slide-in-right 1.75s ease-in-out';
+                }, 1000)
+            }, 1000)
+        } else {
+            peopleIntro.style.visibility = 'hidden';
+            peopleIntro.style.animation = '';
+            peopleLeft.style.visibility = 'hidden';
+            peopleLeft.style.animation = '';
+            peopleRight.style.visibility = 'hidden';
+            peopleRight.style.animation = '';
+        }
+    })
+}, threshold1)
+thePeopleObserver.observe(peoplePage);
