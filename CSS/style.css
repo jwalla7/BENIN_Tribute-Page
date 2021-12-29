@@ -58,6 +58,19 @@ section {
   scroll-snap-align: start;
 }
 
+@font-face {
+    font-family: 'florenceregular';
+    src:  url('florence-regular-webfont.woff2') format('woff2'),
+          url('florence-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
 .scroll-container {
 
 }
@@ -166,7 +179,7 @@ section {
   background-color: white;
   /* background-image: url(https://static01.nyt.com/images/2020/01/29/opinion/29Ehikhamenor1/merlin_165734295_cd0ed8e7-66c6-4301-ace8-4665ad821374-superJumbo.jpg?quality=90&auto=webp); */
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .BeninLegacyMqe {
@@ -176,24 +189,58 @@ section {
   right: 0;
   overflow: hidden;
   --offset: 100vw;
-  --move-initial: calc(-25% + var(--offset));
+  --move-initial: calc(0% + var(--offset));
   --move-final: calc(-100% + var(--offset));
 }
 
 .BeninLegacyMqe__inner {
-  width: fit-content;
+  min-width: 100vw;
+  height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  transform: translate3d(var(--move-initial), 0, 0);
-  animation: marquee 5s linear infinite;
+  transform: translate3d(var(--move-initial), 10%, 0);
+  animation: marquee 25s linear infinite;
   /* animation-play-state: paused; */
 }
 
-span {
-  font-size: 10em;
-  padding: 0 2vw;
+.benin1 {
+font-family: 'Playfair Display','Catamaran', sans-serif;
+font-size: 12em;
 }
-
+.benin2 {
+font-family: 'Catamaran', sans-serif;
+font-size: 12em;
+}
+.benin3 {
+font-family: 'Bodoni Moda','Catamaran','Cormorant Garamond', sans-serif;
+font-size: 12em;
+}
+.benin4 {
+font-family: 'Old Standard TT', sans-serif;
+font-size: 12em;
+}
+.legacy1 {
+font-family: 'Playfair Display','Catamaran', sans-serif;
+font-size: 12em;
+font-style: italic;
+}
+.legacy2 {
+font-family: 'Playfair Display','Catamaran', sans-serif;
+font-size: 12em;
+font-style: italic;
+}
+.legacy3 {
+font-family: 'Playfair Display','Catamaran', sans-serif;
+font-size: 12em;
+font-style: italic;
+}
+.legacy4 {
+font-family: 'Playfair Display','Catamaran', sans-serif;
+font-size: 12em;
+font-style: italic;
+}
 
 .navButton {
   /* position */
