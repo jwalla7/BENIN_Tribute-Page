@@ -1,31 +1,78 @@
-/* ----JavaScript---- */
-
-/* #currentTime {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1.7px;
-  color: rgba(0,0,0,1);
-  width: 200px;
-  height: 40px;
-  margin-top: 1px;
-  margin-left: 1335px;
-  border-style: solid;
-  border-color: rgba(0,0,0,1);  
+/* ------ Browser CSS Reset ------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  box-sizing: border-box;
+	vertical-align: baseline;
 }
-*/
+    /* Older Browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 * {
-  max-width: 100%;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
+  scroll-behavior: smooth;
 }
 
 section {
-  max-width: 100%;
+  position: sticky;
+  min-width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
 }
 
+@font-face {
+    font-family: 'florenceregular';
+    src:  url('florence-regular-webfont.woff2') format('woff2'),
+          url('florence-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
 .scroll-container {
+
 }
 
 .container {
@@ -47,7 +94,7 @@ section {
 }
 
 .scroll-caption {
-  animation: slide-in-left 1s ease-in-out both;
+  /* animation: fade-in 1s ease-in-out both; */
 }
 
 
@@ -110,23 +157,98 @@ section {
   }
 }
 
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
 
-.stolenBronzesContainer {
-  /* position */
-  max-width: 100%;
-  height: 100vh;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  /*background*/
-  background-image: url(https://static01.nyt.com/images/2020/01/29/opinion/29Ehikhamenor1/merlin_165734295_cd0ed8e7-66c6-4301-ace8-4665ad821374-superJumbo.jpg?quality=90&auto=webp);
-  background-size: cover;
-  background-repeat: no-repeat; 
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
 }
 
 
+.stolenBronzesContainer {
+  /* position */
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+  /*background*/
+  background-color: white;
+  /* background-image: url(https://static01.nyt.com/images/2020/01/29/opinion/29Ehikhamenor1/merlin_165734295_cd0ed8e7-66c6-4301-ace8-4665ad821374-superJumbo.jpg?quality=90&auto=webp); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.BeninLegacyMqe {
+  transform: translate(0%, 0%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  --offset: 100vw;
+  --move-initial: calc(0% + var(--offset));
+  --move-final: calc(-100% + var(--offset));
+}
+
+.BeninLegacyMqe__inner {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translate3d(var(--move-initial), 10%, 0);
+  animation: marquee 25s linear infinite;
+  /* animation-play-state: paused; */
+}
+
+.benin1 {
+font-family: 'Playfair Display','Catamaran', sans-serif;
+font-size: 12em;
+}
+.benin2 {
+font-family: 'Catamaran', sans-serif;
+font-size: 12em;
+}
+.benin3 {
+font-family: 'Bodoni Moda','Catamaran','Cormorant Garamond', sans-serif;
+font-size: 12em;
+}
+.benin4 {
+font-family: 'Old Standard TT', sans-serif;
+font-size: 12em;
+}
+.legacy1 {
+font-family: 'Playfair Display','Catamaran', sans-serif;
+font-size: 12em;
+font-style: italic;
+}
+.legacy2 {
+font-family: 'Playfair Display','Catamaran', sans-serif;
+font-size: 12em;
+font-style: italic;
+}
+.legacy3 {
+font-family: 'Playfair Display','Catamaran', sans-serif;
+font-size: 12em;
+font-style: italic;
+}
+.legacy4 {
+font-family: 'Playfair Display','Catamaran', sans-serif;
+font-size: 12em;
+font-style: italic;
+}
+
 .navButton {
   /* position */
-  height: 70%;
+  position: absolute;
+  transform: scale(1) translateY(-1%);
+  z-index: 2;
+  height: 80%;
+  max-width: 100%;
   padding: 4%;
   margin: 2% 0 0 46% ;
     /* font style */
@@ -139,23 +261,61 @@ section {
   text-orientation: upright;
   text-transform: uppercase;
   text-align: center;
-  max-width: 100%;
   /* border */
   border-style: solid;
   border-color: rgb(0,0,0);
   border-width: 5px 5px 5px 5px;
   /* background */
   background-color: rgb(0,0,0);
-} .navButton:hover {
-  /*font*/
-  color: rgb(0,0,0);
-  /*border*/
-  border-color: rgb(0,0,0);
-  border-width: 5px 5px 5px 5px;
-  padding: 4%;
-  /*background*/
-  background-color: rgba(255,255,255, 0.8);
-} 
+}
+
+.navPurpleContainerTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  /* padding: 2%; */
+  transform: translate(-260%, 113.5%);
+  max-width: 16%;
+  /* filter: contrast(.98); */
+  /* animation: fade-in 4s ease-in-out both; */
+}
+.navPurpleImgTop {
+  max-width: 100%;
+  height: auto;
+}
+.navPurpleContainerBottom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  /* padding: 2%; */
+  transform: translate(-260%, 210%);
+  max-width: 16%;
+  /* filter: contrast(.98); */
+  /* animation: fade-in 4s ease-in-out both; */
+}
+.navPurpleImgBottom {
+  max-width: 100%;
+  height: auto;
+}
+
+.navFrameLeftContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* padding: 4% 3% 0% 5%; */
+  transform: scale(.8) translate(97.5%, -4.5%);
+  max-width: 40%;
+  height: auto;
+  /* filter: contrast(.98); */
+  /* animation: fade-in 4s ease-in-out both; */
+}
+#navFrameLeftImg {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .navToolbar {
   /*viewport*/
@@ -189,19 +349,14 @@ section {
   border-style:none;
   border-color: rgb(0,0,0);
   z-index: 1;
-} .navHeader a:hover {
-  color: red;
 }
 
+.one {
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 #introParaContainer {
-  max-width: 40%;
+  max-width: 45%;
   margin: 15% 0 0 0;
   height: auto;
   padding: 20% 1% 1% 3%;
@@ -209,7 +364,7 @@ ul {
 
 #introPara {
   /* position */
-  padding: 6%;
+  padding: 7%;
   max-width: 100%;
   /*font-style*/
   font-family: 'Roboto', sans-serif;
@@ -219,8 +374,7 @@ ul {
   /*font-position*/
   text-align: center;
   /* border */
-  border-style: solid;
-  animation: slide-in-top 1.5s ease-in-out;
+  border: 2px solid black;
 }
 
 #subIntroPara {
@@ -236,13 +390,15 @@ ul {
   /* border */
   border-style: solid;
   border-color: rgb(255, 255, 255);
-  animation: slide-in-right 1.5s ease-in-out;
 }
 
 img {
   max-width: 100%;
 }
-
+.two {
+  min-width: 100vw;
+  height: 100vh;
+}
 .beninBronzeImage {
   /*image style*/
   max-width: 100%;
@@ -255,6 +411,7 @@ img {
   background-image: url(https://www.nurhitoolkit.org/sites/default/files/styles/gallery_full/public/One%20of%20the%20Ancient%20Benin%20Bronze%20statue_0.jpg?itok=XTogp8-d);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  text-align: center;
 }
 
 .beninBronzeImageCaption {
@@ -264,7 +421,6 @@ img {
   letter-spacing: 1.7px;
   color: rgb(5,5,16);
   /*position*/
-  margin-top: 710px;
   text-align: center;
 }
 
@@ -276,44 +432,36 @@ img {
   justify-content: center;
 }
 
-.beninFactsIntro {
+.peopleIntro {
   /*font style*/
   font-family: 'Bodoni Moda','Catamaran','Cormorant Garamond', sans-serif;
-  font-size: 65px;
+  font-size: 5.5em;
   letter-spacing: 2.7px;
   /*position*/
   text-align: center;
   padding-top: 20%;
-  /* animation */
-  animation: fade-in 1s ease-in-out;
-
-
 }
 
-.subFactsIntro {
+.subPeopleIntroLeft {
   /*font style*/
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
+  font-size: 1.45em;
   letter-spacing: 1.7px;
   /*position*/
   text-align: justify;
   max-width: 680px;
-  margin-left: 350px;
-  /* animation */
-  animation: slide-in-left 1s ease-in-out both;
+  margin: 3% 0 0 18%;
 }
 
-.subFactsIntroRight {
+.subPeopleIntroRight {
   /*font style*/
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
+  font-size: 1.45em;
   letter-spacing: 1.7px;
   /*position*/
   text-align: center;
   max-width: 650px;
-  margin-left: 920px;
-  /* animation */
-  animation: slide-in-right 1s ease-in-out both;
+  margin: 1% 0 0 39%;
 }
 
 .beninFactsBackground {
