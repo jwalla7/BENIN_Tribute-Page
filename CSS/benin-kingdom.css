@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
+  width: 100vw;
   line-height: 1;
 }
 ol, ul {
@@ -67,6 +68,8 @@ section {
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800;900&family=Work+Sans:wght@800&display=swap');
+
 
 
 
@@ -78,6 +81,7 @@ section {
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
 }
@@ -182,70 +186,6 @@ section {
   background-repeat: no-repeat;
 }
 
-.BeninLegacyMqe {
-  transform: translate(0%, 0%);
-  position: absolute;
-  top: 0;
-  right: 0;
-  overflow: hidden;
-  --offset: -55vw;
-  --move-initial: calc(55% + var(--offset));
-  --move-final: calc(-55% + var(--offset));
-}
-
-.BeninLegacyMqe__inner {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  transform: translate3d(var(--move-initial), 0, 0);
-  animation: marquee 25s linear infinite;
-  /* animation-play-state: paused; */
-}
-
-#benin1 {
-font-family: 'Playfair Display','Catamaran', sans-serif;
-font-size: 12em;
-}
-#benin2 {
-font-family: 'Catamaran', sans-serif;
-font-size: 12em;
-transform: translate(0%, 15%);
-}
-#benin3 {
-font-family: 'Bodoni Moda','Catamaran','Cormorant Garamond', sans-serif;
-font-size: 12em;
-}
-#benin4 {
-font-family: 'Old Standard TT', sans-serif;
-font-size: 12em;
-}
-#legacy1 {
-font-family: 'Playfair Display','Catamaran', sans-serif;
-font-size: 12em;
-font-style: italic;
-
-}
-#legacy2 {
-font-family: 'Playfair Display','Catamaran', sans-serif;
-font-size: 12em;
-font-style: italic;
-transform: translate(0%, 2%);
-}
-#legacy3 {
-font-family: 'Playfair Display','Catamaran', sans-serif;
-font-size: 12em;
-font-style: italic;
-
-}
-#legacy4 {
-font-family: 'Playfair Display','Catamaran', sans-serif;
-font-size: 12em;
-font-style: italic;
-}
-
 .navButton {
   /* position */
   position: absolute;
@@ -271,53 +211,6 @@ font-style: italic;
   border-width: 5px 5px 5px 5px;
   /* background */
   background-color: rgb(0,0,0);
-}
-
-.navPurpleContainerTop {
-  position: absolute;
-  top: 0;
-  right: 0;
-  overflow: hidden;
-  /* padding: 2%; */
-  transform: translate(-260%, 113.5%);
-  max-width: 16%;
-  /* filter: contrast(.98); */
-  /* animation: fade-in 4s ease-in-out both; */
-}
-.navPurpleImgTop {
-  max-width: 100%;
-  height: auto;
-}
-.navPurpleContainerBottom {
-  position: absolute;
-  top: 0;
-  right: 0;
-  overflow: hidden;
-  /* padding: 2%; */
-  transform: translate(-260%, 210%);
-  max-width: 16%;
-  /* filter: contrast(.98); */
-  /* animation: fade-in 4s ease-in-out both; */
-}
-.navPurpleImgBottom {
-  max-width: 100%;
-  height: auto;
-}
-
-.navFrameLeftContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* padding: 4% 3% 0% 5%; */
-  transform: scale(.8) translate(97.5%, -4.5%);
-  max-width: 40%;
-  height: auto;
-  /* filter: contrast(.98); */
-  /* animation: fade-in 4s ease-in-out both; */
-}
-#navFrameLeftImg {
-  max-width: 100%;
-  height: auto;
 }
 
 .benin-bronze-warrior-container {
@@ -443,8 +336,8 @@ img {
 
 .beninBronzeImage {
   /*image style*/
-  max-width: 100%;
-  height: 700px;
+  width: 100vw;
+  height: 80vh;
   margin-top: 325px;
   /*border*/
   border-style: solid;
@@ -526,14 +419,13 @@ img {
 }
 
 .the-great-wall-header-text{
-
 }
 
 .the-great-wall-header-text-right-container {
   position: absolute;
   left: 0;
   /* border: 1px solid red; */
-  transform: translate(-115%, 0);
+  transform: translate(-115%, 10%);
   width: 50vw;
   height: 100vh;
   font-size: 9rem;
@@ -541,6 +433,18 @@ img {
   font-weight: bolder;
   font-family: 'Cormorant Garamond','Roboto', 'Catamaran', sans-serif;
 }
+
+  #the-great-text {
+    border: 1px solid orange; 
+    transform: scaleX(-1);
+  }
+  #wall-of-text {
+    border: 1px solid orange;
+  }
+  #benin-text {
+    border: 1px solid orange;
+    transform: scaleX(-1);
+  }
 
 .benin-great-wall-image-container {
   width: 50vw;
@@ -550,7 +454,7 @@ img {
 
 .beninFactsBackground {
   /*position*/
-  max-width: 1897px;
+  width: 100vw;
   height: 980px;
   margin-left: -8px;
   margin-top: 310px;
@@ -576,7 +480,7 @@ img {
   margin-left: 85px;
   /*border*/
   border-style:;
-  border-color: rgba (230, 203, 123, 1);
+  border-color: rgba(230, 203, 123, 1);
 }.beninFactsHeader p:hover {
   color: rgba(230,203,123,1);
 }
@@ -745,7 +649,7 @@ img {
   max-width: 300px;
   text-align: start;
   margin-top: -300px;
-  margin-left: 1150px;
+  /* margin-left: 1150px; */
 }
 
 .quotationsPCR {
@@ -788,7 +692,7 @@ img {
   letter-spacing: 1.7px;
   color: rgb(255, 255, 255);
   /*position*/
-  max-width: 850px;
+  /* max-width: 850px; */
   text-align: start;
   margin-top: -100px;
   margin-left: 200px;
@@ -797,7 +701,7 @@ img {
 .womanAndChild {
   /*font style*/
   /*position*/
-  max-width: 1225px;
+  /* max-width: 1225px; */
   height: 1009px;
   margin-top: -1009px;
   /*background*/
@@ -814,7 +718,7 @@ img {
   /*border*/
   border-style:;
   /*position*/
-  max-width: 1024px;
+  /* max-width: 1024px; */
   height: 1009px;;
   margin-top:;
   margin-left: 877px;
@@ -897,43 +801,57 @@ img {
     position: absolute;
     left: 0;
     /* border: 1px solid red; */
+    transform: translate(-120%, 25%);
+    width: 25vw;
+    height: 30vh;
+    font-size: 5rem;
+    text-align: start;
+    font-weight: 400;
+    font-family: 'Catamaran', sans-serif;
+  }
+
+  .the-great-wall-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1%;
     transform: translate(-230%, 10%);
     width: 25vw;
-    height: 30vh;
-    font-size: 5rem;
-    text-align: start;
-    font-weight: bolder;
-    font-family: 'Cormorant Garamond','Roboto', 'Catamaran', sans-serif;
+    height: 40vh;
+    border-right: 2px solid black;
   }
-  .the-great-wall-header-text-right-container {
+  .benin-great-wall-image-container {
     position: absolute;
     left: 0;
+    margin: 0 0 0 25%;
+    width: 13vw;
+    overflow: hidden;
+  }
+
+  .the-great-wall-content-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-105%, -25%);
+    width: 50vw;
+    height: 40vh;
     /* border: 1px solid red; */
-    transform: translate(-115%, 0);
-    width: 25vw;
-    height: 30vh;
-    font-size: 5rem;
-    text-align: start;
-    font-weight: bolder;
-    font-family: 'Cormorant Garamond','Roboto', 'Catamaran', sans-serif;
-}
-#the-great-text {
-  border: 1px solid orange; 
-  transform: scale(-1, 1);
-}
-#wall-of-text {
-  border: 1px solid orange;
-  transform: scale(-1, 1);
-}
-#benin-text {
-  border: 1px solid orange;
-  transform: scale(-1, 1);
-}
-
-
-  .benin-great-wall-image-container {
-    width: 40vw;
-    transform: translate(-6%, 5%);
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 175%;
+    letter-spacing: 1.7px;
+  }
+  .the-great-wall-content-text {
+  }
+  .the-great-wall-content-text-middle {s
+  }
+  .iya-map-container {
+    width: 20vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-6%, -20%);
+    border: 1px solid black;
   }
 
 }
