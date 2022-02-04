@@ -333,32 +333,114 @@ ul {
 img {
   max-width: 100%;
 }
-
-.beninBronzeImage {
+.two {
+  scroll-snap-align: scroll;
+}
+.parallax {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.benin-Bronze-Image-Container {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.benin-bronze-image-container {
   /*image style*/
   width: 100vw;
-  height: 80vh;
-  margin-top: 325px;
-  /*border*/
-  border-style: solid;
-  border-color: rgb(255,255,255);
-  /*background*/
-  background-image: url(https://www.nurhitoolkit.org/sites/default/files/styles/gallery_full/public/One%20of%20the%20Ancient%20Benin%20Bronze%20statue_0.jpg?itok=XTogp8-d);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  height: 100vh;
+  text-align: center;
+  transform: translateY(100%) translateZ(0px);
+}
+.benin-bronze-image {
+  width: 100vw;
+  height: 100vh;
+}
+.stolen-bronzes-interlude {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding: 1%;
+  transform: translateY(0%) translateZ(-1.5px) scale(2.5, 2.4);
+}
+.benin-bronze-image-caption-container {
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
-
 .beninBronzeImageCaption {
+  z-index: 1;
+  padding: .5%;
   /*font style*/
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 70%;
   letter-spacing: 1.7px;
-  color: rgb(5,5,16);
+  color: black;
   /*position*/
   text-align: center;
 }
 
+.stolen-bronzes-interlude-text-header {
+  color: black;
+  font-family: 'Playfair Display','Roboto', sans-serif;
+  font-size: 9em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: center;
+}
+.stolen-bronzes-interlude-text-content-top {
+  color: black;
+    font-family: 'Roboto', sans-serif;
+  font-size: 5.5em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: center;
+}
+.stolen-bronzes-interlude-text-content-bottom {
+  color: black;
+    font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: center;
+}
+.stolen-bronzes-interlude-cite {
+  color: black;
+    font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: center;
+}
+
+.stolen-bronzes-plaques-container {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.stolen-bronzes-plaques-text-container {
+  width: 100vw;
+  height: 100vh;
+  transform: translateY(0%) translateZ(-1.5px) scale(2.5, 2.5);
+}
+.stolen-bronzes-plaques-image-container {
+  width: 100vw;
+  height: 100vh;
+  /* transform: translate(0%, 15%); */
+  /* overflow: hidden; */
+  transform: translateY(100%) translateZ(0px);
+}
+.stolen-bronzes-plaques-image {
+  width: 100vw;
+  height: 100vh;
+}
 
 .three {
   align-items: center;
@@ -399,7 +481,7 @@ img {
   margin: 1% 0 0 39%;
 }
 
-.the-great-wall-top-container {
+.the-great-wall-container {
   width: 100vw;
   height: 100vh;
   transform: translate(60%, 0);
@@ -778,7 +860,7 @@ img {
     text-underline-offset: 5%;
     text-decoration: underline;
   }
-
+/* THE PEOPLE */
   .subIntroParaCite {
     display: flex;
     position: absolute;
@@ -797,6 +879,15 @@ img {
   }.cite-benin-moat:hover {
     color: purple;
   }
+  /* THE CULTURE */
+  .benin-culture-container {
+    width: 100vw;
+    height: 80vh;
+  }
+  .festival-image {
+    width: 100vw;
+  }
+  /* THE GREAT WALL OF BENIN */
   .the-great-wall-header-text-container {
     position: absolute;
     left: 0;
@@ -828,29 +919,40 @@ img {
     overflow: hidden;
   }
 
-  .the-great-wall-content-container {
+  .the-great-wall-content-container-left {
     position: absolute;
     bottom: 0;
     left: 0;
     transform: translate(-105%, -25%);
     width: 50vw;
     height: 40vh;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-size: 175%;
+    font-size: 1.45em;
     letter-spacing: 1.7px;
   }
   .the-great-wall-content-text {
   }
-  .the-great-wall-content-text-middle {s
+  .the-great-wall-content-text-middle {
+  }
+  .the-great-wall-content-container-right{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-6.5%, -5%);
+    width: 40vw;
+    height: 91vh;
+    border: 1px solid blue;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.45em;
+    letter-spacing: 1.7px;
   }
   .iya-map-container {
     width: 20vw;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: translate(-6%, -20%);
+    float: right;
+    transform: translate(0%, 50%);
     border: 1px solid black;
   }
 
