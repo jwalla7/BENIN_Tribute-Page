@@ -60,11 +60,44 @@ section {
 }
 
 @font-face {
-    font-family: 'florenceregular';
-    src:  url('florence-regular-webfont.woff2') format('woff2'),
-          url('florence-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+
+  font-family: 'florenceregular', 
+    'datalegreyadot',
+    'datalegreyathin',
+    'jacques_francoisregular',
+    'josefin_sansbold',
+    'josefin_sansitalic',
+    'josefin_sanslight',
+    'junicodeitalic',
+    'junicodeitaliccondensed',
+    'junicoderegularcondensed',
+    'kawoszehmedium';
+
+  src: url('florence-regular-webfont.woff2') format('woff2'),
+    url('florence-regular-webfont.woff') format('woff'),
+    url('datalegreya-dot-webfont.woff2') format('woff2'),
+    url('datalegreya-dot-webfont.woff') format('woff'),
+    url('datalegreya-thin-webfont.woff2') format('woff2'),
+    url('datalegreya-thin-webfont.woff') format('woff'),
+    url('jacquesfrancois-regular-webfont.woff2') format('woff2'),
+    url('jacquesfrancois-regular-webfont.woff') format('woff'),
+    url('josefinsans-bold-webfont.woff2') format('woff2'),
+    url('josefinsans-bold-webfont.woff') format('woff'),
+    url('josefinsans-italic-webfont.woff') format('woff'),
+    url('josefinsans-italic-webfont.woff2') format('woff2'),
+    url('josefinsans-light-webfont.woff2') format('woff2'),
+    url('josefinsans-light-webfont.woff') format('woff'),
+    url('junicode-italic-webfont.woff2') format('woff2'),
+    url('junicode-italic-webfont.woff') format('woff'),
+    url('junicode-italiccondensed-webfont.woff2') format('woff2'),
+    url('junicode-italiccondensed-webfont.woff') format('woff'),
+    url('junicode-regularcondensed-webfont.woff2') format('woff2'),
+    url('junicode-regularcondensed-webfont.woff') format('woff'),
+    url('kawoszeh-webfont.woff2') format('woff2'),
+    url('kawoszeh-webfont.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
 }
 
 
@@ -389,32 +422,42 @@ img {
   color: black;
   font-family: 'Playfair Display','Roboto', sans-serif;
   font-size: 9em;
+  font-weight: 600;
   letter-spacing: 1.7px;
   /*position*/
   text-align: center;
 }
 .stolen-bronzes-interlude-text-content-top {
   color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-style: italic;
-  font-size: 4em;
+  font-family:
+'junicodeitalic',
+'junicodeitaliccondensed',
+'kawoszehmedium','IM Fell French Canon','Montserrat', sans-serif;
+  /* font-style: italic; */
+  font-weight: lighter;
+  font-size: 8em;
   letter-spacing: 1.7px;
   /*position*/
   text-align: center;
 }
-.stolen-bronzes-interlude-text-content-bottom {
-  color: black;
-  font-family: 'Montserrat', sans-serif;
+.stolen-bronzes-interlude-text-content-middle {
+  color: rgb(0, 0, 0);
+  font-family: 'junicodeitalic','junicodeitaliccondensed','datalegreyadot','Montserrat', sans-serif;
   font-style: italic;
-  font-size: 4em;
+  font-size: 6.5em;
   letter-spacing: 1.7px;
   /*position*/
   text-align: start;
 }
+
+.cite-container {
+  transform: translate(80% , -80%);
+  width: 50vw;
+  height: 10vh;
+}
 .stolen-bronzes-interlude-cite {
   color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-style: italic;
+  font-family: 'Bodoni Moda','Playfair Display','Montserrat', sans-serif;
   font-size: 1.25em;
   letter-spacing: 1.7px;
   /*position*/
@@ -422,6 +465,61 @@ img {
 } .stolen-bronzes-interlude-cite:hover {
   cursor: grab;
   color: purple;
+}
+
+.stolen-bronzes-interlude-bottom-container {
+  /* border: 1px solid blue; */
+  width: 60vw;
+  margin-top: 0%;
+  text-align: start;
+}
+.stolen-bronzes-interlude-text-content-bottom {
+  color: rgb(0, 0, 0);
+  font-family:
+  /* 'Roboto', */
+  'Playfair Display',
+  /* 'TT Old Standard', */
+  /* 'Cormorant Garamond', */
+  /* 'Catamaran',  */
+  /* 'junicodeitalic', */
+  /* 'junicodeitaliccondensed', */
+  'kawoszehmedium',
+  'IM Fell French Canon',
+  'Montserrat', 
+  sans-serif;
+  /* text-transform: uppercase; */
+  /* font-weight: bold; */
+  font-size: 2.2em;
+  font-style: italic;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: start;
+}
+
+.stolen-bronzes-interlude-right-container {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 26vw;
+  height: 80vh;
+  margin-top: 5%;
+  text-align: center;
+}
+.stolen-bronzes-interlude-text-content-right {
+  color: rgb(0, 0, 0);
+  font-family: 'Bodoni Moda','Playfair Display','Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 1.55em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: start;
+}
+.stolen-bronzes-interlude-text-content-bottom-para {
+  font-family: 'Roboto','Bodoni Moda','Playfair Display','Montserrat', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: justify;  
 }
 
 .stolen-bronzes-plaques-container {
