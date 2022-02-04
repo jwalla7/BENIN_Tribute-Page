@@ -69,7 +69,7 @@ section {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800;900&family=Work+Sans:wght@800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400&family=Montserrat:wght@100;200;300&family=Quicksand:wght@300;400;500&family=Raleway:ital,wght@1,100;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
 
 
 
@@ -395,27 +395,33 @@ img {
 }
 .stolen-bronzes-interlude-text-content-top {
   color: black;
-    font-family: 'Roboto', sans-serif;
-  font-size: 5.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 4em;
   letter-spacing: 1.7px;
   /*position*/
   text-align: center;
 }
 .stolen-bronzes-interlude-text-content-bottom {
   color: black;
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
   font-size: 4em;
   letter-spacing: 1.7px;
   /*position*/
-  text-align: center;
+  text-align: start;
 }
 .stolen-bronzes-interlude-cite {
   color: black;
-    font-family: 'Roboto', sans-serif;
-  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 1.25em;
   letter-spacing: 1.7px;
   /*position*/
   text-align: center;
+} .stolen-bronzes-interlude-cite:hover {
+  cursor: grab;
+  color: purple;
 }
 
 .stolen-bronzes-plaques-container {
