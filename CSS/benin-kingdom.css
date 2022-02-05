@@ -369,37 +369,74 @@ img {
 .two {
   scroll-snap-align: scroll;
 }
+.two-horizontal {
+  display: flex;
+  border: 1px solid blue;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+  transform:rotate(-90deg) translate( 0px , 0px);
+  perspective: 1px;
+}
+.two-horizontal-wrapper {
+  border: 1px solid orange;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  transform: rotate(90deg) translate(0px , 0px);
+}
+.stolen-bronzes-interlude-right-container {
+  /* position: absolute; */
+  /* top: 5%; */
+  /* right: 5%; */
+  border: 1px solid purple;
+  width: 100vw;
+  height: 100vh;
+  /* margin-top: 5%; */
+  text-align: center;
+  /* perspective: 1px; */
+  /* transform: rotate(90deg); */
+}
+
+.loot-1897-container {
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+}
+
 .parallax {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0; */
 }
-.benin-Bronze-Image-Container {
+.benin-bronzes-introduction-container {
   width: 100vw;
   height: 100vh;
-  perspective: 1px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  border:  1px solid red;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
 }
 .benin-bronze-image-container {
-  /*image style*/
   width: 100vw;
   height: 100vh;
   text-align: center;
-  transform: translateY(100%) translateZ(0px);
+  /* transform: translateY(100%) translateZ(0px); */
 }
 .benin-bronze-image {
   width: 100vw;
   height: 100vh;
 }
+
 .stolen-bronzes-interlude {
   width: 100vw;
   height: 100vh;
   background-color: white;
   padding: 1%;
-  transform: translateY(0%) translateZ(-1.5px) scale(2.5, 2.4);
+  /* transform: translateY(0%) translateZ(-1.5px) scale(2.5, 2.4); */
+
 }
 .benin-bronze-image-caption-container {
   align-items: center;
@@ -495,16 +532,8 @@ img {
   /*position*/
   text-align: start;
 }
+/* right container here */
 
-.stolen-bronzes-interlude-right-container {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  width: 26vw;
-  height: 80vh;
-  margin-top: 5%;
-  text-align: center;
-}
 .stolen-bronzes-interlude-text-content-right {
   color: rgb(0, 0, 0);
   font-family: 'Bodoni Moda','Playfair Display','Montserrat', sans-serif;
@@ -521,6 +550,7 @@ img {
   /*position*/
   text-align: justify;  
 }
+
 
 .stolen-bronzes-plaques-container {
   width: 100vw;
