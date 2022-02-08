@@ -369,40 +369,36 @@ img {
 .two {
   scroll-snap-align: scroll;
 }
+
 .two-horizontal {
-  display: flex;
   border: 1px solid blue;
-  width: 100vw;
-  height: 100vh;
+  width: 100vh;
+  height: 100vw;
   overflow-y: auto;
-  /* overflow-x: hidden; */
-  transform:rotate(-90deg) translate( 0px , 0px);
+  overflow-x: hidden; 
+  transform: rotate(-90deg) translate(0% , -50%);
+  margin: 0 0 0 -9%;
+  transform-origin: right top;
   perspective: 1px;
 }
+
 .two-horizontal-wrapper {
-  border: 1px solid orange;
-  width: 100vw;
-  height: auto;
   display: flex;
+  border: 1px solid orange;
+  width: auto;
+  height: 100vh;
   transform: rotate(90deg) translate(0px , 0px);
 }
+
 .stolen-bronzes-interlude-right-container {
-  /* position: absolute; */
-  /* top: 5%; */
   /* right: 5%; */
   border: 1px solid purple;
   width: 100vw;
   height: 100vh;
   /* margin-top: 5%; */
   text-align: center;
-  /* perspective: 1px; */
+  perspective: 1px;
   /* transform: rotate(90deg); */
-}
-
-.loot-1897-container {
-  background-color: blue;
-  width: 100vw;
-  height: 100vh;
 }
 
 .parallax {
@@ -412,10 +408,11 @@ img {
   bottom: 0;
   left: 0; */
 }
+
 .benin-bronzes-introduction-container {
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
-  border:  1px solid red;
+  border:  1px solid green;
   /* overflow-x: hidden; */
   /* overflow-y: auto; */
 }
