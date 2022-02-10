@@ -35,3 +35,4 @@ const thePeopleObserver = new IntersectionObserver((entries) => {
     })
 }, threshold1)
 thePeopleObserver.observe(peoplePage);
+
