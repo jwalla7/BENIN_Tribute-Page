@@ -107,9 +107,6 @@ section {
 
 
 
-.scroll-container {
-
-}
 
 .container {
   scroll-snap-type: y mandatory;
@@ -377,8 +374,8 @@ img {
 
 .two-horizontal {
   display: flex;
-  border: 3px solid blue;
-  background-color: cadetblue;
+  /* border: 3px solid blue; */
+  /* background-color: cadetblue; */
   width: 100vh;
   height: 100vw;
   align-items: center;
@@ -386,6 +383,7 @@ img {
   /* overflow-y: auto; */
   overflow-y: inherit;
   overflow-x: hidden;
+  scroll-snap-type: y mandatory;
   transform-origin: right top;
   transform: rotate(-90deg) translate(.45% , -50.5%);
   perspective: 1px;
@@ -398,7 +396,7 @@ img {
   display: inline-flex;  
   /* display: flex; */
   background-color: orange;
-  width: auto;
+  min-width: auto;
   height: 100vh;
   /* overflow-y: hidden; */
   /* overflow-x: scroll; */
@@ -406,11 +404,19 @@ img {
   transform: rotate(90deg) translate(-25% , 0%);
   perspective: 1px;
 }
+.two-horizontal-section {
+  position: absolute;
+  display: inline-flex;
+  width: auto;
+  /* background-color: aquamarine; */
+  height: 100vh;
+}
+
 .benin-bronzes-introduction-container {
   width: 100vw;
   height: 100vh;
   border:  1px solid green;
-  transform: translate(0%,0%);
+  transform: translate(-50%,0%);
   /* perspective: 1px; */
 }
 .stolen-bronzes-interlude-right-container {
@@ -418,13 +424,22 @@ img {
   border: 1px solid purple;
   width: 100vw;
   height: 100vh;
-  /* transform: translate(0%,0%); */
+  transform: translate(-50%,0%);
   /* margin-top: 5%; */
   text-align: center;
   /* perspective: 1px; */
   /* transform: rotate(90deg); */
 }
+.stolen-bronzes-final-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
 
+.snap {
+  scroll-snap-align: start;
+}
 .parallax {
   /* position: absolute;
   top: 0;
@@ -1042,8 +1057,8 @@ img {
 /* BENIN BRONZES */
   .two-horizontal {
     display: flex;
-    border: 3px solid blue;
-    background-color: cadetblue;
+    /* border: 3px solid blue; */
+    /* background-color: cadetblue; */
     width: 100vh;
     height: 100vw;
     align-items: center;
