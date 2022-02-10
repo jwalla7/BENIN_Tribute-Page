@@ -1,0 +1,1172 @@
+/* ------ Browser CSS Reset ------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  box-sizing: border-box;
+	vertical-align: baseline;
+}
+    /* Older Browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  width: 100vw;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  scroll-behavior: smooth;
+}
+
+section {
+  position: sticky;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+@font-face {
+
+  font-family: 'florenceregular', 
+    'datalegreyadot',
+    'datalegreyathin',
+    'jacques_francoisregular',
+    'josefin_sansbold',
+    'josefin_sansitalic',
+    'josefin_sanslight',
+    'junicodeitalic',
+    'junicodeitaliccondensed',
+    'junicoderegularcondensed',
+    'kawoszehmedium';
+
+  src: url('florence-regular-webfont.woff2') format('woff2'),
+    url('florence-regular-webfont.woff') format('woff'),
+    url('datalegreya-dot-webfont.woff2') format('woff2'),
+    url('datalegreya-dot-webfont.woff') format('woff'),
+    url('datalegreya-thin-webfont.woff2') format('woff2'),
+    url('datalegreya-thin-webfont.woff') format('woff'),
+    url('jacquesfrancois-regular-webfont.woff2') format('woff2'),
+    url('jacquesfrancois-regular-webfont.woff') format('woff'),
+    url('josefinsans-bold-webfont.woff2') format('woff2'),
+    url('josefinsans-bold-webfont.woff') format('woff'),
+    url('josefinsans-italic-webfont.woff') format('woff'),
+    url('josefinsans-italic-webfont.woff2') format('woff2'),
+    url('josefinsans-light-webfont.woff2') format('woff2'),
+    url('josefinsans-light-webfont.woff') format('woff'),
+    url('junicode-italic-webfont.woff2') format('woff2'),
+    url('junicode-italic-webfont.woff') format('woff'),
+    url('junicode-italiccondensed-webfont.woff2') format('woff2'),
+    url('junicode-italiccondensed-webfont.woff') format('woff'),
+    url('junicode-regularcondensed-webfont.woff2') format('woff2'),
+    url('junicode-regularcondensed-webfont.woff') format('woff'),
+    url('kawoszeh-webfont.woff2') format('woff2'),
+    url('kawoszeh-webfont.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800;900&family=Work+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400&family=Montserrat:wght@100;200;300&family=Quicksand:wght@300;400;500&family=Raleway:ital,wght@1,100;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+
+
+
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.js-scroll {
+  max-width: 50%;
+  height: auto;
+  background-color: blue;
+  transition: background-color 500ms;
+}
+
+.js-scroll.scrolled {
+  background-color: aquamarine;
+}
+
+.scroll-caption {
+  /* animation: fade-in 1s ease-in-out both; */
+}
+
+
+
+
+
+
+
+/*  --- KEYFRAMES ---  */
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+
+
+.stolenBronzesContainer {
+  /* position */
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+  /*background*/
+  background-color: white;
+  /* background-image: url(https://static01.nyt.com/images/2020/01/29/opinion/29Ehikhamenor1/merlin_165734295_cd0ed8e7-66c6-4301-ace8-4665ad821374-superJumbo.jpg?quality=90&auto=webp); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navButton {
+  /* position */
+  position: absolute;
+  transform: scale(1) translateY(-1%);
+  z-index: 2;
+  height: 80%;
+  width: 10.55vw;
+  padding: 4% 0% 0% 8.5%;
+  margin: 2% 0 0 45.4%;
+    /* font style */
+  font-family: 'Playfair Display','Roboto', sans-serif;
+  font-size: 175%;
+  letter-spacing: 4.7px;
+  color: rgb(255,255,255);
+  /* font position */
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  /* border */
+  border-style: solid;
+  border-color: rgb(0,0,0);
+  border-width: 5px 5px 5px 5px;
+  /* background */
+  background-color: rgb(0,0,0);
+}
+.nav-button-text-container {
+  font-size: 105%;
+-moz-transform: translate(-260%, -4.5%);
+}
+
+.benin-bronze-warrior-container {
+  z-index: 2;
+  width: 16vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(219%, 9%); 
+}
+
+.benin-bronze-woman-container {
+  z-index: 1;
+  width: 15vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-232.5%, 14%);
+}
+
+.navToolbar {
+  /*viewport*/
+  display: none;
+  /*position*/
+  max-width: 200px;
+  height: 200px;
+  margin-top: -624px;
+  margin-left: 1451px;
+  position:;
+  /*border*/
+  border-style: solid;
+  /*background*/
+  background-color: red;
+} 
+
+.navHeader {
+  position: absolute;
+  bottom: 0;
+  width: 50vw;
+  height: 10vh;
+  transform: translate(73%, 10%);
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1.7px;
+  /* text-align: end; */
+  /* margin-top: -580px; */
+  /* margin-left: 1451px; */
+  background-color: rgb(255,255,255);
+  /* border: 1px solid red; */
+  z-index: 1;
+}
+ul {
+  display: flex;  
+  column-gap: 2%;
+}
+.nav-header-text {
+  text-decoration: none;
+  color: black;
+}.nav-header-text:hover {
+  transition: ease-in 1s;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+/* Section ONE */
+#introParaContainer {
+  max-width: 45%;
+  margin: 15% 0 0 0;
+  height: auto;
+  padding: 20% 1% 1% 3%;
+}
+
+#introPara {
+  /* position */
+  padding: 7%;
+  max-width: 100%;
+  /*font-style*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 175%;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  /*font-position*/
+  text-align: center;
+  /* border */
+  border: 2px solid black;
+}
+
+#subIntroPara {
+  max-width: 60%;
+  padding: 5%;
+  margin: -13.5% 0 0 45%;
+  /*font-style*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 175%;
+  letter-spacing: 1.7px;
+  /*font-position*/
+  text-align: justify;
+  /* border */
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+}
+.subIntroParaCite {
+  display: flex;
+  position: absolute;
+  right: 0;
+  transform: translate(-34em, -2.7em);
+  font-size: 65%;
+  opacity: 90%;
+}
+.cite-benin-timeline {
+  color: black;
+}.cite-benin-timeline:hover {
+  color: purple;
+}
+.cite-benin-moat {
+  color: black;
+}.cite-benin-moat:hover {
+  color: purple;
+}
+
+img {
+  max-width: 100%;
+}
+.two {
+  scroll-snap-align: scroll;
+}
+
+.two-horizontal {
+  display: flex;
+  /* border: 3px solid blue; */
+  /* background-color: cadetblue; */
+  width: 100vh;
+  height: 100vw;
+  align-items: center;
+  justify-content: center;
+  /* overflow-y: auto; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  transform-origin: right top;
+  transform: rotate(-90deg) translate(.45% , -50.5%);
+  perspective: 1px;
+
+}.two-horizontal::-webkit-scrollbar {
+    /* hide scrollbar but keep functionality for Chrome, Safari and Opera */
+    display: none; 
+}
+.two-horizontal-wrapper {
+  position: relative;
+  display: inline-flex;  
+  /* display: flex; */
+  background-color: orange;
+  min-width: auto;
+  height: 100vh;
+  /* overflow-y: hidden; */
+  /* overflow-x: scroll; */
+  /* transform-origin: right top; */
+  transform: rotate(90deg) translate(0% , 0%);
+  perspective: 1px;
+}
+.two-horizontal-section {
+  position: absolute;
+  display: inline-flex;
+  width: auto;
+  /* background-color: aquamarine; */
+  height: 100vh;
+}
+
+.benin-bronzes-introduction-container {
+  width: 100vw;
+  height: 100vh;
+  border:  1px solid green;
+  transform: translate(-50%,0%);
+  /* perspective: 1px; */
+}
+.stolen-bronzes-interlude-right-container {
+  /* right: 5%; */
+  border: 1px solid purple;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%,0%);
+  /* margin-top: 5%; */
+  text-align: center;
+  /* perspective: 1px; */
+  /* transform: rotate(90deg); */
+}
+.stolen-bronzes-final-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.snap {
+  scroll-snap-align: start;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.benin-bronze-image-container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.benin-bronze-image {
+  width: 100vw;
+  height: 100vh;
+}
+
+.stolen-bronzes-interlude {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding: 1%;
+  /* transform: translateY(0%) translateZ(-1.5px) scale(2.5, 2.4); */
+
+}
+.benin-bronze-image-caption-container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.beninBronzeImageCaption {
+  z-index: 1;
+  padding: .5%;
+  /*font style*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 70%;
+  letter-spacing: 1.7px;
+  color: black;
+  /*position*/
+  text-align: center;
+}
+
+.stolen-bronzes-interlude-text-header {
+  color: black;
+  font-family: 'Playfair Display','Roboto', sans-serif;
+  font-size: 9em;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: center;
+}
+.stolen-bronzes-interlude-text-content-top {
+  color: black;
+  font-family:
+'junicodeitalic',
+'junicodeitaliccondensed',
+'kawoszehmedium','IM Fell French Canon','Montserrat', sans-serif;
+  /* font-style: italic; */
+  font-weight: lighter;
+  font-size: 8em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: center;
+}
+.stolen-bronzes-interlude-text-content-middle {
+  color: rgb(0, 0, 0);
+  font-family: 'junicodeitalic','junicodeitaliccondensed','datalegreyadot','Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 6.5em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: start;
+}
+
+.cite-container {
+  transform: translate(80% , -80%);
+  width: 50vw;
+  height: 10vh;
+}
+.stolen-bronzes-interlude-cite {
+  color: black;
+  font-family: 'Bodoni Moda','Playfair Display','Montserrat', sans-serif;
+  font-size: 1.25em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: center;
+} .stolen-bronzes-interlude-cite:hover {
+  cursor: grab;
+  color: purple;
+}
+
+.stolen-bronzes-interlude-bottom-container {
+  /* border: 1px solid blue; */
+  width: 60vw;
+  margin-top: 0%;
+  text-align: start;
+}
+.stolen-bronzes-interlude-text-content-bottom {
+  color: rgb(0, 0, 0);
+  font-family:
+  /* 'Roboto', */
+  'Playfair Display',
+  /* 'TT Old Standard', */
+  /* 'Cormorant Garamond', */
+  /* 'Catamaran',  */
+  /* 'junicodeitalic', */
+  /* 'junicodeitaliccondensed', */
+  'kawoszehmedium',
+  'IM Fell French Canon',
+  'Montserrat', 
+  sans-serif;
+  /* text-transform: uppercase; */
+  /* font-weight: bold; */
+  font-size: 2.2em;
+  font-style: italic;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: start;
+}
+/* right container here */
+
+.stolen-bronzes-interlude-text-content-right {
+  color: rgb(0, 0, 0);
+  font-family: 'Bodoni Moda','Playfair Display','Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 1.55em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: start;
+}
+.stolen-bronzes-interlude-text-content-bottom-para {
+  font-family: 'Roboto','Bodoni Moda','Playfair Display','Montserrat', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: justify;  
+}
+
+
+.stolen-bronzes-plaques-container {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.stolen-bronzes-plaques-text-container {
+  width: 100vw;
+  height: 100vh;
+  transform: translateY(0%) translateZ(-1.5px) scale(2.5, 2.5);
+}
+.stolen-bronzes-plaques-image-container {
+  width: 100vw;
+  height: 100vh;
+  /* transform: translate(0%, 15%); */
+  /* overflow: hidden; */
+  transform: translateY(100%) translateZ(0px);
+}
+.stolen-bronzes-plaques-image {
+  width: 100vw;
+  height: 100vh;
+}
+
+.three {
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.peopleIntro {
+  /*font style*/
+  font-family: 'Bodoni Moda','Catamaran','Cormorant Garamond', sans-serif;
+  font-size: 5.5em;
+  letter-spacing: 2.7px;
+  /*position*/
+  text-align: center;
+  padding-top: 20%;
+}
+
+.subPeopleIntroLeft {
+  /*font style*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.45em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: justify;
+  max-width: 680px;
+  margin: 3% 0 0 18%;
+}
+
+.subPeopleIntroRight {
+  /*font style*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.45em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: center;
+  max-width: 650px;
+  margin: 1% 0 0 39%;
+}
+
+.the-great-wall-container {
+  width: 100vw;
+  height: 100vh;
+  transform: translate(60%, 0);
+}
+
+.the-great-wall-header-text-container {
+  position: absolute;
+  left: 0;
+  /* border: 1px solid red; */
+  transform: translate(-115%, 0);
+  width: 50vw;
+  height: 100vh;
+  font-size: 9rem;
+  text-align: start;
+  font-weight: bolder;
+  font-family: 'Cormorant Garamond','Roboto', 'Catamaran', sans-serif;
+}
+
+.the-great-wall-header-text{
+}
+
+.the-great-wall-header-text-right-container {
+  position: absolute;
+  left: 0;
+  /* border: 1px solid red; */
+  transform: translate(-115%, 10%);
+  width: 50vw;
+  height: 100vh;
+  font-size: 9rem;
+  text-align: start;
+  font-weight: bolder;
+  font-family: 'Cormorant Garamond','Roboto', 'Catamaran', sans-serif;
+}
+
+  #the-great-text {
+    border: 1px solid orange; 
+    transform: scaleX(-1);
+  }
+  #wall-of-text {
+    border: 1px solid orange;
+  }
+  #benin-text {
+    border: 1px solid orange;
+    transform: scaleX(-1);
+  }
+
+.benin-great-wall-image-container {
+  width: 50vw;
+  transform: translate(-4%, 10%);
+}
+
+
+.beninFactsBackground {
+  /*position*/
+  width: 100vw;
+  height: 980px;
+  margin-left: -8px;
+  margin-top: 310px;
+  /*background*/
+  background-color: rgb(5,5,8);
+  /*border*/
+  border-style: solid;
+  border-color: rgb(5,5,10);
+}
+
+.beninFactsHeader {
+  /*font style*/
+  font-family: 'Bodoni Moda', sans-serif;
+  font-size: 90px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  color: rgba(255,255,255);
+  /*position*/
+  text-align: center;
+  max-width: 100%;
+  height:;
+  margin-top: -20px;
+  margin-left: 85px;
+  /*border*/
+  border-style:;
+  border-color: rgba(230, 203, 123, 1);
+}.beninFactsHeader p:hover {
+  color: rgba(230,203,123,1);
+}
+
+.beninFactsParagraphLeft {
+  /*font style*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  color: rgb(255,255,255);
+  /*position*/
+  max-width: 150px;
+  height: 450px;
+  text-align: end;
+  margin-top: 170px;
+  margin-left: 555px;
+  /*border*/
+  border-style: ;
+  border-color: white;
+}
+
+.beninFactsParagraphLeftCenter {
+  /*font style*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  color: rgb(255,255,255);
+  /*position*/
+  max-width: 230px;
+  height: 450px;
+  text-align: start;
+  margin-top: -466px;
+  margin-left: 720px;
+  /*border*/
+  border-style: ;
+  border-color: white;
+}
+
+.beninFactsParagraphRight {
+    /*font style*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  color: rgb(255,255,255);
+  /*position*/
+  max-width: 150px;
+  height: 450px;
+  text-align: end;
+  margin-top: -467px;
+  margin-left: 965px;
+  /*border*/
+  border-style: ;
+  border-color: white;
+}
+
+.beninFactsParagraphRightCenter {
+  /*font style*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  color: rgb(255,255,255);
+  /*position*/
+  max-width: 250px;
+  height: 450px;
+  text-align: start;
+  margin-top: -466px;
+  margin-left: 1130px;
+  /*border*/
+  border-color: white;
+}
+
+.cityBeninBackground {
+  /*position*/
+  max-width: 1903px;
+  height: 990px;
+  margin-top:-120px;
+  margin-left: -8px;
+  /*border*/
+  /*background*/
+  background-color: rgba(255,255,255);
+  background-size: 100% 100%;
+}
+
+.cityBeninHeader {
+  /*font style*/
+  font-family: 'Old Standard TT', sans-serif;
+  font-size: 130px;
+  text-align: center;
+  color: rgba(8,15,60,1);
+  /*position*/
+  max-width: 800px;
+  height: 400px;
+  margin-top: 250px;
+  margin-left: 550px;
+  /*border*/
+}
+
+.cityParaHeader {
+  /*font style*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 16.5px;
+  letter-spacing: 1.7px;
+  color: rgb(0,0,0);
+  /*position*/
+  text-align: center;
+  max-width: 1800px;
+  margin-top: -120px;
+  margin-left: -500px;  
+}
+
+.quotationsPLL {
+  /*font style*/
+  font-family: 'Catamaran', sans-serif;
+  font-size: 150px;
+  /*position*/
+  margin-left: -1300px;
+  margin-bottom: 240px;
+}
+
+.cityParaLeft {
+  /*font style*/
+  font-family: 'Old Standard TT', sans-serif;
+  font-size: 20px;
+  /*position*/
+  text-align: center;
+  max-width: 450px;
+  margin-top: -400px;
+  margin-left: 300px;
+}
+
+.quotationsPLR {
+  /*font style*/
+  font-family: 'Catamaran', sans-serif;
+  font-size: 150px;
+  /*position*/
+  margin-top: -230px;
+  margin-left: -200px;
+}
+
+.cityDivider {
+  /*font style*/
+  font-family: 'Old Standard TT', sans-serif;
+  font-size: 500px;
+  /*position*/
+  max-width: 500px;
+  height: 1000px;
+  margin-top: -900px;
+  margin-left: 760px;
+}
+
+.quotationsPCL {
+  /*font style*/
+  font-family: 'Catamaran', sans-serif;
+  font-size: 150px;
+  /*position*/
+  margin-top: -500px;
+  margin-left: 420px;
+}
+
+.cityParaCenter {
+  /*font style*/
+  font-family: 'Old Standard TT', sans-serif;
+  font-size: 20px;
+  letter-spacing: px;
+  /*position*/
+  max-width: 300px;
+  text-align: start;
+  margin-top: -300px;
+  /* margin-left: 1150px; */
+}
+
+.quotationsPCR {
+  /*font style*/
+  font-family: 'Catamaran', sans-serif;
+  font-size: 150px;
+  /*position*/
+  margin-top: -230px;
+  margin-left: 1200px;
+  margin-bottom:; 
+}
+
+.coastBeninBackground {
+  /*background*/
+  background-image: url(https://cdn2.wanderlust.co.uk/media/1010/shutterstock_1468473773.jpg?anchor=center&mode=crop&width=1920&height=858&format=auto&rnd=132624217470000000);
+  background-size: 100% 100%;
+  /*position*/
+  max-width: 100%;
+  height: 100vh;
+  margin-top: 800px;
+  margin-left: -8px;  
+}
+
+.coastBeninIntro {
+  /*font-style*/
+  font-family: 'Playfair Display','Catamaran', sans-serif;
+  font-size: 173.5px;
+  text-transform: uppercase;
+  color: rgb(255,255,255);
+  /*position*/
+  text-align: justify;
+  margin-top: -950px;
+  margin-left: 200px;
+}
+
+.subCoastBeninIntro {
+  /*font style*/
+  font-family: 'Old Standard', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  color: rgb(255, 255, 255);
+  /*position*/
+  /* max-width: 850px; */
+  text-align: start;
+  margin-top: -100px;
+  margin-left: 200px;
+}
+
+.womanAndChild {
+  /*font style*/
+  /*position*/
+  /* max-width: 1225px; */
+  height: 1009px;
+  margin-top: -1009px;
+  /*background*/
+  background-color: rgb(255, 255, 255);
+  /*border*/
+  border-style: solid;
+  border-color: rgb(255,255,255);
+}
+
+.womanAndChildImage {
+  /*background*/
+  background-image: url(https://live.staticflickr.com/7307/8728623792_e04de28718_b.jpg);
+  background-size: 100% 100%;
+  /*border*/
+  border-style:;
+  /*position*/
+  /* max-width: 1024px; */
+  height: 1009px;;
+  margin-top:;
+  margin-left: 877px;
+}
+
+#introImage {
+  max-width: 100%;
+}
+
+#introImageCaption {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: black;
+  max-width: 100%;
+  height: 20px;
+  margin: 10px;
+  background-color: rgb(255,255,255);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1440px) {
+  .navHeader {
+    position: absolute;
+    bottom: 0;
+    width: 50vw;
+    height: 10vh;
+    transform: translate(66%, 10%);
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.7px;
+    /* text-align: end; */
+    /* margin-top: -580px; */
+    /* margin-left: 1451px; */
+    background-color: rgb(255,255,255);
+    /* border: 1px solid red; */
+    z-index: 1;
+  }
+  .navButton {
+    /* position */
+    position: absolute;
+    transform: scale(1) translateY(-1%);
+    z-index: 2;
+    height: 80%;
+    /* max-width: 100%; */
+    width: 10.55vw;
+    padding: 4%;
+    margin: 2% 0 0 46% ;
+      /* font style */
+    font-family: 'Playfair Display','Roboto', sans-serif;
+    font-size: 175%;
+    letter-spacing: 4.7px;
+    color: rgb(255,255,255);
+    /* font position */
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    /* border */
+    border-style: solid;
+    border-color: rgb(0,0,0);
+    border-width: 5px 5px 5px 5px;
+    /* background */
+    background-color: rgb(0,0,0);
+  }
+  .nav-button-text-container {
+    font-size: 100%;
+    -moz-transform: translate(-230%, -10%);
+  }
+  .benin-bronze-warrior-container {
+      z-index: 2;
+      width: 20vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(164%, 6%); 
+  }
+  .benin-bronze-woman-container {
+      z-index: 1;
+      width: 20vw;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-156%, 6%);
+  }
+
+  .nav-header-text:hover {
+    transition: ease-in 1s;
+    text-underline-offset: 5%;
+    text-decoration: underline;
+  }
+/* BENIN BRONZES */
+  .two-horizontal {
+    display: flex;
+    /* border: 3px solid blue; */
+    /* background-color: cadetblue; */
+    width: 100vh;
+    height: 100vw;
+    align-items: center;
+    justify-content: center;
+    /* overflow-y: auto; */
+    overflow-y: inherit;
+    overflow-x: hidden;
+    transform-origin: right top;
+    transform: rotate(-90deg) translate(0% , -51.9%);
+    margin: 0 0 0 -7%;
+    perspective: 1px;
+  }
+/* THE PEOPLE */
+  .subIntroParaCite {
+    display: flex;
+    position: absolute;
+    right: 0;
+    transform: translate(-5em, -2.7em);
+    font-size: 65%;
+    opacity: 90%;
+  }
+  .cite-benin-timeline {
+    color: black;
+  }.cite-benin-timeline:hover {
+    color: purple;
+  }
+  .cite-benin-moat {
+    color: black;
+  }.cite-benin-moat:hover {
+    color: purple;
+  }
+  /* THE CULTURE */
+  .benin-culture-container {
+    width: 100vw;
+    height: 80vh;
+  }
+  .festival-image {
+    width: 100vw;
+  }
+  /* THE GREAT WALL OF BENIN */
+  .the-great-wall-header-text-container {
+    position: absolute;
+    left: 0;
+    /* border: 1px solid red; */
+    transform: translate(-120%, 25%);
+    width: 25vw;
+    height: 30vh;
+    font-size: 5rem;
+    text-align: start;
+    font-weight: 400;
+    font-family: 'Catamaran', sans-serif;
+  }
+
+  .the-great-wall-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1%;
+    transform: translate(-230%, 10%);
+    width: 25vw;
+    height: 40vh;
+    border-right: 2px solid black;
+  }
+  .benin-great-wall-image-container {
+    position: absolute;
+    left: 0;
+    margin: 0 0 0 25%;
+    width: 13vw;
+    overflow: hidden;
+  }
+
+  .the-great-wall-content-container-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-105%, -25%);
+    width: 50vw;
+    height: 40vh;
+    border: 1px solid red;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.45em;
+    letter-spacing: 1.7px;
+  }
+  .the-great-wall-content-text {
+  }
+  .the-great-wall-content-text-middle {
+  }
+  .the-great-wall-content-container-right{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-6.5%, -5%);
+    width: 40vw;
+    height: 91vh;
+    border: 1px solid blue;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.45em;
+    letter-spacing: 1.7px;
+  }
+  .iya-map-container {
+    width: 20vw;
+    float: right;
+    transform: translate(0%, 50%);
+    border: 1px solid black;
+  }
+
+}
