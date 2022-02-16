@@ -330,14 +330,14 @@ ul {
 }
 
 .title-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 41vw;
   height: 100vh;
   text-align: right;
   padding: 10.5% 0% 0% 0%;
 }
 .title-text {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-family: 
   'Roboto',
   /* 'kawoszehmedium', */
@@ -353,8 +353,10 @@ ul {
 }
 
 .table-of-contents-list-container {
+  position: relative;
+  top: 0;
   display: block;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   width: 28.5vw;
   height: 100vh;
   padding: 10.5% 0% 0% 2%;
@@ -376,7 +378,7 @@ ul {
   /* 'Playfair Display',  */
       sans-serif;
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.12em;
 }
 
 .table-of-contents-list-content-text {
@@ -384,7 +386,7 @@ ul {
   color: black;
 }
 .table-of-contents-numerical-text {
-  position: relative;
+  position: absolute;
   right: 0;
     font-family: 
     'Roboto',
@@ -398,7 +400,7 @@ ul {
   /* 'Playfair Display',  */
       sans-serif;
   display: inline-block;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   text-align: end;
   width: 5vw;
 }
@@ -1173,8 +1175,8 @@ img {
   }
   .navButton {
     /* position */
-    position: absolute;
-    transform: scale(1) translateY(-1%);
+    position: relative;
+    transform: scale(1) translate(0%, 5%);
     z-index: 2;
     height: 80%;
     /* max-width: 100%; */
