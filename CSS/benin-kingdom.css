@@ -301,7 +301,7 @@ section {
   height: 10vh;
   transform: translate(73%, 10%);
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   letter-spacing: 1.7px;
   /* text-align: end; */
   /* margin-top: -580px; */
@@ -331,13 +331,14 @@ ul {
 
 .title-container {
   /* border: 1px solid red; */
-  width: 41vw;
+  width: 38.5vw;
   height: 100vh;
   text-align: right;
   padding: 10.5% 0% 0% 0%;
 }
 .title-text {
-  font-size: 1.3em;
+  font-size: 1em;
+  letter-spacing: 1.7px;
   font-family: 
   'Roboto',
   /* 'kawoszehmedium', */
@@ -357,7 +358,7 @@ ul {
   top: 0;
   display: block;
   /* border: 1px solid orange; */
-  width: 28.5vw;
+  width: 30.5vw;
   height: 100vh;
   padding: 10.5% 0% 0% 2%;
 }
@@ -378,7 +379,8 @@ ul {
   /* 'Playfair Display',  */
       sans-serif;
   display: inline-block;
-  font-size: 1.12em;
+  letter-spacing: 1.7px;
+  font-size: 1em;
 }
 
 .table-of-contents-list-content-text {
@@ -700,11 +702,11 @@ img {
   color: rgb(0, 0, 0);
   font-family:
   /* 'Roboto', */
-  'Playfair Display',
+  /* 'Playfair Display', */
   /* 'TT Old Standard', */
   /* 'Cormorant Garamond', */
   /* 'Catamaran',  */
-  /* 'junicodeitalic', */
+  'junicodeitalic',
   /* 'junicodeitaliccondensed', */
   'kawoszehmedium',
   'IM Fell French Canon',
@@ -1241,7 +1243,7 @@ img {
     overflow-x: hidden;
     transform-origin: right top;
     transform: rotate(-90deg) translate(0% , -49.93%);
-    margin: 0 0 0 -7%;
+    margin: 0 0 0 -6.99%;
     perspective: 1px;
   }
   .stolen-bronzes-interlude-text-content-bottom-para {
