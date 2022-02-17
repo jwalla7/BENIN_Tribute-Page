@@ -71,6 +71,9 @@ section {
     'junicodeitalic',
     'junicodeitaliccondensed',
     'junicoderegularcondensed',
+    'deluce_freeitalic',
+    'deluce_freeregular',
+    'ignotumregular',
     'kawoszehmedium';
 
   src: url('florence-regular-webfont.woff2') format('woff2'),
@@ -94,7 +97,13 @@ section {
     url('junicode-regularcondensed-webfont.woff2') format('woff2'),
     url('junicode-regularcondensed-webfont.woff') format('woff'),
     url('kawoszeh-webfont.woff2') format('woff2'),
-    url('kawoszeh-webfont.woff') format('woff');
+    url('kawoszeh-webfont.woff') format('woff'),
+    url('delucefreeitalic-mvzrx-webfont.woff2') format('woff2'),
+    url('delucefreeitalic-mvzrx-webfont.woff') format('woff'),
+    url('delucefreeregular-2oerw-webfont.woff2') format('woff2'),
+    url('delucefreeregular-2oerw-webfont.woff') format('woff'),
+    url('ignotum-mlyw2-webfont.woff2') format('woff2'),
+    url('ignotum-mlyw2-webfont.woff') format('woff');
 
   font-weight: normal;
   font-style: normal;
@@ -201,7 +210,11 @@ section {
     }
 }
 
-
+.container {
+  animation: fade-in ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 .stolenBronzesContainer {
   /* position */
   width: 100vw;
@@ -288,7 +301,7 @@ section {
   height: 10vh;
   transform: translate(73%, 10%);
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   letter-spacing: 1.7px;
   /* text-align: end; */
   /* margin-top: -580px; */
@@ -308,6 +321,90 @@ ul {
   transition: ease-in 1s;
   text-decoration: underline;
   text-underline-offset: 5px;
+}
+/* Table of contents */
+.table-of-contents-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-container {
+  /* border: 1px solid red; */
+  width: 38.5vw;
+  height: 100vh;
+  text-align: right;
+  padding: 10.5% 0% 0% 0%;
+}
+.title-text {
+  font-size: 1em;
+  letter-spacing: 1.7px;
+  font-family: 
+  'Roboto',
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'junicodeitalic', */
+  /* 'junicodeitaliccondensed', */
+  /* 'datalegreyadot', */
+  /* 'Montserrat','Roboto',  */
+  /* 'Bodoni Moda', */
+  /* 'Playfair Display',  */
+  sans-serif;
+  display: inline-block;
+}
+
+.table-of-contents-list-container {
+  position: relative;
+  top: 0;
+  display: block;
+  /* border: 1px solid orange; */
+  width: 30.5vw;
+  height: 100vh;
+  padding: 10.5% 0% 0% 2%;
+}
+.table-of-contents-list-text-container {
+  align-items: center;
+  text-align: start;
+}
+.table-of-contents-list-content {
+  font-family: 
+    'Roboto',
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'junicodeitalic', */
+  /* 'junicodeitaliccondensed', */
+  /* 'datalegreyadot', */
+  /* 'Montserrat','Roboto',  */
+  /* 'Bodoni Moda', */
+  /* 'Playfair Display',  */
+      sans-serif;
+  display: inline-block;
+  letter-spacing: 1.7px;
+  font-size: 1em;
+}
+
+.table-of-contents-list-content-text {
+  text-decoration: none;
+  color: black;
+}
+.table-of-contents-numerical-text {
+  position: absolute;
+  right: 0;
+    font-family: 
+    'Roboto',
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'junicodeitalic', */
+  /* 'junicodeitaliccondensed', */
+  /* 'datalegreyadot', */
+  /* 'Montserrat','Roboto',  */
+  /* 'Bodoni Moda', */
+  /* 'Playfair Display',  */
+      sans-serif;
+  display: inline-block;
+  /* border: 1px solid purple; */
+  text-align: end;
+  width: 5vw;
 }
 /* Section ONE */
 #introParaContainer {
@@ -346,6 +443,7 @@ ul {
   border-style: solid;
   border-color: rgb(255, 255, 255);
 }
+
 .subIntroParaCite {
   display: flex;
   position: absolute;
@@ -409,27 +507,56 @@ img {
   position: absolute;
   display: inline-flex;
   width: auto;
-  /* background-color: aquamarine; */
+  background-color: black;
   height: 100vh;
 }
 
 .benin-bronzes-introduction-container {
   width: 100vw;
   height: 100vh;
-  border:  1px solid green;
+  padding: 0% 0% 0 .5%;
+  /* border:  1px solid green; */
   transform: translate(-50%,0%);
   /* perspective: 1px; */
 }
 .stolen-bronzes-interlude-right-container {
   /* right: 5%; */
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
+  /* background-color: rgba(198, 186, 164, 1); */
+  /* background-color: rgba(186, 169, 151, 1); */
+  /* background-color: rgba(181, 173, 163, 0.802); */
+  /* background-color: rgba(188, 171, 151, 0.511); */
+  background-color: rgba(164, 149, 132, 0.401);
+  /* background-image: url(/assets/images/Homannianorum-Heredum-1743.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: 50%; */
+  /* background-position-y: 65%; */
+  /* background-size: 150%; */
+  color: white;
+  padding: 1%;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   transform: translate(-50%,0%);
   /* margin-top: 5%; */
   text-align: center;
   /* perspective: 1px; */
   /* transform: rotate(90deg); */
+}
+.interlude-background-container {
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.interlude-map-background-image {
+  transform: scale(1.7) translate(-1%, -21%);
+  filter: brightness(40%) contrast(110%) sepia(60%);
+  /* filter: sepia(50%); */
+  /* filter: hue-rotate(90%); */
 }
 .stolen-bronzes-final-container {
   width: 100vw;
@@ -439,6 +566,25 @@ img {
   scroll-snap-align: start;
 }
 
+.stolen-bronzes-final-text-container {
+  /* border: 1px solid red; */
+  width: 50vw;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  transform: translate(55%, 40%);
+}
+
+.stolen-bronzes-final-text {
+  font-size: 9.5em;
+  font-family: 
+    /* 'jacques_francoisregular', */
+    'junicodeitalic',
+    /* 'deluce_freeitalic', */
+    /* 'deluce_freeregular', */
+    sans-serif;
+    font-weight: bolder;
+}
 .snap {
   scroll-snap-align: start;
 }
@@ -534,6 +680,17 @@ img {
   cursor: grab;
   color: purple;
 }
+.stolen-bronzes-interlude-cite-white {
+  color: white;
+  font-family: 'Bodoni Moda','Playfair Display','Montserrat', sans-serif;
+  font-size: .5em;
+  letter-spacing: 1.7px;
+  /*position*/
+  text-align: center;
+} .stolen-bronzes-interlude-cite-white:hover {
+  cursor: grab;
+  color: purple;
+}
 
 .stolen-bronzes-interlude-bottom-container {
   /* border: 1px solid blue; */
@@ -545,11 +702,11 @@ img {
   color: rgb(0, 0, 0);
   font-family:
   /* 'Roboto', */
-  'Playfair Display',
+  /* 'Playfair Display', */
   /* 'TT Old Standard', */
   /* 'Cormorant Garamond', */
   /* 'Catamaran',  */
-  /* 'junicodeitalic', */
+  'junicodeitalic',
   /* 'junicodeitaliccondensed', */
   'kawoszehmedium',
   'IM Fell French Canon',
@@ -566,20 +723,36 @@ img {
 /* right container here */
 
 .stolen-bronzes-interlude-text-content-right {
-  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 2;
+  /* color: rgb(0, 0, 0); */
   font-family: 'Bodoni Moda','Playfair Display','Montserrat', sans-serif;
   font-style: italic;
-  font-size: 1.55em;
+  font-size: 12em;
   letter-spacing: 1.7px;
   /*position*/
   text-align: start;
 }
 .stolen-bronzes-interlude-text-content-bottom-para {
-  font-family: 'Roboto','Bodoni Moda','Playfair Display','Montserrat', sans-serif;
-  font-size: 1em;
-  letter-spacing: 1.7px;
+  /* border: 1px solid white; */
+  width: 64vw;
+  position: relative;
+  z-index: 5;
+  font-family:
+  'Roboto',
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'junicodeitalic', */
+  /* 'junicodeitaliccondensed', */
+  /* 'datalegreyadot', */
+  /* 'Montserrat','Roboto',  */
+  /* 'Bodoni Moda', */
+  /* 'Playfair Display',  */
+  sans-serif;
+  font-size: 2.78em;
+  letter-spacing: 1.5px;
   /*position*/
-  text-align: justify;  
+  /* text-align: justify;   */
 }
 
 
@@ -1004,8 +1177,8 @@ img {
   }
   .navButton {
     /* position */
-    position: absolute;
-    transform: scale(1) translateY(-1%);
+    position: relative;
+    transform: scale(1) translate(0%, 5%);
     z-index: 2;
     height: 80%;
     /* max-width: 100%; */
@@ -1069,9 +1242,31 @@ img {
     overflow-y: inherit;
     overflow-x: hidden;
     transform-origin: right top;
-    transform: rotate(-90deg) translate(0% , -51.9%);
-    margin: 0 0 0 -7%;
+    transform: rotate(-90deg) translate(0% , -49.93%);
+    margin: 0 0 0 -6.99%;
     perspective: 1px;
+  }
+  .stolen-bronzes-interlude-text-content-bottom-para {
+    /* border: 1px solid white; */
+    width: 64vw;
+    height: 60vh;
+    position: relative;
+    z-index: 5;
+    font-family:
+    'Roboto',
+    /* 'kawoszehmedium', */
+    /* 'IM Fell French Canon', */
+    /* 'junicodeitalic', */
+    /* 'junicodeitaliccondensed', */
+    /* 'datalegreyadot', */
+    /* 'Montserrat','Roboto',  */
+    /* 'Bodoni Moda', */
+    /* 'Playfair Display',  */
+    sans-serif;
+    font-size: 2.3em;
+    letter-spacing: 1.5px;
+    /*position*/
+    text-align: start;  
   }
 /* THE PEOPLE */
   .subIntroParaCite {
