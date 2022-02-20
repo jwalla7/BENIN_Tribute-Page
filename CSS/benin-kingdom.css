@@ -472,6 +472,7 @@ img {
 
 .two-horizontal {
   display: flex;
+  position: sticky;
   /* border: 3px solid blue; */
   /* background-color: cadetblue; */
   width: 100vh;
@@ -494,7 +495,7 @@ img {
   position: relative;
   display: inline-flex;  
   /* display: flex; */
-  background-color: orange;
+  background-color: black;
   min-width: auto;
   height: 100vh;
   /* overflow-y: hidden; */
@@ -766,7 +767,52 @@ img {
 .stolen-bronzes-plaques-text-container {
   width: 100vw;
   height: 100vh;
-  transform: translateY(0%) translateZ(-1.5px) scale(2.5, 2.5);
+  transform: translate(30%, 30%) translateZ(-1.5px) scale(2.5, 2.5);
+}
+.stolen-bronzes-plaques-text {
+  font-size: 1.96em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  'Roboto',
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+/* 'Montserrat', */
+/* 'Bodoni Moda', */
+/* 'Playfair Display',  */
+    sans-serif;  
+}
+
+#text-reveal-1 {
+  visibility: hidden;
+}
+#text-reveal-2 {
+  visibility: hidden;
+}
+#text-reveal-3 {
+  visibility: hidden;
+}
+#text-reveal-4 {
+  visibility: hidden;
+}
+#text-reveal-5 {
+  visibility: hidden;
+}
+#text-reveal-6 {
+  visibility: hidden;
+}
+#text-reveal-7 {
+  visibility: hidden;
+}
+#text-reveal-8 {
+  visibility: hidden;
+}
+#text-reveal-9 {
+  visibility: hidden;
 }
 .stolen-bronzes-plaques-image-container {
   width: 100vw;
@@ -1232,8 +1278,9 @@ img {
 /* BENIN BRONZES */
   .two-horizontal {
     display: flex;
+    position: sticky;
     /* border: 3px solid blue; */
-    /* background-color: cadetblue; */
+    /* background-color: black; */
     width: 100vh;
     height: 100vw;
     align-items: center;
