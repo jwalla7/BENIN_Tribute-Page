@@ -599,13 +599,23 @@ img {
 }
 
 .benin-bronze-image-container {
+  display: flex;
+  background-color: white;
   width: 100vw;
   height: 100vh;
   text-align: center;
 }
+.benin-bronze-image-wrapper {
+  position: absolute;
+  right: 0;
+  transform: translate(-5.8%, 10%);
+  width: 60vw;
+  height: 60vh;
+}
 .benin-bronze-image {
-  width: 100vw;
-  height: 100vh;
+  /* transform: translate(26.5%, 10%); */
+  width: 60vw;
+  height: 70vh;
 }
 
 .stolen-bronzes-interlude {
@@ -617,22 +627,63 @@ img {
 
 }
 .benin-bronze-image-caption-container {
+  transform: translate(0%, 0%);
+  /* border: 1px solid red; */
+  width: 60vw;
+  height: 18vh;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 .beninBronzeImageCaption {
   z-index: 1;
-  padding: .5%;
+  padding: 1% 0% 0% 2%;
   /*font style*/
-  font-family: 'Roboto', sans-serif;
-  font-size: 70%;
+  font-family: 
+  /* 'jacques_francoisregular', */
+  /* 'junicodeitalic', */
+  /* 'deluce_freeitalic', */
+  /* 'deluce_freeregular', */
+  /* 'Roboto',  */
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'Montserrat', */
+  'Playfair Display',
+  sans-serif;
+  font-size: 1em;
+  font-weight: 300;
   letter-spacing: 1.7px;
-  color: black;
+  color: rgba(88, 88, 89, 0.823);
   /*position*/
-  text-align: center;
+  text-align: start;
 }
-
+.benin-bronze-image-description-text-container {
+  /* border: 1px solid red; */
+  padding: 2% 0% 0% 0%;
+  width: 26vw;
+  height: 80vh;
+  transform: translate(12% ,8%);
+  text-align: justify;
+}
+.benin-bronze-image-text {
+  z-index: 1;
+  /*font style*/
+  font-family: 
+  /* 'jacques_francoisregular', */
+  /* 'junicodeitalic', */
+  /* 'deluce_freeitalic', */
+  /* 'deluce_freeregular', */
+  'Roboto', 
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'Montserrat', */
+  /* 'Playfair Display', */
+  sans-serif;
+  font-size: .9em;
+  font-weight: 300;
+  letter-spacing: 1.7px;
+  color: rgba(88, 88, 89, 0.823);
+}
 .stolen-bronzes-interlude-text-header {
   color: black;
   font-family: 'Playfair Display','Roboto', sans-serif;
@@ -758,19 +809,35 @@ img {
 
 
 .stolen-bronzes-plaques-container {
+  position: sticky;
   width: 100vw;
   height: 100vh;
   perspective: 1px;
   overflow-x: hidden;
   overflow-y: auto;
 }
+.plaques-text-background-container {
+  position: relative;
+  z-index: 1;
+}
+.plaques-text-background-image {
+  transform: scale(1.1) translate(-10%, -21%);
+  filter: brightness(40%) contrast(110%) sepia(0%);
+  /* filter: sepia(50%); */
+  /* filter: hue-rotate(90%); */
+}
 .stolen-bronzes-plaques-text-container {
+  position: relative;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   transform: translate(30%, 30%) translateZ(-1.5px) scale(2.5, 2.5);
 }
 .stolen-bronzes-plaques-text {
-  font-size: 1.96em;
+  position: relative;
+  z-index: 2;
+  /* color: white; */
+  font-size: 1.7em;
   letter-spacing: 1.7px;
   /* line-height: 1.25em; */
   font-weight: 300;
@@ -788,30 +855,39 @@ img {
 }
 
 #text-reveal-1 {
+  padding-left: 4%;
   visibility: hidden;
 }
 #text-reveal-2 {
+  padding-left: 4%;
   visibility: hidden;
 }
 #text-reveal-3 {
+  padding-left: 4%;
   visibility: hidden;
 }
 #text-reveal-4 {
+  padding-left: 4%;
   visibility: hidden;
 }
 #text-reveal-5 {
+  padding-left: 4%;
   visibility: hidden;
 }
 #text-reveal-6 {
+  padding-left: 4%;
   visibility: hidden;
 }
 #text-reveal-7 {
+  padding-left: 4%;
   visibility: hidden;
 }
 #text-reveal-8 {
+  padding-left: 4%;
   visibility: hidden;
 }
 #text-reveal-9 {
+  padding-left: 4%;
   visibility: hidden;
 }
 .stolen-bronzes-plaques-image-container {
