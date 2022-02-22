@@ -1507,19 +1507,19 @@ img {
     /* 'Montserrat', */
     /* 'Playfair Display', */
     sans-serif;
-    font-size: 6em;
+    font-size: 8em;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.823);
   }
   .benin-bronze-image-header-text-container {
     position: relative;
-    transform: translate(32%, -150%);
+    transform: translate(40%, -170%);
     /* border: 1px solid orange; */
     width: 11vw;
   }
   .benin-bronze-image-header-text-container-1 {
     position: relative;
-    transform: translate(50%, -400%);
+    transform: translate(60%, -420%);
     /* border: 1px solid green; */
     width: 11vw;
   }
@@ -1535,14 +1535,31 @@ img {
     /* 'Bodoni Moda', */
     sans-serif;
     text-transform: uppercase;
-    font-size: 1.65em;
-    letter-spacing: 1.7px;
+    font-size: 1.8em;
+    letter-spacing: 1.25px;
     font-weight: 100;
     color: rgba(0, 0, 0, 0.823);
   }
   .benin-bronze-image-header-content-container {
+    width: 17vw;
     /* border: 1px solid aqua; */
-    transform: translate(0%, -30%);
+    transform: translate(4%, -30%);
+    text-align: left;
+  }
+  .benin-bronze-image-wrapper {
+    position: absolute;
+    right: 0;
+    transform: translate(-4%, 5%);
+    width: 75vw;
+    height: 85vh;
+  }
+  .benin-bronze-image {
+    /* transform: translate(26.5%, 10%); */
+    filter: grayscale(85%);
+    width: 90vw;
+    height: 90vh;
+  }.benin-bronze-image:hover {
+    filter: grayscale(0%);
   }
 /* THE PEOPLE */
   .subIntroParaCite {
