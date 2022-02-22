@@ -708,13 +708,13 @@ img {
 }
 .benin-bronze-image-header-text-container {
   position: relative;
-  transform: translate(45%, -128%);
+  transform: translate(31%, -140%);
   /* border: 1px solid orange; */
   width: 11vw;
 }
 .benin-bronze-image-header-text-container-1 {
   position: relative;
-  transform: translate(60%, -295%);
+  transform: translate(45%, -340%);
   /* border: 1px solid green; */
   width: 11vw;
 }
@@ -723,15 +723,21 @@ img {
     /*font style*/
   font-family: 
   /* 'jacques_francoisregular', */
-  /* 'junicodeitalic', */
+  'junicodeitalic',
   /* 'IM Fell French Canon', */
   /* 'Montserrat', */
   /* 'junicodeitaliccondensed', */
-  'Bodoni Moda',
+  /* 'Bodoni Moda', */
   sans-serif;
-  font-size: 2.5em;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 2px;
   font-weight: 100;
   color: rgba(0, 0, 0, 0.823);
+}
+.benin-bronze-image-header-content-container {
+  /* border: 1px solid aqua; */
+  transform: translate(0%, -70%);
 }
 .benin-bronze-image-text {
   /*font style*/
@@ -1464,6 +1470,79 @@ img {
     letter-spacing: 1.5px;
     /*position*/
     text-align: start;  
+  }
+  .benin-bronze-image-description-text-container {
+    /* border: 1px solid red; */
+    padding: 2% 0% 0% 0%;
+    width: 16vw;
+    height: 80vh;
+    transform: translate(12% ,8%);
+    text-align: justify;
+  }
+  .benin-bronze-image-header-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* border: 1px solid pink; */
+    width: 5vw;
+  }
+  .benin-bronze-image-header-container-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%, -50%);
+    /* border: 1px solid blue; */
+    width: 7.5vw;
+  }
+  .benin-bronze-image-text-letter {
+    /*font style*/
+    font-family: 
+    /* 'jacques_francoisregular', */
+    /* 'junicodeitalic', */
+    /* 'deluce_freeitalic', */
+    /* 'deluce_freeregular', */
+    /* 'Roboto',  */
+    'kawoszehmedium',
+    /* 'IM Fell French Canon', */
+    /* 'Montserrat', */
+    /* 'Playfair Display', */
+    sans-serif;
+    font-size: 6em;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.823);
+  }
+  .benin-bronze-image-header-text-container {
+    position: relative;
+    transform: translate(32%, -150%);
+    /* border: 1px solid orange; */
+    width: 11vw;
+  }
+  .benin-bronze-image-header-text-container-1 {
+    position: relative;
+    transform: translate(50%, -400%);
+    /* border: 1px solid green; */
+    width: 11vw;
+  }
+  .benin-bronze-image-text-letter-sub {
+    padding: 2% 0% 0% 0%;
+      /*font style*/
+    font-family: 
+    /* 'jacques_francoisregular', */
+    'junicodeitalic',
+    /* 'IM Fell French Canon', */
+    /* 'Montserrat', */
+    /* 'junicodeitaliccondensed', */
+    /* 'Bodoni Moda', */
+    sans-serif;
+    text-transform: uppercase;
+    font-size: 1.65em;
+    letter-spacing: 1.7px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.823);
+  }
+  .benin-bronze-image-header-content-container {
+    /* border: 1px solid aqua; */
+    transform: translate(0%, -30%);
   }
 /* THE PEOPLE */
   .subIntroParaCite {
