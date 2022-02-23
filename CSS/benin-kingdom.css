@@ -892,9 +892,15 @@ img {
 .plaques-text-background-container {
   position: relative;
   z-index: 0;
+    transform: scale(1.1) translate(-10%, -55%);
+    height: 100vh;
+    overflow: hidden;
+  /* filter: brightness(40%) contrast(110%) sepia(0%); */
 }
 .plaques-text-background-image {
-  transform: scale(1.1) translate(-10%, -21%);
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* transform: scale(1.1) translate(-10%, -50%); */
   filter: brightness(40%) contrast(110%) sepia(0%);
   /* filter: sepia(50%); */
   /* filter: hue-rotate(90%); */
@@ -902,6 +908,7 @@ img {
 .plaques-text-container {
   position: relative;
   z-index: 1;
+  transform: translate(2%, 10%);
 }
 .stolen-bronzes-plaques-text-container {
   position: relative;
@@ -912,7 +919,7 @@ img {
 .stolen-bronzes-plaques-text {
   position: relative;
   z-index: 2;
-  /* color: white; */
+  color: white;
   font-size: 1.7em;
   letter-spacing: 1.7px;
   /* line-height: 1.25em; */
@@ -935,47 +942,69 @@ img {
 }
 
 #text-reveal-1 {
-  padding-left: 4%;
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-2 {
-  padding-left: 4%;
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-3 {
-  padding-left: 4%;
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-4 {
-  padding-left: 4%;
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-5 {
-  padding-left: 4%;
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-6 {
-  padding-left: 4%;
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-7 {
-  padding-left: 4%;
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-8 {
-  padding-left: 4%;
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-9 {
-  padding-left: 4%;
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
+#text-reveal-10 {
+  padding: 0% 0% 0% 10%;
+  /* visibility: hidden; */
+}
 .stolen-bronzes-plaques-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4%;
+  column-gap: 2%;
+  background-color: white;
   width: 100vw;
   height: 100vh;
   /* transform: translate(0%, 15%); */
   /* overflow: hidden; */
   transform: translateY(100%) translateZ(0px);
+}
+.stolen-bronzes-plaques-display-container-one {
+  border: 1px solid red;
+  width: 15vw;
+  height: 20vh;
+}
+.stolen-bronzes-plaques-image-1 {
+  width: 15vw;
+  height: 20vh;
+}
+.stolen-bronzes-plaques-image-w {
+  transform: translateY(100%) translateZ(0px);
+
 }
 .stolen-bronzes-plaques-image {
   width: 100vw;
@@ -1073,7 +1102,14 @@ img {
   transform: translate(-4%, 10%);
 }
 
-
+.benin-general-asoro-container {
+  width: 100vw;
+  height: 100vh;
+}
+.benin-general-asoro-image {
+  width: 100vw;
+  height: 100vh;
+}
 .beninFactsBackground {
   /*position*/
   width: 100vw;
@@ -1446,7 +1482,7 @@ img {
     overflow-x: hidden;
     transform-origin: right top;
     transform: rotate(-90deg) translate(0% , -49.93%);
-    margin: 0 0 0 -6.99%;
+    margin: 0 0 0 -8.91%;
     perspective: 1px;
   }
   .stolen-bronzes-interlude-text-content-bottom-para {

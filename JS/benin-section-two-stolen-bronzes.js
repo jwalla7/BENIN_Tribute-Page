@@ -1,6 +1,7 @@
 // STOLEN BRONZES - PLAQUES
 // Reveal Text
 const plaquesContainer = document.querySelector('.stolen-bronzes-plaques-text-container');
+const plaqueAllText = document.querySelector('.stolen-bronzes-plaques-text');
 const plaqueTextReveal1 = document.getElementById('text-reveal-1');
 const plaqueTextReveal2 = document.getElementById('text-reveal-2');
 const plaqueTextReveal3 = document.getElementById('text-reveal-3');
@@ -10,6 +11,7 @@ const plaqueTextReveal6 = document.getElementById('text-reveal-6');
 const plaqueTextReveal7 = document.getElementById('text-reveal-7');
 const plaqueTextReveal8 = document.getElementById('text-reveal-8');
 const plaqueTextReveal9 = document.getElementById('text-reveal-9');
+const plaqueTextReveal10 = document.getElementById('text-reveal-10');
 
 const viewPoint1 = {
     rootMargin: '0% 0% 0% 0%',
@@ -47,6 +49,11 @@ const viewPoint9 = {
     rootMargin: '0% 0% -97% 0%',
     threshold: 0
 };
+const viewPoint10 = {
+    rootMargin: '0% 0% -100% 0%',
+    threshold: 0
+};
+
 
 // Reveal Sentence 1
 const plaqueView1 = new IntersectionObserver((entries) => {
@@ -165,3 +172,34 @@ const plaqueView9 = new IntersectionObserver((entries) => {
     });
 }, viewPoint9);
 plaqueView9.observe(plaquesContainer);
+// Reveal Sentence 10
+const plaqueView10 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            plaqueTextReveal1.style.visibility = '';
+            plaqueTextReveal1.style.animation = 'fade-out 1s ease-in';
+            plaqueTextReveal2.style.visibility = '';
+            plaqueTextReveal2.style.animation = 'fade-out 1s ease-in';
+            plaqueTextReveal3.style.visibility = '';
+            plaqueTextReveal3.style.animation = 'fade-out 1s ease-in';
+            plaqueTextReveal4.style.visibility = '';
+            plaqueTextReveal4.style.animation = 'fade-out 1s ease-in';
+            plaqueTextReveal5.style.visibility = '';
+            plaqueTextReveal5.style.animation = 'fade-out 1s ease-in';
+            plaqueTextReveal6.style.visibility = '';
+            plaqueTextReveal6.style.animation = 'fade-out 1s ease-in';
+            plaqueTextReveal7.style.visibility = '';
+            plaqueTextReveal7.style.animation = 'fade-out 1s ease-in';
+            plaqueTextReveal8.style.visibility = '';
+            plaqueTextReveal8.style.animation = 'fade-out 1s ease-in';
+            plaqueTextReveal9.style.visibility = '';
+            plaqueTextReveal9.style.animation = 'fade-out 1s ease-in';
+            plaqueTextReveal10.style.visibility = '';
+            plaqueTextReveal10.style.animation = 'fade-out 1s ease-in';
+        } else {
+            plaqueTextReveal10.style.visibility = '';
+            plaqueTextReveal10.style.animation = '';
+        }
+    });
+}, viewPoint10);
+plaqueView10.observe(plaquesContainer);
