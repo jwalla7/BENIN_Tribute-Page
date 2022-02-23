@@ -11,10 +11,10 @@ const plaqueTextReveal6 = document.getElementById('text-reveal-6');
 const plaqueTextReveal7 = document.getElementById('text-reveal-7');
 const plaqueTextReveal8 = document.getElementById('text-reveal-8');
 const plaqueTextReveal9 = document.getElementById('text-reveal-9');
-const plaqueTextReveal10 = document.getElementById('text-reveal-10');
+const plaqueTextRevealA = document.getElementById('text-reveal-10');
 
 const viewPoint1 = {
-    rootMargin: '0% 0% 0% 0%',
+    rootMargin: '0% 0% -50% 0%',
     threshold: 0
 };
 const viewPoint2 = {
@@ -49,7 +49,7 @@ const viewPoint9 = {
     rootMargin: '0% 0% -97% 0%',
     threshold: 0
 };
-const viewPoint10 = {
+const viewPointA = {
     rootMargin: '0% 0% -100% 0%',
     threshold: 0
 };
@@ -172,8 +172,8 @@ const plaqueView9 = new IntersectionObserver((entries) => {
     });
 }, viewPoint9);
 plaqueView9.observe(plaquesContainer);
-// Reveal Sentence 10
-const plaqueView10 = new IntersectionObserver((entries) => {
+// Reveal Sentence A
+const plaqueViewA = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             plaqueTextReveal1.style.visibility = '';
@@ -194,12 +194,12 @@ const plaqueView10 = new IntersectionObserver((entries) => {
             plaqueTextReveal8.style.animation = 'fade-out 1s ease-in';
             plaqueTextReveal9.style.visibility = '';
             plaqueTextReveal9.style.animation = 'fade-out 1s ease-in';
-            plaqueTextReveal10.style.visibility = '';
-            plaqueTextReveal10.style.animation = 'fade-out 1s ease-in';
+            plaqueTextRevealA.style.visibility = '';
+            plaqueTextRevealA.style.animation = 'fade-out 1s ease-in';
         } else {
-            plaqueTextReveal10.style.visibility = '';
-            plaqueTextReveal10.style.animation = '';
+            plaqueTextRevealA.style.visibility = '';
+            plaqueTextRevealA.style.animation = '';
         }
     });
-}, viewPoint10);
-plaqueView10.observe(plaquesContainer);
+}, viewPointA);
+plaqueViewA.observe(plaquesContainer);
