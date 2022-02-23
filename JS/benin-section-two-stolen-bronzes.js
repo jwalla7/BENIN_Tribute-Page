@@ -14,7 +14,7 @@ const plaqueTextReveal9 = document.getElementById('text-reveal-9');
 const plaqueTextRevealA = document.getElementById('text-reveal-10');
 
 const viewPoint1 = {
-    rootMargin: '0% 0% -50% 0%',
+    rootMargin: '0% 0% -10% 0%',
     threshold: 0
 };
 const viewPoint2 = {
@@ -46,7 +46,7 @@ const viewPoint8 = {
     threshold: 0
 };
 const viewPoint9 = {
-    rootMargin: '0% 0% -97% 0%',
+    rootMargin: '0% 0% -96% 0%',
     threshold: 0
 };
 const viewPointA = {
@@ -176,30 +176,77 @@ plaqueView9.observe(plaquesContainer);
 const plaqueViewA = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            plaqueTextReveal1.style.visibility = '';
-            plaqueTextReveal1.style.animation = 'fade-out 1s ease-in';
-            plaqueTextReveal2.style.visibility = '';
-            plaqueTextReveal2.style.animation = 'fade-out 1s ease-in';
-            plaqueTextReveal3.style.visibility = '';
-            plaqueTextReveal3.style.animation = 'fade-out 1s ease-in';
-            plaqueTextReveal4.style.visibility = '';
-            plaqueTextReveal4.style.animation = 'fade-out 1s ease-in';
-            plaqueTextReveal5.style.visibility = '';
-            plaqueTextReveal5.style.animation = 'fade-out 1s ease-in';
-            plaqueTextReveal6.style.visibility = '';
-            plaqueTextReveal6.style.animation = 'fade-out 1s ease-in';
-            plaqueTextReveal7.style.visibility = '';
-            plaqueTextReveal7.style.animation = 'fade-out 1s ease-in';
-            plaqueTextReveal8.style.visibility = '';
-            plaqueTextReveal8.style.animation = 'fade-out 1s ease-in';
-            plaqueTextReveal9.style.visibility = '';
-            plaqueTextReveal9.style.animation = 'fade-out 1s ease-in';
-            plaqueTextRevealA.style.visibility = '';
-            plaqueTextRevealA.style.animation = 'fade-out 1s ease-in';
+            setTimeout(() => {
+                plaqueTextReveal1.style.visibility = '';
+                plaqueTextReveal1.style.animation = 'fade-out 1s ease-in';
+                plaqueTextReveal2.style.visibility = '';
+                plaqueTextReveal2.style.animation = 'fade-out 1s ease-in';
+                plaqueTextReveal3.style.visibility = '';
+                plaqueTextReveal3.style.animation = 'fade-out 1s ease-in';
+                plaqueTextReveal4.style.visibility = '';
+                plaqueTextReveal4.style.animation = 'fade-out 1s ease-in';
+                plaqueTextReveal5.style.visibility = '';
+                plaqueTextReveal5.style.animation = 'fade-out 1s ease-in';
+                plaqueTextReveal6.style.visibility = '';
+                plaqueTextReveal6.style.animation = 'fade-out 1s ease-in';
+                plaqueTextReveal7.style.visibility = '';
+                plaqueTextReveal7.style.animation = 'fade-out 1s ease-in';
+                plaqueTextReveal8.style.visibility = '';
+                plaqueTextReveal8.style.animation = 'fade-out 1s ease-in';
+                plaqueTextReveal9.style.visibility = '';
+                plaqueTextReveal9.style.animation = 'fade-out 1s ease-in';
+                plaqueTextRevealA.style.visibility = '';
+                plaqueTextRevealA.style.animation = 'fade-out 1s ease-in';
+            }, 1000)
         } else {
+
             plaqueTextRevealA.style.visibility = '';
             plaqueTextRevealA.style.animation = '';
         }
     });
 }, viewPointA);
 plaqueViewA.observe(plaquesContainer);
+
+
+// Statuettes Container
+const artifactsContainer = document.querySelector('.stolen-bronzes-plaques-image-container');
+const artifactsHeaderText = document.getElementById('artifacts-header-text');
+const artifactsHeaderText1 = document.getElementById('artifacts-header-text-1');
+
+const statuetteView1 = {
+    rootMargin: '0% 0% -50% 0%',
+    threshold: 0
+};
+const statuetteView2 = {
+    rootMargin: '0% 0% -100% 0%',
+    threshold: 0
+};
+//  Reveal Header
+const statuetteHeader = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            artifactsHeaderText.style.visibility = 'visible';
+            artifactsHeaderText.style.animation = 'fade-in 3s ease-in';
+            artifactsHeaderText1.style.visibility = 'visible';
+            artifactsHeaderText1.style.animation = 'fade-in 3s ease-in';
+        } else {
+            artifactsHeaderText.style.visibility = '';
+            artifactsHeaderText.style.animation = '';
+            artifactsHeaderText1.style.visibility = '';
+            artifactsHeaderText1.style.animation = '';
+        }
+    })
+}, statuetteView1);
+statuetteHeader.observe(artifactsContainer);
+//  Move Header
+const statuetteMove = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            artifactsHeaderText.style.transform = '(0%, -20%)';
+        } else {
+            artifactsHeaderText.style.transform = '(0%, -20%)';
+        }
+    })
+}, statuetteView2);
+statuetteMove.observe(artifactsContainer);
+
