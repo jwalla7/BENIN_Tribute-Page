@@ -210,6 +210,8 @@ plaqueViewA.observe(plaquesContainer);
 
 // Statuettes Container
 const artifactsContainer = document.querySelector('.stolen-bronzes-plaques-image-container');
+const artifactsImageContainer = document.querySelector('.benin-artifacts-display-content-container');
+const artifactsHeaderContainer = document.getElementById('artifacts-display-header');
 const artifactsHeaderText = document.getElementById('artifacts-header-text');
 const artifactsHeaderText1 = document.getElementById('artifacts-header-text-1');
 
@@ -242,9 +244,16 @@ statuetteHeader.observe(artifactsContainer);
 const statuetteMove = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            artifactsHeaderText.style.transform = '(0%, -20%)';
+            artifactsHeaderContainer.style.transition = '.75s ease-in-out';
+            artifactsHeaderContainer.style.transform = 'translateY(-50%)';
+
+            setTimeout(() => {
+                artifactsImageContainer.style.animation = 'fade-in 1s ease-in';
+                artifactsImageContainer.style.visibility = 'visible';
+            }, 1000)
         } else {
-            artifactsHeaderText.style.transform = '(0%, -20%)';
+            artifactsHeaderContainer.style.transform = 'translateY(0%)';
+            artifactsHeaderContainer.style.transition = '';
         }
     })
 }, statuetteView2);
