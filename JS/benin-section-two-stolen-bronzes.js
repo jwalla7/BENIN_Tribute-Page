@@ -259,3 +259,40 @@ const statuetteMove = new IntersectionObserver((entries) => {
 }, statuetteView2);
 statuetteMove.observe(artifactsContainer);
 
+// The Artifacts Slideshow
+    // run
+    let elementIndex = 0;
+    let artifactsSlide;
+    const artifactsSlideStart = () => {
+        let div = document.getElementsByClassName('stolen-bronzes-plaques-display-container');
+        for (let i = 0; i < div.length; i++) {
+            div[i].style.display = 'none';
+            console.log(`divIndex: ${div[i]}`);
+        }
+        elementIndex++;
+        console.log(elementIndex);
+        if (elementIndex > div.length) {
+            elementIndex = 1;
+        }
+        div[elementIndex - 1].style.display = 'block';
+        elementIndex = setTimeout(artifactsSlideStart, 5000);
+    }
+    // stop
+    const artifactsSlideEnd = () => {
+        clearTimeout(artifactsSlide);
+    }
+    //  left button
+    const previousArtifact = () => {
+        artifactsSlide--;
+        if (elementIndex < 0) {
+            
+        }
+    }
+    // right button
+    const nextArtifact = () => {
+        artifactsSlide++;
+        if (elementIndex > div.length) {
+            elementIndex = 1;
+        }
+    }
+
