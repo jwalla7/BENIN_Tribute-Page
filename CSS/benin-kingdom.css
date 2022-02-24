@@ -555,7 +555,7 @@ img {
 }
 .interlude-map-background-image {
   transform: scale(1.7) translate(-1%, -21%);
-  filter: brightness(40%) contrast(110%) sepia(60%);
+  filter: brightness(40%) contrast(110%) sepia(90%);
   /* filter: sepia(50%); */
   /* filter: hue-rotate(90%); */
 }
@@ -599,13 +599,26 @@ img {
 }
 
 .benin-bronze-image-container {
+  display: flex;
+  background-color: white;
   width: 100vw;
   height: 100vh;
   text-align: center;
 }
+.benin-bronze-image-wrapper {
+  position: absolute;
+  right: 0;
+  transform: translate(-5.8%, 5%);
+  width: 75vw;
+  height: 85vh;
+}
 .benin-bronze-image {
-  width: 100vw;
-  height: 100vh;
+  /* transform: translate(26.5%, 10%); */
+  filter: grayscale(85%);
+  width: 90vw;
+  height: 90vh;
+}.benin-bronze-image:hover {
+  filter: grayscale(0%);
 }
 
 .stolen-bronzes-interlude {
@@ -617,22 +630,133 @@ img {
 
 }
 .benin-bronze-image-caption-container {
+  transform: translate(0%, 0%);
+  /* border: 1px solid red; */
+  width: 60vw;
+  height: 18vh;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 .beninBronzeImageCaption {
   z-index: 1;
-  padding: .5%;
+  padding: 1% 0% 0% 2%;
   /*font style*/
-  font-family: 'Roboto', sans-serif;
-  font-size: 70%;
+  font-family: 
+  /* 'jacques_francoisregular', */
+  /* 'junicodeitalic', */
+  /* 'deluce_freeitalic', */
+  /* 'deluce_freeregular', */
+  'Roboto', 
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'Montserrat', */
+  /* 'Playfair Display', */
+  sans-serif;
+  font-size: .7em;
+  font-weight: 300;
   letter-spacing: 1.7px;
-  color: black;
+  color: rgba(88, 88, 89, 0.823);
   /*position*/
-  text-align: center;
+  text-align: start;
 }
-
+.cite-benin-bronzes-image-caption {
+  color: black;
+  text-decoration: none;
+}.cite-benin-bronzes-image-caption:hover {
+  color: purple;
+}
+.benin-bronze-image-description-text-container {
+  /* border: 1px solid red; */
+  padding: 2% 0% 0% 0%;
+  width: 16vw;
+  height: 80vh;
+  transform: translate(12% ,8%);
+  text-align: justify;
+}
+.benin-bronze-image-header-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  /* border: 1px solid pink; */
+  width: 5vw;
+}
+.benin-bronze-image-header-container-1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(0%, -50%);
+  /* border: 1px solid blue; */
+  width: 7.5vw;
+}
+.benin-bronze-image-text-letter {
+  /*font style*/
+  font-family: 
+  /* 'jacques_francoisregular', */
+  /* 'junicodeitalic', */
+  /* 'deluce_freeitalic', */
+  /* 'deluce_freeregular', */
+  /* 'Roboto',  */
+  'kawoszehmedium',
+  /* 'IM Fell French Canon', */
+  /* 'Montserrat', */
+  /* 'Playfair Display', */
+  sans-serif;
+  font-size: 8em;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.823);
+}
+.benin-bronze-image-header-text-container {
+  position: relative;
+  transform: translate(31%, -140%);
+  /* border: 1px solid orange; */
+  width: 11vw;
+}
+.benin-bronze-image-header-text-container-1 {
+  position: relative;
+  transform: translate(45%, -340%);
+  /* border: 1px solid green; */
+  width: 11vw;
+}
+.benin-bronze-image-text-letter-sub {
+  padding: 2% 0% 0% 0%;
+    /*font style*/
+  font-family: 
+  /* 'jacques_francoisregular', */
+  'junicodeitalic',
+  /* 'IM Fell French Canon', */
+  /* 'Montserrat', */
+  /* 'junicodeitaliccondensed', */
+  /* 'Bodoni Moda', */
+  sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.823);
+}
+.benin-bronze-image-header-content-container {
+  /* border: 1px solid aqua; */
+  transform: translate(0%, -70%);
+}
+.benin-bronze-image-text {
+  /*font style*/
+  font-family: 
+  /* 'jacques_francoisregular', */
+  /* 'junicodeitalic', */
+  /* 'deluce_freeitalic', */
+  /* 'deluce_freeregular', */
+  'Roboto', 
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'Montserrat', */
+  /* 'Playfair Display', */
+  sans-serif;
+  font-size: .9em;
+  font-weight: 300;
+  letter-spacing: 1.7px;
+  color: rgba(88, 88, 89, 0.823);
+}
 .stolen-bronzes-interlude-text-header {
   color: black;
   font-family: 'Playfair Display','Roboto', sans-serif;
@@ -755,22 +879,46 @@ img {
   /*position*/
   /* text-align: justify;   */
 }
-
-
 .stolen-bronzes-plaques-container {
+  position: sticky;
   width: 100vw;
   height: 100vh;
   perspective: 1px;
   overflow-x: hidden;
   overflow-y: auto;
 }
+.plaques-text-background-container {
+  position: relative;
+  z-index: 0;
+    transform: scale(1.1) translate(-10%, -55%);
+    height: 100vh;
+    overflow: hidden;
+    /* filter: brightness(40%) contrast(110%) sepia(0%); */
+}
+.plaques-text-background-image {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* transform: scale(1.1) translate(-10%, -50%); */
+  filter: brightness(40%) contrast(110%) sepia(0%);
+  /* filter: sepia(50%); */
+  /* filter: hue-rotate(90%); */
+}
+.plaques-text-container {
+  position: relative;
+  z-index: 1;
+  transform: translate(2%, 10%);
+}
 .stolen-bronzes-plaques-text-container {
+  position: relative;
   width: 100vw;
   height: 100vh;
   transform: translate(30%, 30%) translateZ(-1.5px) scale(2.5, 2.5);
 }
 .stolen-bronzes-plaques-text {
-  font-size: 1.96em;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 1.7em;
   letter-spacing: 1.7px;
   /* line-height: 1.25em; */
   font-weight: 300;
@@ -783,43 +931,140 @@ img {
 /* 'datalegreyadot', */
 /* 'Montserrat', */
 /* 'Bodoni Moda', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+/* 'Montserrat', */
 /* 'Playfair Display',  */
     sans-serif;  
 }
 
 #text-reveal-1 {
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-2 {
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-3 {
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-4 {
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-5 {
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-6 {
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-7 {
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-8 {
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
 #text-reveal-9 {
+  padding: 0% 0% 0% 10%;
   visibility: hidden;
 }
+#text-reveal-A {
+  padding: 0% 0% 0% 10%;
+  /* visibility: hidden; */
+}
 .stolen-bronzes-plaques-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4%;
+  column-gap: 2%;
+  background-color: white;
   width: 100vw;
   height: 100vh;
   /* transform: translate(0%, 15%); */
   /* overflow: hidden; */
   transform: translateY(100%) translateZ(0px);
+}
+.benin-artifacts-display-header {
+  position: absolute;
+  right: 35%;
+  visibility: hidden;
+  /* transform: translateX(75%); */
+}
+.benin-artifacts-display-header-text {
+  font-size: 7.5em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  /* 'Roboto', */
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+'junicodeitalic',
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+/* 'Montserrat', */
+/* 'Bodoni Moda', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+/* 'Montserrat', */
+/* 'Playfair Display',  */
+    sans-serif;  
+}
+.benin-artifacts-display-header-text-1 {
+  font-size: 7.5em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  /* 'Roboto', */
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+/* 'Montserrat', */
+/* 'Bodoni Moda', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+'datalegreyadot',
+/* 'Montserrat', */
+'Playfair Display', 
+    sans-serif;  
+}
+.stolen-bronzes-plaques-display-container-one {
+  /* border: 1px solid red; */
+  width: 12vw;
+  height: 16vh;
+}
+.benin-artifacts-display-content-container {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 70vh;
+  padding: 2%;
+  column-gap: 1%;
+  row-gap: -50%;
+  flex-wrap: wrap; 
+  /* border: 1px solid red; */
+}
+.stolen-bronzes-plaques-image-1 {
+  width: 12vw;
+  height: 16vh;
+}
+.stolen-bronzes-plaques-image-w {
+  transform: translateY(100%) translateZ(0px);
+
 }
 .stolen-bronzes-plaques-image {
   width: 100vw;
@@ -917,7 +1162,14 @@ img {
   transform: translate(-4%, 10%);
 }
 
-
+.benin-general-asoro-container {
+  width: 100vw;
+  height: 100vh;
+}
+.benin-general-asoro-image {
+  width: 100vw;
+  height: 100vh;
+}
 .beninFactsBackground {
   /*position*/
   width: 100vw;
@@ -1290,7 +1542,7 @@ img {
     overflow-x: hidden;
     transform-origin: right top;
     transform: rotate(-90deg) translate(0% , -49.93%);
-    margin: 0 0 0 -6.99%;
+    margin: 0 0 0 -8.91%;
     perspective: 1px;
   }
   .stolen-bronzes-interlude-text-content-bottom-para {
@@ -1314,6 +1566,104 @@ img {
     letter-spacing: 1.5px;
     /*position*/
     text-align: start;  
+  }
+  .benin-bronze-image-description-text-container {
+    /* border: 1px solid red; */
+    padding: 2% 0% 0% 0%;
+    width: 16vw;
+    height: 80vh;
+    transform: translate(12% ,8%);
+    text-align: justify;
+  }
+  .benin-bronze-image-header-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* border: 1px solid pink; */
+    width: 5vw;
+  }
+  .benin-bronze-image-header-container-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%, -50%);
+    /* border: 1px solid blue; */
+    width: 7.5vw;
+  }
+  .benin-bronze-image-text-letter {
+    /*font style*/
+    font-family: 
+    /* 'jacques_francoisregular', */
+    /* 'junicodeitalic', */
+    /* 'deluce_freeitalic', */
+    /* 'deluce_freeregular', */
+    /* 'Roboto',  */
+    'kawoszehmedium',
+    /* 'IM Fell French Canon', */
+    /* 'Montserrat', */
+    /* 'Playfair Display', */
+    sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.823);
+  }
+  .benin-bronze-image-header-text-container {
+    position: relative;
+    transform: translate(15%, -105%);
+    /* border: 1px solid orange; */
+    width: 11vw;
+  }
+  .benin-bronze-image-header-text-container-1 {
+    position: relative;
+    transform: translate(24%, -225%);
+    /* border: 1px solid green; */
+    width: 11vw;
+  }
+  .benin-bronze-image-text-letter-sub {
+    padding: 2% 0% 0% 0%;
+      /*font style*/
+    font-family: 
+    /* 'jacques_francoisregular', */
+    'junicodeitalic',
+    /* 'IM Fell French Canon', */
+    /* 'Montserrat', */
+    /* 'junicodeitaliccondensed', */
+    /* 'Bodoni Moda', */
+    sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 1.25px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.823);
+  }
+  .benin-bronze-image-header-content-container {
+    width: 17vw;
+    /* border: 1px solid aqua; */
+    transform: translate(2%, -20%);
+    text-align: left;
+  }
+  .benin-bronze-image-wrapper {
+    position: absolute;
+    right: 0;
+    transform: translate(-4%, 5%);
+    width: 75vw;
+    height: 85vh;
+  }
+  .benin-bronze-image {
+    /* transform: translate(26.5%, 10%); */
+    filter: grayscale(85%);
+    width: 90vw;
+    height: 90vh;
+  }.benin-bronze-image:hover {
+    filter: grayscale(0%);
+  }
+    /* Artifacts */
+  .benin-artifacts-display-header {
+    visibility: hidden;
+    position: absolute;
+    right: 25%;
+    /* transform:translateX(50%); */
+    text-align: center;
   }
 /* THE PEOPLE */
   .subIntroParaCite {
