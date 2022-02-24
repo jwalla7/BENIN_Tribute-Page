@@ -1041,8 +1041,8 @@ img {
 }
 .stolen-bronzes-plaques-display-container-one {
   /* border: 1px solid red; */
-  width: 12vw;
-  height: 16vh;
+  width: 10vw;
+  height: 14vh;
 }
 .benin-artifacts-display-content-container {
   display: flex;
@@ -1050,17 +1050,20 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  width: 65vw;
   height: 70vh;
   padding: 2%;
-  column-gap: 1%;
+  column-gap: 5%;
   row-gap: -50%;
   flex-wrap: wrap; 
+  transform: translate(30%, -10%);
   /* border: 1px solid red; */
 }
 .stolen-bronzes-plaques-image-1 {
-  width: 12vw;
-  height: 16vh;
+  width: 10vw;
+  height: 14vh;
 }
 .stolen-bronzes-plaques-image-w {
   transform: translateY(100%) translateZ(0px);
@@ -1167,6 +1170,16 @@ img {
   height: 100vh;
 }
 .benin-general-asoro-image {
+  width: 100vw;
+  height: 100vh;
+}
+
+.benin-general-asoro-container {
+  width: 100vw;
+  height: 100vh;
+}
+.benin-general-asoro-image {
+  transform: translate(0%, 0%);
   width: 100vw;
   height: 100vh;
 }
