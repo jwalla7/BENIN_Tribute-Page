@@ -1116,6 +1116,7 @@ img {
 #benin-artifact-9 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(6%, 0%)
 }
 #benin-artifact-14 {
   max-width: 40vw;
@@ -1124,14 +1125,17 @@ img {
 #benin-artifact-10 {
   max-width: 39vw;
   max-height: 65vh;
+  transform: translate(0%, 20%)
 }
 #benin-artifact-13 {
   max-width: 39vw;
   max-height: 65vh;
+  transform: translate(0%, 12%)
 }
 #benin-artifact-15 {
   max-width: 39vw;
   max-height: 65vh;
+  transform: translate(0%, 45%)
 }
 #benin-artifact-7 {
   max-width: 40vw;
@@ -1140,10 +1144,12 @@ img {
 #benin-artifact-6 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(2%, 0%)
 }
 #benin-artifact-5 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(9%, 0%)
 }
 #benin-artifact-16 {
   max-width: 40vw;
@@ -1156,14 +1162,17 @@ img {
 #benin-artifact-17 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(0%, 5%)
 }
 #benin-artifact-3 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(1%, 0%)
 }
 #benin-artifact-2 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(0%, 5%) scale(1.1);
 }
 #benin-artifact-1 {
   max-width: 39vw;
@@ -1180,6 +1189,7 @@ img {
 #benin-artifact-18 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(10%, 0%)
 }
 #benin-artifact-19 {
   max-width: 40vw;
@@ -1188,22 +1198,27 @@ img {
 #benin-artifact-8 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(12%, 0%)
 }
 #benin-artifact-20 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(-2%, 15%)
 }
 #benin-artifact-21 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(30%, 0%)
 }
 #benin-artifact-22 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(-2%, 10%);
 }
 #benin-artifact-23 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(2%, 0%)
 }
 
 .stolen-bronzes-plaques-image {
