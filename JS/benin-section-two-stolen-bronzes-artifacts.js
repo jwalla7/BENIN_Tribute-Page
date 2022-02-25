@@ -34,7 +34,7 @@ leftArrow.addEventListener('mouseup', () => {
             elementIndex = 1;
         }
         div[elementIndex - 1].style.display = 'block';
-        artifactsSlide = setTimeout(artifactsSlideStart, 5000);
+        artifactsSlide = setTimeout(artifactsSlideStart, 8000);
     };
     // stop
     const artifactsSlideEnd = () => {

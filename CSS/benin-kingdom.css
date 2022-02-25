@@ -1104,13 +1104,129 @@ img {
 
 .stolen-bronzes-artifacts-display-image {
   /* transform: scale(); */
-  width: auto;
-  height: 65vh;
+  max-width: 40vw;
+max-  height: 65vh;
 
+}
+#benin-artifact-1 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-2 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-3 {
+  max-width: 39vw;
+  max-height: 65vh;
+}
+#benin-artifact-4 {
+  max-width: 39vw;
+  max-height: 65vh;
+}
+#benin-artifact-5 {
+  max-width: 39vw;
+  max-height: 65vh;
+}
+#benin-artifact-6 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-7 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-8 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-9 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-10 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-11 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-12 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-13 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-14 {
+  max-width: 39vw;
+  max-height: 65vh;
+}
+#benin-artifact-15 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-16 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-17 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-18 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-19 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-20 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-21 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-22 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-23 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-24 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-25 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-26 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-27 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-28 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-29 {
+  max-width: 40vw;
+  max-height: 65vh;
 }
 .stolen-bronzes-plaques-image {
   width: 100vw;
-  height: 100vh;
+  max-height: 100vh;
 }
 
 .three {
@@ -1716,6 +1832,17 @@ img {
     right: 25%;
     /* transform:translateX(50%); */
     text-align: center;
+  }
+  .benin-artifacts-display-right-toggle-button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* border: 1px solid black; */
+    width: 10vw;
+    height: 15vh;
+    padding: 3%;
+    text-align: center;
+    transform: translate(-215%, 325%);
   }
 /* THE PEOPLE */
   .subIntroParaCite {
