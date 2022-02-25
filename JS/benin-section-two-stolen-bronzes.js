@@ -275,24 +275,25 @@ statuetteMove.observe(artifactsContainer);
             elementIndex = 1;
         }
         div[elementIndex - 1].style.display = 'block';
-        elementIndex = setTimeout(artifactsSlideStart, 5000);
-    }
+        artifactsSlide = setTimeout(artifactsSlideStart, 2000);
+    };
     // stop
     const artifactsSlideEnd = () => {
         clearTimeout(artifactsSlide);
-    }
+    };
+    // artifactsSlideStart();
     //  left button
-    const previousArtifact = () => {
-        artifactsSlide--;
-        if (elementIndex < 0) {
-            
-        }
-    }
+    // const previousArtifact = () => {
+    //     elementIndex--;
+    //     if (elementIndex < 0) { 
+    //         elementIndex = div.length - 1;
+    //     }
+    // };
     // right button
-    const nextArtifact = () => {
-        artifactsSlide++;
-        if (elementIndex > div.length) {
-            elementIndex = 1;
-        }
-    }
+    // const nextArtifact = () => {
+    //     elementIndex++;
+    //     if (elementIndex > div.length) {
+    //         elementIndex = 1;
+    //     }
+    // };
 
