@@ -1039,34 +1039,17 @@ img {
 'Playfair Display', 
     sans-serif;  
 }
-.stolen-bronzes-plaques-display-container {
-  /* border: 1px solid red; */
-  width: 50vw;
-  height: 70vh;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.stolen-bronzes-plaques-display-image-container {
-  /* border: 1px solid blue; */
-  width: 40vw;
-  height: 65vh;
-}
-.stolen-bronzes-plaques-display-image-cite-container {
-  /* border: 1px solid peru; */
-  padding: 2%;
-  width: 40vw;
-  height: 5vh;
-}
-.stolen-bronzes-plaques-image-cite-text {
 
-}
+
 .benin-artifacts-display-content-container {
-  display: flex;
+  /* display: flex; */
   visibility: hidden;
   position: absolute;
   bottom: 0;
   left: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 40vw;
   height: 70vh;
   /* padding: 2%; */
@@ -1075,7 +1058,6 @@ img {
   /* flex-wrap: wrap;  */
   transform: translate(79%, -6%);
   /* border: 1px solid red; */
-  text-align: center;
 }
 .benin-artifacts-display-right-toggle-button-container {
   position: absolute;
@@ -1086,7 +1068,7 @@ img {
   height: 15vh;
   padding: 3%;
   text-align: center;
-  transform: translate(-200%, 325%);
+  transform: translate(-280%, 325%);
 }
 .benin-artifacts-display-left-toggle-button-container {
   position: absolute;
@@ -1099,29 +1081,31 @@ img {
   text-align: center;
   transform: translate(232%, 325%);
 }
-.arrow {
+#right-arrow {
   border: solid black;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 10px;
-}
-.right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);  
+}#right-arrow:hover {
+  cursor: grab;
 }
-.left {
+#left-arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 10px;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+}#left-arrow:hover {
+  cursor:grab;
 }
 
-.stolen-bronzes-plaques-image-1 {
+.stolen-bronzes-artifacts-display-image {
   /* transform: scale(); */
   width: auto;
   height: 65vh;
-
-}
-.stolen-bronzes-plaques-image-w {
-  transform: translateY(100%) translateZ(0px);
 
 }
 .stolen-bronzes-plaques-image {

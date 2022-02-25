@@ -122,7 +122,7 @@
             </li>
             <br>
             <br>
-            <li class="table-of-contents-list-content"><a href="#" class="table-of-contents-list-content-text">Content</a>
+            <li class="table-of-contents-list-content"><a href="#" class="table-of-contents-list-content-text">Credits</a>
               &nbsp;<div class="table-of-contents-numerical-text">15</div>
             </li>
           </ul>
@@ -347,35 +347,27 @@
           </div>
           <div class="benin-artifacts-display-right-toggle-button-container" onclick="nextArtifact();">
             <span class="benin-artifacts-display-right-toggle-button">
-              <i class="arrow right"></i>
+              <i class="arrow" id="right-arrow"></i>
             </span>
           </div>
           <div class="benin-artifacts-display-left-toggle-button-container" onclick="previousArtifact();">
             <span class="benin-artifacts-display-left-toggle-button">
-              <i class="arrow left"></i>
+              <i class="arrow" id="left-arrow"></i>
             </span>
           </div>  
           <div class="benin-artifacts-display-content-container">
-            <div class="stolen-bronzes-plaques-display-container" id="benin-artifact-image-1">
-              <div class="stolen-bronzes-plaques-display-image-container">
-                <img class='stolen-bronzes-plaques-image-1' src='/assets/images/benin-artifact-9.jpg'>
-              </div>
-              <div class="stolen-bronzes-plaques-display-image-cite-container">
-                <figcaption class="stolen-bronzes-plaques-image-cite-text">
-                  This image is an image, okay?
-                </figcaption>
-              </div>
-            </div>
-            <div class="stolen-bronzes-plaques-display-container" id="benin-artifact-image-2">
-              <div class="stolen-bronzes-plaques-display-image-container">
-                <img class='stolen-bronzes-plaques-image-1' src='/assets/images/benin-artifact-9.jpg'>
-              </div>
-              <div class="stolen-bronzes-plaques-display-image-cite-container">
-                <figcaption class="stolen-bronzes-plaques-image-cite-text">
-                  This image is an image, ok?
-                </figcaption>
-              </div>
-            </div>
+            <div class="stolen-bronzes-artifacts-display-image"></div>
+            <img class='stolen-bronzes-artifacts-display-image' id='benin-artifact-9' src='/assets/images/benin-artifact-9.jpg'>
+            <img class='stolen-bronzes-artifacts-display-image' id='benin-artifact-12' src='/assets/images/stolen-bronze-statuettes.jpg'>
+            <img class='stolen-bronzes-artifacts-display-image' id='benin-artifact-8' src='/assets/images/benin-artifact-8.jpeg'>
+            <img class='stolen-bronzes-artifacts-display-image' id='benin-artifact-7' src='/assets/images/benin-artifact-7.jpg.webp'>
+            <img class='stolen-bronzes-artifacts-display-image' id='benin-artifact-6' src='/assets/images/benin-artifact-6.jpg.webp'>
+            <img class='stolen-bronzes-artifacts-display-image' id='benin-artifact-5' src='/assets/images/benin-artifact-5.jpg'>
+            <img class='stolen-bronzes-artifacts-display-image' id='benin-artifact-4' src='/assets/images/benin-artifact-4.jpg'>
+            <img class='stolen-bronzes-artifacts-display-image' id='benin-artifact-3' src='/assets/images/benin-artifact-3.jpg'>
+            <img class='stolen-bronzes-artifacts-display-image' id='benin-artifact-2' src='/assets/images/benin-artifact-2.jpg.webp'>
+            <img class='stolen-bronzes-artifacts-display-image' id='benin-artifact-1' src='/assets/images/benin-artifact-1.jpg.webp'>
+          </div>
         </div>
       </div>
     </section>
@@ -547,6 +539,7 @@
 <script src='/JS/benin-main-window.js'></script>
 <script src='/JS/benin-section-one.js'></script>
 <script src='/JS/benin-section-two-stolen-bronzes.js'></script>
+<script src='/JS/benin-section-two-stolen-bronzes-artifacts.js'></script>
 <script src='/JS/benin-section-two-the-people.js'></script>
 
 </body>
