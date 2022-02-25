@@ -258,4 +258,3 @@ const statuetteMove = new IntersectionObserver((entries) => {
     })
 }, statuetteView2);
 statuetteMove.observe(artifactsContainer);
-
