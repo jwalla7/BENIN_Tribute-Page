@@ -1341,6 +1341,49 @@ img {
   width: 100vw;
   height: 100vh;
 }
+
+.oba-oduduwa-header-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #DECDBC;
+  overflow: hidden;
+}
+.oba-oduduwa-header-image-container {
+  position: relative;
+  z-index: 0;
+}
+.oba-oduduwa-image {
+  width: auto;
+  /* height: 100vh; */
+  height: auto;
+  transform: translate(15%, -35%) scale(1.1);
+}
+.oba-oduduwa-header-text-container {
+  position: relative;
+  z-index: 1;
+}
+.oba-oduduwa-header-text {
+  color: white;
+  font-size: 12.5em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  /* 'Roboto', */
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+/* 'Montserrat', */
+/* 'Bodoni Moda', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+'datalegreyadot',
+/* 'Montserrat', */
+'Playfair Display', 
+    sans-serif;  
+}
 .beninFactsBackground {
   /*position*/
   width: 100vw;
