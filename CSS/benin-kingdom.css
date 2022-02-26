@@ -1356,15 +1356,22 @@ img {
   width: auto;
   /* height: 100vh; */
   height: auto;
-  transform: translate(15%, -35%) scale(1.1);
+  transform: translate(0%, -25.5%) scale(1.1);
 }
 .oba-oduduwa-header-text-container {
   position: relative;
   z-index: 1;
 }
+.oba-oduduwa-header-text-1 {
+  transform: translate(9%, 85%);
+}
+.oba-oduduwa-header-text-2 {
+  transform: translate(46%, -10%);
+  letter-spacing: -1px;
+}
 .oba-oduduwa-header-text {
   color: white;
-  font-size: 12.5em;
+  font-size: 8em;
   letter-spacing: 1.7px;
   /* line-height: 1.25em; */
   font-weight: 300;
@@ -1372,17 +1379,18 @@ img {
   /* 'Roboto', */
 /* 'kawoszehmedium', */
 /* 'IM Fell French Canon', */
-/* 'junicodeitalic', */
-/* 'junicodeitaliccondensed', */
-/* 'datalegreyadot', */
-/* 'Montserrat', */
 /* 'Bodoni Moda', */
 /* 'junicodeitalic', */
 /* 'junicodeitaliccondensed', */
-'datalegreyadot',
-/* 'Montserrat', */
+/* 'datalegreyadot', */
+'Montserrat',
 'Playfair Display', 
     sans-serif;  
+}
+.oba-oduduwa-content-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e8ded4e5;
 }
 .beninFactsBackground {
   /*position*/
