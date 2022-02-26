@@ -11,6 +11,7 @@ const reset = () => {
 }
 
 const artifactsSlideStart = () => {
+    reset();
     for (let i = 0; i < div.length; i++) {
         div[i].style.display = 'none';
         console.log(`divIndex: ${div[i]}`);
@@ -21,7 +22,7 @@ const artifactsSlideStart = () => {
         elementIndex = 0;
     }
     div[elementIndex - 1].style.display = 'block';
-    artifactsSlide = setTimeout(artifactsSlideStart, 8000);
+    artifactsSlide = setTimeout(artifactsSlideStart, 6000);
 };
 // stop
 const artifactsSlideEnd = () => {
@@ -34,7 +35,7 @@ const previousArtifact = () => {
     if (elementIndex < 0) { 
         elementIndex = div.length - 1;
     }
-    div[elementIndex - 1].style.display = 'block';
+    div[elementIndex].style.display = 'block';
     elementIndex--;
 };
 // right button
@@ -43,7 +44,7 @@ const nextArtifact = () => {
     if (elementIndex > div.length - 1) {
         elementIndex = 0;
     }
-    div[elementIndex + 1].style.display = 'block';
+    div[elementIndex].style.display = 'block';
     elementIndex++;
 };
 // Slideshow Arrows
