@@ -1050,13 +1050,13 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 40vw;
+  width: 35vw;
   height: 70vh;
   /* padding: 2%; */
   /* column-gap: 5%; */
   /* row-gap: -50%;  */
   /* flex-wrap: wrap;  */
-  transform: translate(79%, -6%);
+  transform: translate(85%, -6%);
   /* border: 1px solid red; */
 }
 .benin-artifacts-display-right-toggle-button-container {
@@ -1116,26 +1116,27 @@ img {
 #benin-artifact-9 {
   max-width: 40vw;
   max-height: 65vh;
-  transform: translate(6%, 0%)
+  transform: translate(18%, 0%)
 }
 #benin-artifact-14 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(5%, 0%)
 }
 #benin-artifact-10 {
-  max-width: 39vw;
+  max-width: 35vw;
   max-height: 65vh;
-  transform: translate(0%, 20%)
+  transform: translate(1%, 20%)
 }
 #benin-artifact-13 {
-  max-width: 39vw;
+  max-width: 35vw;
   max-height: 65vh;
-  transform: translate(0%, 12%)
+  transform: translate(2%, 12%)
 }
 #benin-artifact-15 {
-  max-width: 39vw;
+  max-width: 35vw;
   max-height: 65vh;
-  transform: translate(0%, 45%)
+  transform: translate(1%, 45%)
 }
 #benin-artifact-7 {
   max-width: 40vw;
@@ -1144,81 +1145,86 @@ img {
 #benin-artifact-6 {
   max-width: 40vw;
   max-height: 65vh;
-  transform: translate(2%, 0%)
+  transform: translate(10%, 0%)
 }
 #benin-artifact-5 {
   max-width: 40vw;
   max-height: 65vh;
-  transform: translate(9%, 0%)
+  transform: translate(14%, 0%)
 }
-#benin-artifact-16 {
+/* #benin-artifact-16 {
   max-width: 40vw;
   max-height: 65vh;
-}
+} */
 #benin-artifact-4 {
-  max-width: 40vw;
-  max-height: 65vh;
-}
-#benin-artifact-17 {
-  max-width: 40vw;
-  max-height: 65vh;
-  transform: translate(0%, 5%)
-}
-#benin-artifact-3 {
-  max-width: 40vw;
-  max-height: 65vh;
-  transform: translate(1%, 0%)
-}
-#benin-artifact-2 {
-  max-width: 40vw;
-  max-height: 65vh;
-  transform: translate(0%, 5%) scale(1.1);
-}
-#benin-artifact-1 {
-  max-width: 39vw;
-  max-height: 65vh;
-}
-#benin-artifact-11 {
-  max-width: 40vw;
-  max-height: 65vh;
-}
-#benin-artifact-12 {
-  max-width: 40vw;
-  max-height: 65vh;
-}
-#benin-artifact-18 {
   max-width: 40vw;
   max-height: 65vh;
   transform: translate(10%, 0%)
 }
+#benin-artifact-17 {
+  max-width: 35vw;
+  max-height: 65vh;
+  transform: translate(1%, 5%)
+}
+#benin-artifact-3 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(6%, 0%)
+}
+#benin-artifact-2 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(6%, 5%) scale(1.1);
+}
+#benin-artifact-1 {
+  max-width: 39vw;
+  max-height: 65vh;
+  transform: translate(4%, 0%)
+}
+#benin-artifact-11 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(5%, 0%)
+}
+#benin-artifact-12 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(7%, -5%)scale(.8);
+}
+#benin-artifact-18 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(11%, 0%)
+}
 #benin-artifact-19 {
   max-width: 40vw;
   max-height: 65vh;
+  transform: translate(7%, 0%)
 }
 #benin-artifact-8 {
   max-width: 40vw;
   max-height: 65vh;
-  transform: translate(12%, 0%)
+  transform: translate(17%, 0%)
 }
 #benin-artifact-20 {
-  max-width: 40vw;
+  max-width: 35vw;
   max-height: 65vh;
-  transform: translate(-2%, 15%)
+  transform: translate(1%, 15%)
 }
 #benin-artifact-21 {
   max-width: 40vw;
   max-height: 65vh;
-  transform: translate(30%, 0%)
+  transform: translate(32%, 0%)
 }
 #benin-artifact-22 {
-  max-width: 40vw;
+  max-width: 35vw;
   max-height: 65vh;
-  transform: translate(-2%, 10%);
+  transform: translate(1%, 10%);
 }
 #benin-artifact-23 {
   max-width: 40vw;
   max-height: 65vh;
-  transform: translate(2%, 0%)
+  transform: translate(8%, 0%)
 }
 
 .stolen-bronzes-plaques-image {
@@ -1829,6 +1835,132 @@ img {
     right: 25%;
     /* transform:translateX(50%); */
     text-align: center;
+  }
+  .benin-artifacts-display-content-container {
+    /* display: flex; */
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40vw;
+    height: 70vh;
+    /* padding: 2%; */
+    /* column-gap: 5%; */
+    /* row-gap: -50%;  */
+    /* flex-wrap: wrap;  */
+    transform: translate(79%, -6%);
+    /* border: 1px solid red; */
+  }
+  #benin-artifact-9 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(6%, 0%)
+  }
+  #benin-artifact-14 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-10 {
+    max-width: 39vw;
+    max-height: 65vh;
+    transform: translate(0%, 20%)
+  }
+  #benin-artifact-13 {
+    max-width: 39vw;
+    max-height: 65vh;
+    transform: translate(0%, 12%)
+  }
+  #benin-artifact-15 {
+    max-width: 39vw;
+    max-height: 65vh;
+    transform: translate(0%, 45%)
+  }
+  #benin-artifact-7 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-6 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(2%, 0%)
+  }
+  #benin-artifact-5 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(9%, 0%)
+  }
+  #benin-artifact-16 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-4 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-17 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(0%, 5%)
+  }
+  #benin-artifact-3 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(1%, 0%)
+  }
+  #benin-artifact-2 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(0%, 5%) scale(1.1);
+  }
+  #benin-artifact-1 {
+    max-width: 39vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-11 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-12 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(0%, -5%)scale(.8);
+  }
+  #benin-artifact-18 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(10%, 0%)
+  }
+  #benin-artifact-19 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-8 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(12%, 0%)
+  }
+  #benin-artifact-20 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(-2%, 15%)
+  }
+  #benin-artifact-21 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(30%, 0%)
+  }
+  #benin-artifact-22 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(-2%, 10%);
+  }
+  #benin-artifact-23 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(2%, 0%)
   }
   .benin-artifacts-display-right-toggle-button-container {
     position: absolute;

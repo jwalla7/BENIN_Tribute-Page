@@ -31,20 +31,20 @@ artifactsSlideStart();
 //  left button
 const previousArtifact = () => {
     reset();
-    div[elementIndex - 1].style.display = 'block';
-    elementIndex--;
     if (elementIndex < 0) { 
         elementIndex = div.length - 1;
     }
+    div[elementIndex - 1].style.display = 'block';
+    elementIndex--;
 };
 // right button
 const nextArtifact = () => {
     reset();
-    div[elementIndex + 1].style.display = 'block';
-    elementIndex++;
     if (elementIndex > div.length - 1) {
         elementIndex = 0;
     }
+    div[elementIndex + 1].style.display = 'block';
+    elementIndex++;
 };
 // Slideshow Arrows
 const rightArrow = document.getElementById('right-arrow');
