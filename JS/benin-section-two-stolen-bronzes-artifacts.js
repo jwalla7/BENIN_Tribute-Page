@@ -27,7 +27,7 @@ const artifactsSlideStart = () => {
 const artifactsSlideEnd = () => {
     clearTimeout(artifactsSlide);
 };
-artifactsSlideStart();
+// artifactsSlideStart();
 //  left button
 const previousArtifact = () => {
     reset();

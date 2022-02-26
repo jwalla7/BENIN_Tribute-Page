@@ -248,6 +248,7 @@ const statuetteMove = new IntersectionObserver((entries) => {
             artifactsHeaderContainer.style.transform = 'translateY(-50%)';
 
             setTimeout(() => {
+                artifactsSlideStart();
                 artifactsImageContainer.style.animation = 'fade-in 1s ease-in';
                 artifactsImageContainer.style.visibility = 'visible';
             }, 1000)
