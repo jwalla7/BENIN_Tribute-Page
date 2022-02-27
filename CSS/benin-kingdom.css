@@ -1387,6 +1387,64 @@ img {
 'Playfair Display', 
     sans-serif;  
 }
+.oba-oduduwa-introduction-header-container {
+  position: relative;
+  z-index: 1;
+  width: 30vw;
+  text-align: right;
+  /* border: 1px solid black; */
+  transform: translate(163.5%, 0%);
+}
+.oba-oduduwa-introduction-content-container {
+  position: relative;
+  z-index: 1;
+}
+.oba-oduduwa-introduction-content-right {
+  position: absolute;
+  right: 0;
+  width: 18.5vw;
+  height: auto;
+  /* border: 1px solid black; */
+  text-align: justify;
+  padding: 0% 0% 0% 1%;
+  transform: translate(-13.5%, -13%);
+}
+.oba-oduduwa-content-right-text {
+  color: white;
+  font-size: .85em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  'Roboto',
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+/* 'Bodoni Moda', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+/* 'Montserrat', */
+'Playfair Display', 
+    sans-serif;  
+}
+.oba-oduduwa-introduction-header-text {
+  color: black;
+  font-size: 1em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  /* 'Roboto', */
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+/* 'Bodoni Moda', */
+'junicodeitalic',
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+'Montserrat',
+'Playfair Display', 
+    sans-serif;  
+}
 .oba-oduduwa-content-container {
   width: 100vw;
   height: 100vh;
@@ -2119,5 +2177,37 @@ img {
     transform: translate(0%, 50%);
     border: 1px solid black;
   }
-
+  /* OBAS OF BENIN */
+  /* ODUDUWA */
+  .oba-oduduwa-image {
+    width: auto;
+    /* height: 100vh; */
+    height: auto;
+    transform: translate(0%, -25.5%) scale(1.1);
+  }
+  .oba-oduduwa-header-text-1 {
+    transform: translate(9%, 85%);
+  }
+  .oba-oduduwa-header-text-2 {
+    transform: translate(46%, -10%);
+    letter-spacing: -1px;
+  }
+  .oba-oduduwa-introduction-header-container {
+    position: relative;
+    z-index: 1;
+    width: 30vw;
+    text-align: right;
+    /* border: 1px solid black; */
+    transform: translate(163.5%, 0%);
+  }
+  .oba-oduduwa-introduction-content-right {
+    position: absolute;
+    right: 0;
+    width: 18.5vw;
+    height: auto;
+    /* border: 1px solid black; */
+    text-align: justify;
+    padding: 0% 0% 0% 1%;
+    transform: translate(-13.5%, -13%);
+  }
 }
