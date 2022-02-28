@@ -555,7 +555,8 @@ img {
 }
 .interlude-map-background-image {
   transform: scale(1.7) translate(-1%, -21%);
-  filter: brightness(40%) contrast(110%) sepia(90%);
+  filter: grayscale(100%) brightness(45%) sepia(20%);
+  /* filter: brightness(40%) contrast(110%) sepia(90%); */
   /* filter: sepia(50%); */
   /* filter: hue-rotate(90%); */
 }
@@ -1050,13 +1051,13 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 40vw;
+  width: 35vw;
   height: 70vh;
   /* padding: 2%; */
   /* column-gap: 5%; */
   /* row-gap: -50%;  */
   /* flex-wrap: wrap;  */
-  transform: translate(79%, -6%);
+  transform: translate(85%, -6%);
   /* border: 1px solid red; */
 }
 .benin-artifacts-display-right-toggle-button-container {
@@ -1104,13 +1105,132 @@ img {
 
 .stolen-bronzes-artifacts-display-image {
   /* transform: scale(); */
-  width: auto;
-  height: 65vh;
-
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  max-width: 40vw;
+  max-height: 65vh;
 }
+
+#benin-artifact-9 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(18%, 0%)
+}
+#benin-artifact-14 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(5%, 0%)
+}
+#benin-artifact-10 {
+  max-width: 35vw;
+  max-height: 65vh;
+  transform: translate(1%, 20%)
+}
+#benin-artifact-13 {
+  max-width: 35vw;
+  max-height: 65vh;
+  transform: translate(2%, 12%)
+}
+#benin-artifact-15 {
+  max-width: 35vw;
+  max-height: 65vh;
+  transform: translate(1%, 45%)
+}
+#benin-artifact-7 {
+  max-width: 40vw;
+  max-height: 65vh;
+}
+#benin-artifact-6 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(10%, 0%)
+}
+#benin-artifact-5 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(14%, 0%)
+}
+/* #benin-artifact-16 {
+  max-width: 40vw;
+  max-height: 65vh;
+} */
+#benin-artifact-4 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(10%, 0%)
+}
+#benin-artifact-17 {
+  max-width: 35vw;
+  max-height: 65vh;
+  transform: translate(1%, 5%)
+}
+#benin-artifact-3 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(6%, 0%)
+}
+#benin-artifact-2 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(6%, 5%) scale(1.1);
+}
+#benin-artifact-1 {
+  max-width: 39vw;
+  max-height: 65vh;
+  transform: translate(4%, 0%)
+}
+#benin-artifact-11 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(5%, 0%)
+}
+#benin-artifact-12 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(7%, -5%)scale(.8);
+}
+#benin-artifact-18 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(11%, 0%)
+}
+#benin-artifact-19 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(7%, 0%)
+}
+#benin-artifact-8 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(17%, 0%)
+}
+#benin-artifact-20 {
+  max-width: 35vw;
+  max-height: 65vh;
+  transform: translate(1%, 15%)
+}
+#benin-artifact-21 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(32%, 0%)
+}
+#benin-artifact-22 {
+  max-width: 35vw;
+  max-height: 65vh;
+  transform: translate(1%, 10%);
+}
+#benin-artifact-23 {
+  max-width: 40vw;
+  max-height: 65vh;
+  transform: translate(8%, 0%)
+}
+
 .stolen-bronzes-plaques-image {
   width: 100vw;
-  height: 100vh;
+  max-height: 100vh;
 }
 
 .three {
@@ -1221,6 +1341,142 @@ img {
   transform: translate(0%, 0%);
   width: 100vw;
   height: 100vh;
+}
+.obas-of-benin-container {
+  width: 100vw;
+  height: 100vh;
+}
+.obas-of-benin-background-image {
+
+}
+
+.oba-oduduwa-header-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #DECDBC;
+  overflow: hidden;
+}
+.oba-oduduwa-header-image-container {
+  position: relative;
+  z-index: 0;
+}
+.oba-oduduwa-image {
+  width: auto;
+  /* height: 100vh; */
+  height: auto;
+  transform: translate(20%, -25.5%) scale(1.1);
+}
+.oba-oduduwa-header-text-container {
+  position: relative;
+  z-index: 1;
+}
+.oba-oduduwa-header-text-1 {
+  transform: translate(15%, 85%);
+}
+.oba-oduduwa-header-text-2 {
+  transform: translate(50%, -10%);
+  letter-spacing: -1px;
+}
+.oba-oduduwa-header-text {
+  color: white;
+  font-size: 8em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  /* 'Roboto', */
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+/* 'Bodoni Moda', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+'Montserrat',
+'Playfair Display', 
+    sans-serif;  
+}
+.oba-oduduwa-introduction-header-container {
+  position: relative;
+  z-index: 1;
+  width: 22vw;
+  text-align: right;
+  /* border: 1px solid black; */
+  transform: translate(224.5%, 30%);
+}
+.oba-oduduwa-introduction-content-container {
+  position: relative;
+  z-index: 1;
+}
+.oba-oduduwa-introduction-content-right {
+  position: absolute;
+  right: 0;
+  width: 18.5vw;
+  height: auto;
+  /* border: 1px solid black; */
+  text-align: justify;
+  padding: 0% 0% 0% 1%;
+  transform: translate(-55%, -13%);
+}
+.oba-oduduwa-content-right-text {
+  color: white;
+  font-size: .85em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  'Roboto',
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+/* 'Bodoni Moda', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+/* 'Montserrat', */
+'Playfair Display', 
+    sans-serif;  
+}
+.oba-cite-container {
+  /* border: 1px solid red; */
+  width: 5vw;
+  height: 5vh;
+}
+.cite-oba-oduduwa {
+    color: white;
+  font-size: .85em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  'Roboto',
+'Playfair Display', 
+    sans-serif;  
+}.cite-oba-oduduwa:hover {
+  cursor: grab;
+  color: purple;
+}
+.oba-oduduwa-introduction-header-text {
+  color: black;
+  font-size: 1em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  /* 'Roboto', */
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+/* 'Bodoni Moda', */
+'junicodeitalic',
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+'Montserrat',
+'Playfair Display', 
+    sans-serif;  
+}
+.oba-oduduwa-content-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e8ded4e5;
+  /* background-color: #fffaf5e5; */
 }
 .beninFactsBackground {
   /*position*/
@@ -1717,6 +1973,144 @@ img {
     /* transform:translateX(50%); */
     text-align: center;
   }
+  .benin-artifacts-display-content-container {
+    /* display: flex; */
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40vw;
+    height: 70vh;
+    /* padding: 2%; */
+    /* column-gap: 5%; */
+    /* row-gap: -50%;  */
+    /* flex-wrap: wrap;  */
+    transform: translate(79%, -6%);
+    /* border: 1px solid red; */
+  }
+  #benin-artifact-9 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(6%, 0%)
+  }
+  #benin-artifact-14 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(-.5%, 0%)
+  }
+  #benin-artifact-10 {
+    max-width: 39vw;
+    max-height: 65vh;
+    transform: translate(0%, 20%)
+  }
+  #benin-artifact-13 {
+    max-width: 39vw;
+    max-height: 65vh;
+    transform: translate(0%, 12%)
+  }
+  #benin-artifact-15 {
+    max-width: 39vw;
+    max-height: 65vh;
+    transform: translate(0%, 45%)
+  }
+  #benin-artifact-7 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-6 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(2%, 0%)
+  }
+  #benin-artifact-5 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(9%, 0%)
+  }
+  #benin-artifact-16 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-4 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-17 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(0%, 5%)
+  }
+  #benin-artifact-3 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(1%, 0%)
+  }
+  #benin-artifact-2 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(0%, 5%) scale(1.1);
+  }
+  #benin-artifact-1 {
+    max-width: 39vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-11 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-12 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(0%, -5%)scale(.8);
+  }
+  #benin-artifact-18 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(10%, 0%)
+  }
+  #benin-artifact-19 {
+    max-width: 40vw;
+    max-height: 65vh;
+  }
+  #benin-artifact-8 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(12%, 0%)
+  }
+  #benin-artifact-20 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(-2%, 15%)
+  }
+  #benin-artifact-21 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(30%, 0%)
+  }
+  #benin-artifact-22 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(-2%, 10%);
+  }
+  #benin-artifact-23 {
+    max-width: 40vw;
+    max-height: 65vh;
+    transform: translate(2%, 0%)
+  }
+  .benin-artifacts-display-right-toggle-button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* border: 1px solid black; */
+    width: 10vw;
+    height: 15vh;
+    padding: 3%;
+    text-align: center;
+    transform: translate(-215%, 325%);
+  }
 /* THE PEOPLE */
   .subIntroParaCite {
     display: flex;
@@ -1812,5 +2206,37 @@ img {
     transform: translate(0%, 50%);
     border: 1px solid black;
   }
-
+  /* OBAS OF BENIN */
+  /* ODUDUWA */
+  .oba-oduduwa-image {
+    width: auto;
+    /* height: 100vh; */
+    height: auto;
+    transform: translate(0%, -25.5%) scale(1.1);
+  }
+  .oba-oduduwa-header-text-1 {
+    transform: translate(9%, 85%);
+  }
+  .oba-oduduwa-header-text-2 {
+    transform: translate(46%, -10%);
+    letter-spacing: -1px;
+  }
+  .oba-oduduwa-introduction-header-container {
+    position: relative;
+    z-index: 1;
+    width: 30vw;
+    text-align: right;
+    /* border: 1px solid black; */
+    transform: translate(163.5%, 20%);
+  }
+  .oba-oduduwa-introduction-content-right {
+    position: absolute;
+    right: 0;
+    width: 18.5vw;
+    height: auto;
+    /* border: 1px solid black; */
+    text-align: justify;
+    padding: 0% 0% 0% 1%;
+    transform: translate(-13.5%, -13%);
+  }
 }
