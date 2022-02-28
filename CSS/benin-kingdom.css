@@ -555,7 +555,8 @@ img {
 }
 .interlude-map-background-image {
   transform: scale(1.7) translate(-1%, -21%);
-  filter: brightness(40%) contrast(110%) sepia(90%);
+  filter: grayscale(100%) brightness(45%) sepia(20%);
+  /* filter: brightness(40%) contrast(110%) sepia(90%); */
   /* filter: sepia(50%); */
   /* filter: hue-rotate(90%); */
 }
@@ -1345,6 +1346,9 @@ img {
   width: 100vw;
   height: 100vh;
 }
+.obas-of-benin-background-image {
+
+}
 
 .oba-oduduwa-header-container {
   width: 100vw;
@@ -1430,6 +1434,25 @@ img {
 /* 'Montserrat', */
 'Playfair Display', 
     sans-serif;  
+}
+.oba-cite-container {
+  /* border: 1px solid red; */
+  width: 5vw;
+  height: 5vh;
+}
+.cite-oba-oduduwa {
+    color: white;
+  font-size: .85em;
+  letter-spacing: 1.7px;
+  /* line-height: 1.25em; */
+  font-weight: 300;
+  font-family: 
+  'Roboto',
+'Playfair Display', 
+    sans-serif;  
+}.cite-oba-oduduwa:hover {
+  cursor: grab;
+  color: purple;
 }
 .oba-oduduwa-introduction-header-text {
   color: black;
@@ -1976,6 +1999,7 @@ img {
   #benin-artifact-14 {
     max-width: 40vw;
     max-height: 65vh;
+    transform: translate(-.5%, 0%)
   }
   #benin-artifact-10 {
     max-width: 39vw;
@@ -2203,7 +2227,7 @@ img {
     width: 30vw;
     text-align: right;
     /* border: 1px solid black; */
-    transform: translate(163.5%, 0%);
+    transform: translate(163.5%, 20%);
   }
   .oba-oduduwa-introduction-content-right {
     position: absolute;

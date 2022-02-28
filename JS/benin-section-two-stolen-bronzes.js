@@ -246,6 +246,7 @@ const statuetteMove = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             artifactsHeaderContainer.style.transition = '.75s ease-in-out';
             artifactsHeaderContainer.style.transform = 'translateY(-50%)';
+            artifactsImageContainer.style.animation = 'fade-in 1s ease-in';
 
             setTimeout(() => {
                 artifactsSlideStart();
@@ -253,8 +254,12 @@ const statuetteMove = new IntersectionObserver((entries) => {
                 artifactsImageContainer.style.visibility = 'visible';
             }, 1000)
         } else {
+            reset();
+            artifactsSlideEnd();
             artifactsHeaderContainer.style.transform = 'translateY(0%)';
             artifactsHeaderContainer.style.transition = '';
+            artifactsImageContainer.style.transition = '.1s ease-in-out';
+            artifactsImageContainer.style.visibility = 'hidden';
         }
     })
 }, statuetteView2);
