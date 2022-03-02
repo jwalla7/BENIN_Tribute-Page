@@ -1328,10 +1328,6 @@ img {
   width: 100vw;
   height: 100vh;
 }
-.benin-general-asoro-image {
-  width: 100vw;
-  height: 100vh;
-}
 
 .benin-general-asoro-container {
   width: 100vw;
@@ -1341,13 +1337,118 @@ img {
   transform: translate(0%, 0%);
   width: 100vw;
   height: 100vh;
+  /* width: auto; */
+  /* height: 100vh; */
 }
 .obas-of-benin-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
   width: 100vw;
   height: 100vh;
+  background-color: #4F3B3D;
+}
+.obas-of-benin-introduction-container {
+  position: relative;
+  z-index: 1;
+  background-color: #4F3B3D;
+  width: 44.5vw;
+  height: 100vh;
+}
+.obas-of-benin-header-container {
+  width: 40vw;
+  height: auto;
+  text-align: center;
+  transform: translate(10%, 0%)
+  /* border: 1px solid black; */
+  /* border-bottom-color: white; */
+}
+.obas-of-benin-header-text {
+  font-size: 35em;
+  color: #CFC488;
+  color: #d6bf87;
+  color: #be9659cd;
+  color: black;
+  color: white;
+  font-family: 
+  /* 'Roboto', */
+'kawoszehmedium',
+/* 'IM Fell French Canon', */
+/* 'Bodoni Moda', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+/* 'Montserrat', */
+'Playfair Display', 
+    sans-serif;  
+}
+.obas-of-benin-header-content-container {
+  width: 40vw;
+  height: 5vh;
+  transform: translate(18%, 0%);
+  border-top: 1px solid white;
+  text-align: center;
+  padding: 2% 0% 0% 0% ;
+}
+.obas-of-benin-header-content-text {
+  font-size: 1.15em;
+  color: #CFC488;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  font-family: 
+  /* 'Roboto', */
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+'Bodoni Moda',
+'junicodeitalic',
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+'Montserrat',
+'Playfair Display', 
+    sans-serif;  
+}
+.obas-of-benin-main-content-container {
+  display: flex;
+  column-gap: 2%;
+  width: 40vw;
+  height: 20vh;
+  transform: translate(18%, 0%);
+  /* border: 1px solid white; */
+}
+.obas-of-benin-main-content-left {
+  /* border: 1px solid red; */
+  width: 20vw;
+
+}
+.obas-of-benin-main-content-right {
+  text-align: justify;
+  /* border: 1px solid red; */
+  width: 20vw;
+
+}
+.obas-of-benin-main-content-text {
+  color: white;
+  font-size: .75em;
+  font-family: 
+  /* 'Roboto', */
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'Bodoni Moda', */
+  /* 'junicodeitalic', */
+  /* 'junicodeitaliccondensed', */
+  /* 'datalegreyadot', */
+  'Montserrat',
+  'Playfair Display', 
+  sans-serif;  
+}
+.obas-of-benin-background-image-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  transform: translate(28%, -110%);
+  z-index: 0;
 }
 .obas-of-benin-background-image {
-
 }
 
 .oba-oduduwa-header-container {
@@ -2207,6 +2308,29 @@ img {
     border: 1px solid black;
   }
   /* OBAS OF BENIN */
+  .obas-of-benin-background-image-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transform: translate(28%, -100%);
+    z-index: 0;
+  }
+  .obas-of-benin-header-content-container {
+    width: 40vw;
+    height: 5vh;
+    transform: translate(5%, 0%);
+    border-top: 1px solid white;
+    text-align: center;
+    padding: 2% 0% 0% 0% ;
+  }
+  .obas-of-benin-main-content-container {
+    display: flex;
+    column-gap: 2%;
+    width: 40vw;
+    height: 20vh;
+    transform: translate(5%, 0%);
+    /* border: 1px solid white; */
+  }
   /* ODUDUWA */
   .oba-oduduwa-image {
     width: auto;
@@ -2226,17 +2350,18 @@ img {
     z-index: 1;
     width: 30vw;
     text-align: right;
+    /* padding: 0% 1% 0% 0%; */
     /* border: 1px solid black; */
     transform: translate(163.5%, 20%);
   }
   .oba-oduduwa-introduction-content-right {
     position: absolute;
     right: 0;
-    width: 18.5vw;
+    width: 19.5vw;
     height: auto;
     /* border: 1px solid black; */
     text-align: justify;
     padding: 0% 0% 0% 1%;
-    transform: translate(-13.5%, -13%);
+    transform: translate(-7.5%, -10%);
   }
 }
