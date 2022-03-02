@@ -1365,7 +1365,7 @@ img {
   height: 50vh;
 }
 .warrior-color {
-  color: orange;
+  color: rgb(35, 35, 61);
 }
 .warriors-of-benin-header-text {
   font-size: 18em;
@@ -1381,7 +1381,16 @@ img {
 'Playfair Display', 
     sans-serif;  
 }
-
+.generals-of-benin-header-container {
+  width: 50vw;
+  height: 100vh;
+  background-color: rgb(35, 35, 61);
+}
+.generals-of-benin-content-container {
+  width: 50vw;
+  height: 100vh;
+  border: 1px solid red;
+}
 .benin-general-obasogie-container {
   position: relative;
   z-index: 2;
