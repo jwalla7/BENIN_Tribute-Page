@@ -1323,18 +1323,83 @@ img {
   width: 50vw;
   transform: translate(-4%, 10%);
 }
-
-.benin-general-asoro-container {
+.warriors-of-benin-header-container-top {
+  /* border: 1px solid blue; */
+  /* background-color: blue; */
+  position: relative;
+  z-index: 3;
+  width: 32vw;
+  height: 50vh;
+}
+.warriors-of-benin-header-container-top-two {
+  /* border: 1px solid green; */
+  position: relative;
+  z-index: 1;
+  width: 30vw;
+  height: 50vh; 
+  transform: translate(112%, -100%);
+}
+.warriors-of-benin-header-container-bottom-two {
+  /* border: 1px solid orange; */
+  position: relative;
+  z-index: 2;
+  width: 20vw;
+  height: 50vh;
+  transform: translate(100%, -310%);
+}
+.warriors-of-benin-header-container-bottom-one {
+  /* border: 1px solid purple; */
+  position: relative;
+  z-index: 2;
+  width: 20vw;
+  height: 50vh;
+  transform: translate(241%, -410%);
+}
+.warriors-of-benin-header-container-bottom {
+  /* background-color: red; */
+  /* border: 1px solid red; */
+  position: relative;
+  transform: translate(150%, -510%);
+  z-index: 1;
+  width: 40vw;
+  height: 50vh;
+}
+.warrior-color {
+  color: rgb(35, 35, 61);
+}
+.warriors-of-benin-header-text {
+  font-size: 18em;
+  font-family: 
+  /* 'Roboto', */
+/* 'kawoszehmedium', */
+/* 'IM Fell French Canon', */
+/* 'Bodoni Moda', */
+/* 'junicodeitalic', */
+/* 'junicodeitaliccondensed', */
+/* 'datalegreyadot', */
+/* 'Montserrat', */
+'Playfair Display', 
+    sans-serif;  
+}
+.generals-of-benin-header-container {
+  width: 50vw;
+  height: 100vh;
+  background-color: rgb(35, 35, 61);
+}
+.generals-of-benin-content-container {
+  width: 50vw;
+  height: 100vh;
+  border: 1px solid red;
+}
+.benin-general-obasogie-container {
+  position: relative;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
+  transform: translate(0%, -100%);
+  background-color: transparent;
 }
-
-.benin-general-asoro-container {
-  width: 100vw;
-  height: 100vh;
-}
-.benin-general-asoro-image {
-  transform: translate(0%, 0%);
+.benin-general-obasogie-image {
   width: 100vw;
   height: 100vh;
   /* width: auto; */
