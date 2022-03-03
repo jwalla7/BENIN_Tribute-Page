@@ -27,8 +27,12 @@ function mouseReact(event) {
     const centerY = imageOba.offsetTop + imageHeight / 2;
     const mouseX = event.clientX - centerX;
     const mouseY = event.clientY - centerY;
-    const rotateX = ((+1) * tiltSettings.max * mouseY / (imageHeight / 2)).toFixed(2);
-    const rotateY = ((-1) * tiltSettings.max * mouseX / (imageHeight / 2)).toFixed(2);
+    const rotateXUncapped = ((+1) * tiltSettings.max * mouseY / (imageHeight / 2)).toFixed(2);
+    const rotateYUncapped = ((-1) * tiltSettings.max * mouseX / (imageHeight / 2)).toFixed(2);
+    const rotateX = rotateXUncapped < -tiltSettings.max ? -tiltSettings.max :
+                    (rotateXUncapped > tiltSettings.max ? tiltSettings.max : rotateXUncapped);
+    const rotateY = rotateYUncapped < -tiltSettings.max ? -tiltSettings.max :
+                    (rotateYUncapped > tiltSettings.max ? tiltSettings.max : rotateYUncapped);
 
     imageOba.style.transform = `perspective(${tiltSettings.perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(${tiltSettings.scale}, ${tiltSettings.scale}, ${tiltSettings.scale})`;
 }
