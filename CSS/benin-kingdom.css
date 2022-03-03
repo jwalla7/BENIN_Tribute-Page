@@ -1402,8 +1402,7 @@ img {
 .benin-general-obasogie-image {
   width: 100vw;
   height: 100vh;
-  /* width: auto; */
-  /* height: 100vh; */
+  /* border: 1px solid red; */
 }
 .obas-of-benin-container {
   position: relative;
