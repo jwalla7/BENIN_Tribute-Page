@@ -1324,12 +1324,13 @@ img {
   transform: translate(-4%, 10%);
 }
 .warriors-of-benin-header-container-top {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   /* background-color: blue; */
   position: relative;
   z-index: 3;
   width: 32vw;
   height: 50vh;
+  transform: translate(20%, 0%);
 }
 .warriors-of-benin-header-container-top-two {
   /* border: 1px solid green; */
@@ -1337,7 +1338,7 @@ img {
   z-index: 1;
   width: 30vw;
   height: 50vh; 
-  transform: translate(112%, -100%);
+  transform: translate(105%, -100%);
 }
 .warriors-of-benin-header-container-bottom-two {
   /* border: 1px solid orange; */
@@ -1359,7 +1360,7 @@ img {
   /* background-color: red; */
   /* border: 1px solid red; */
   position: relative;
-  transform: translate(150%, -510%);
+  transform: translate(143%, -510%);
   z-index: 1;
   width: 40vw;
   height: 50vh;
@@ -2370,6 +2371,58 @@ img {
     float: right;
     transform: translate(0%, 50%);
     border: 1px solid black;
+  }
+  /* HEROES OF BENIN */
+  /* --> Warriors of Benin Text */
+  .warriors-of-benin-header-container-top {
+    border: 1px solid blue;
+    /* background-color: blue; */
+    position: relative;
+    z-index: 3;
+    width: 32vw;
+    height: 50vh;
+    transform: translate(0%, 0%);
+  }
+  .warriors-of-benin-header-container-top {
+    border: 1px solid red;
+    /* background-color: blue; */
+    position: relative;
+    z-index: 3;
+    width: 32vw;
+    height: 50vh;
+  }
+  .warriors-of-benin-header-container-top-two {
+    border: 1px solid green;
+    position: relative;
+    z-index: 1;
+    width: 30vw;
+    height: 50vh; 
+    transform: translate(112%, -100%);
+  }
+  .warriors-of-benin-header-container-bottom-two {
+    border: 1px solid orange;
+    position: relative;
+    z-index: 2;
+    width: 20vw;
+    height: 50vh;
+    transform: translate(100%, -310%);
+  }
+  .warriors-of-benin-header-container-bottom-one {
+    border: 1px solid purple;
+    position: relative;
+    z-index: 2;
+    width: 20vw;
+    height: 50vh;
+    transform: translate(241%, -410%);
+  }
+  .warriors-of-benin-header-container-bottom {
+    /* background-color: red; */
+    border: 1px solid greenyellow;
+    position: relative;
+    transform: translate(150%, -510%);
+    z-index: 1;
+    width: 40vw;
+    height: 50vh;
   }
   /* OBAS OF BENIN */
   .obas-of-benin-background-image-container {
