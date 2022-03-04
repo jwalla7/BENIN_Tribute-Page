@@ -1277,19 +1277,37 @@ img {
   z-index: 1;
 }
 .benin-artifact-leopard-image-container {
+  border: 1px solid white;
   position: relative;
   z-index: 0;
   width: 100vw;
   height: 100vh;
   text-align: center;
-  transform: translate(0%, 5%);
+  transform: translate(0%, -70%);
 }
 .benin-artifact-leopard-image {
-  width: 75%;
+  width: 65%;
   height: auto;
 }
+.benin-artifact-leopard-header-text-container {
+  border: 1px solid white;
+  width: 15vw;
+  height: 80vh;
+  text-align: center;
+}
 .benin-artifact-leopard-header-text {
-  color: #b1afa7;
+  font-size: 1.25em;
+  font-family:
+  /* 'Roboto', */
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'Bodoni Moda', */
+  /* 'junicodeitalic', */
+  /* 'datalegreyadot', */
+  /* 'Montserrat', */
+  'Playfair Display',   
+  sans-serif;
+  color: white;
 }
 .three {
   align-items: center;
