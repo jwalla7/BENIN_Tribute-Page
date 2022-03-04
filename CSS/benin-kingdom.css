@@ -1266,6 +1266,31 @@ img {
   max-height: 100vh;
 }
 
+.benin-artifact-leopard-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #020101;
+  /* background-color: #b8a769 ; */
+}
+.benin-artifact-leopard-header-container {
+  position: relative;
+  z-index: 1;
+}
+.benin-artifact-leopard-image-container {
+  position: relative;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  transform: translate(0%, 5%);
+}
+.benin-artifact-leopard-image {
+  width: 75%;
+  height: auto;
+}
+.benin-artifact-leopard-header-text {
+  color: #b1afa7;
+}
 .three {
   align-items: center;
   align-content: center;
