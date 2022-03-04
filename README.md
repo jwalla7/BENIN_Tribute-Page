@@ -7,6 +7,9 @@ Benin Marvels, quick facts about Ancient Benin
 ## The Artifacts
 ![benin-screenshot](https://user-images.githubusercontent.com/89559981/155896127-206796f8-fe0c-4685-8e77-8d295057b354.png)
 
-## Dynasties of Benin
+## Heroes of Benin
+![benin-screenshot](https://user-images.githubusercontent.com/89559981/156829615-4e4fc1c6-89c3-4157-ba5c-e2eb86d85ade.png)
+
+## Kings of Benin
 ![benin-screenshot](https://user-images.githubusercontent.com/89559981/155899719-7a57f24c-b911-423e-9af6-cb3dc8c555fa.png)
 
