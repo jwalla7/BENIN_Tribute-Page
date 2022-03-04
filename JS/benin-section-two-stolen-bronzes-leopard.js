@@ -3,7 +3,7 @@ const leopardImage = document.querySelector('.benin-artifact-leopard-image');
 
 // --> Tilt Settings
 const tiltSettingsLeo = {
-    max: 15,
+    max: 20,
     perspective: 800,
     scale: 1.05
 };

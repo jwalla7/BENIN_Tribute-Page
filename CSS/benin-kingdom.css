@@ -1408,52 +1408,101 @@ img {
   width: 50vw;
   transform: translate(-4%, 10%);
 }
+.warriors-of-benin-empty-space-container-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  border: 1px solid grey;
+  width: 65vw;
+  height: 10vh; 
+}
+.warriors-of-benin-empty-space-container-middle {
+  /* border: 1px solid rgb(51, 51, 51); */
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 48vw;
+  height: 20vh;
+  transform: translate(0%, 50%); 
+}
+.warriors-of-benin-empty-space-container-bottom-left {
+  /* border: 1px solid rgb(56, 56, 56); */
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 8vw;
+  height: 40vh; 
+  transform: translate(-46em, 17.9em); 
+}
+.warriors-of-benin-empty-space-container-bottom-right {
+  /* border: 1px solid rgb(0, 0, 0); */
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 31vw;
+  height: 35vh; 
+  transform: translate(0em, 17.9em);
+}
 .warriors-of-benin-header-container-top {
   border: 1px solid blue;
   /* background-color: blue; */
-  position: relative;
+  position: absolute;
+  top: 0;
+  overflow: visible;  
   z-index: 3;
-  width: 32vw;
-  height: 50vh;
-  transform: translate(20%, 0%);
+  width: .1vw;
+  height: .1vh;
+  transform: translate(10em, 0%);
 }
 .warriors-of-benin-header-container-top-two {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   position: relative;
+  overflow: visible;
   z-index: 1;
-  width: 30vw;
-  height: 50vh; 
-  transform: translate(105%, -100%);
+  width: .1vw;
+  height: .1vh; 
+  transform: translate(41.5em, 0em);
 }
 .warriors-of-benin-header-container-bottom-two {
-  /* border: 1px solid orange; */
-  position: relative;
+  border: 1px solid orange;
+  position: absolute;
+  bottom: 0;
+  overflow: visible;
   z-index: 2;
-  width: 20vw;
-  height: 50vh;
-  transform: translate(100%, -310%);
+  width: .1vw;
+  height: .1vh;
+  transform: translate(30em, -33em);
 }
 .warriors-of-benin-header-container-bottom-one {
-  /* border: 1px solid purple; */
-  position: relative;
+  border: 1px solid purple;
+  position: absolute;
+  top: 0;
+  overflow: visible;
   z-index: 2;
-  width: 20vw;
-  height: 50vh;
-  transform: translate(241%, -410%);
+  width: .1vw;
+  height: .1vh;
+  transform: translate(60em, 25em);
 }
 .warriors-of-benin-header-container-bottom {
   /* background-color: red; */
-  /* border: 1px solid red; */
+  border: 1px solid red;
   position: relative;
-  transform: translate(143%, -510%);
+  overflow: visible;
   z-index: 1;
-  width: 40vw;
-  height: 50vh;
+  width: .1vw;
+  height: .1vh;
+  transform: translate(70.5em, -33em);
 }
 .warrior-color {
   color: rgb(35, 35, 61);
 }
 .warriors-of-benin-header-text {
+  position: relative;
+  z-index: 2;
   font-size: 18em;
   font-family: 
   /* 'Roboto', */
@@ -1482,7 +1531,7 @@ img {
   z-index: 2;
   width: 100vw;
   height: 100vh;
-  transform: translate(0%, -100%);
+  transform: translate(0%, -.2%);
   background-color: transparent;
 }
 .benin-general-obasogie-image {
