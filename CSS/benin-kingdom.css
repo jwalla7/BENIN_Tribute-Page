@@ -509,7 +509,7 @@ img {
 .benin-origin-introduction-container {
   width: 100vw;
   height: 100vh;
-  background-color: #070709;
+  background-color: #050507;
   text-align: center;
   padding: 10% 28%;
 }
@@ -532,26 +532,10 @@ img {
   text-align: start;
 }
 .benin-origin-introduction-text-left {
-  color:rgb(255, 255, 254);
+  color: rgba(220, 204, 147, 0.878) ;
   font-family: 
-  /* 'jacques_francoisregular', */
-  /* 'junicodeitalic', */
-  /* 'junicodeitaliccondensed', */
-  /* 'deluce_freeitalic', */
-  /* 'deluce_freeregular', */
-  /* 'Roboto',  */
-  /* 'kawoszehmedium', */
-  /* 'IM Fell French Canon', */
-  /* 'Montserrat', */
   'Playfair Display',
-  /* 'kawoszehmedium', */
-  /* 'IM Fell French Canon', */
-  /* 'datalegreyadot', */
-  /* 'Montserrat', */
-  /* 'Bodoni Moda', */
-  /* 'datalegreyadot', */
-  'Montserrat',
-  /* 'Playfair Display',  */
+  'Bodoni Moda',
   sans-serif;
   font-size: 2.35rem;
   /* font-weight: bold; */
@@ -560,15 +544,9 @@ img {
 .benin-origin-introduction-text-right {
   color: white;
   font-family: 
-  /* 'jacques_francoisregular', */
   'junicodeitalic',
-  /* 'junicodeitaliccondensed', */
-  /* 'Roboto',  */
-  /* 'IM Fell French Canon', */
-  /* 'Montserrat', */
-  /* 'Playfair Display', */
-  /* 'Bodoni Moda', */
-  /* 'Montserrat', */
+  'junicodeitaliccondensed',
+  'jacques_francoisregular',
   sans-serif;
   font-size: 2.5rem;
   letter-spacing: 2.7px;
@@ -2215,6 +2193,27 @@ img {
     width: 60vw;
     height: 30vh;
     transform: translate(-12%, 70%);
+  }
+  .benin-origin-introduction-text-left {
+    color: rgba(220, 204, 147, 0.878) ;
+    font-family: 
+    'Playfair Display',
+    'Bodoni Moda',
+    sans-serif;
+    font-size: 2.35rem;
+    /* font-weight: bold; */
+    letter-spacing: 2.25px;
+  }
+  .benin-origin-introduction-text-right {
+    color: white;
+    font-family: 
+    'junicodeitalic',
+    'junicodeitaliccondensed',
+    'jacques_francoisregular',
+    sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2.7px;
+    font-style: italic;
   }
 /* BENIN BRONZES */
   .two-horizontal {
