@@ -509,7 +509,8 @@ img {
 .benin-origin-introduction-container {
   width: 100vw;
   height: 100vh;
-  background-color: #050507;
+  background-color: black;
+  /* background-color: #050507; */
   text-align: center;
   padding: 10% 28%;
 }
@@ -524,12 +525,16 @@ img {
   /* border: 1px solid greenyellow; */
   width: 20vw;
   text-align: end;
+  transition: visibility 2s ease-in;
+  visibility: hidden;
 }
 .benin-origin-introduction-text-container-right {
   /* border: 1px solid red; */
   width: 40vw;
   padding: .5%;
   text-align: start;
+  transition: visibility 1s ease-in;
+  visibility: hidden;
 }
 .benin-origin-introduction-text-left {
   color: rgba(220, 204, 147, 0.878) ;
@@ -1349,14 +1354,22 @@ img {
   /* transform: translate(25%, 50%); */
 }
 .benin-artifact-leopard-header-text-container {
+  display: flex;
+  z-index: 0;
   border: 1px solid white;
-  width: 19vw;
+  width: 30vw;
   height: 80vh;
   text-align: center;
-  transform: translate(-8%, 0%);
+  transform: translate(0%, 0%);
 }
-.benin-artifact-leopard-header-text {
-  font-size: 1em;
+.benin-artifact-leopard-header-text-left-container {
+
+}
+.benin-artifact-leopard-header-text-right-container {
+
+}
+.benin-artifact-leopard-header-text-left {
+  font-size: 10em;
   font-family:
   /* 'Roboto', */
   /* 'kawoszehmedium', */
@@ -1365,9 +1378,24 @@ img {
   /* 'junicodeitalic', */
   /* 'datalegreyadot', */
   /* 'Montserrat', */
-  'Playfair Display',   
+  'Playfair Display',
   sans-serif;
-  color: black;
+  letter-spacing: 1.7px;
+  color: white;
+}
+.benin-artifact-leopard-header-text-right {
+  font-size: 1em;
+  font-family:
+  /* 'Roboto', */
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'Bodoni Moda', */
+  /* 'junicodeitalic', */
+  /* 'datalegreyadot', */
+  'Montserrat',
+  /* 'Playfair Display',    */
+  sans-serif;
+  color: white;
 }
 .three {
   align-items: center;
@@ -1407,7 +1435,32 @@ img {
   max-width: 650px;
   margin: 1% 0 0 39%;
 }
-
+/* BENIN GREAT WALL */
+.benin-great-wall-header-container {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+.benin-great-wall-header-image-container {
+  position: relative;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transform: translate(0%, -100%);
+}
+.benin-great-wall-header-text {
+  color: rgb(255, 255, 255);
+  font-family: 
+  sans-serif;
+  font-size: 9.2rem;
+}
+.benin-great-wall-image {
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(40%);
+}
 .the-great-wall-container {
   width: 100vw;
   height: 100vh;
