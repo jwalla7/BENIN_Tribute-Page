@@ -294,6 +294,7 @@ section {
 -moz-transform: translate(-260%, -4.5%);
 }
 
+/* Homepage Display */
 .benin-bronze-warrior-container {
   z-index: 2;
   width: 16vw;
@@ -440,6 +441,8 @@ ul {
   width: 5vw;
 }
 /* Section ONE */
+
+/* Did You Know? */
 #introParaContainer {
   max-width: 45%;
   margin: 15% 0 0 0;
@@ -502,7 +505,77 @@ img {
 .two {
   scroll-snap-align: scroll;
 }
+/* Pre-Historic Origins */
+.benin-origin-introduction-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #070709;
+  text-align: center;
+  padding: 10% 28%;
+}
+.benin-origin-introduction-header-container {
+  /* border: 1px solid white; */
+  display: flex;
+  width: 60vw;
+  height: 30vh;
+  transform: translate(-5%, 50%);
+}
+.benin-origin-introduction-text-container-left {
+  /* border: 1px solid greenyellow; */
+  width: 20vw;
+  text-align: end;
+}
+.benin-origin-introduction-text-container-right {
+  /* border: 1px solid red; */
+  width: 40vw;
+  padding: .5%;
+  text-align: start;
+}
+.benin-origin-introduction-text-left {
+  color:rgb(255, 255, 254);
+  font-family: 
+  /* 'jacques_francoisregular', */
+  /* 'junicodeitalic', */
+  /* 'junicodeitaliccondensed', */
+  /* 'deluce_freeitalic', */
+  /* 'deluce_freeregular', */
+  /* 'Roboto',  */
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'Montserrat', */
+  'Playfair Display',
+  /* 'kawoszehmedium', */
+  /* 'IM Fell French Canon', */
+  /* 'datalegreyadot', */
+  /* 'Montserrat', */
+  /* 'Bodoni Moda', */
+  /* 'datalegreyadot', */
+  'Montserrat',
+  /* 'Playfair Display',  */
+  sans-serif;
+  font-size: 2.35rem;
+  /* font-weight: bold; */
+  letter-spacing: 2.25px;
+}
+.benin-origin-introduction-text-right {
+  color: white;
+  font-family: 
+  /* 'jacques_francoisregular', */
+  'junicodeitalic',
+  /* 'junicodeitaliccondensed', */
+  /* 'Roboto',  */
+  /* 'IM Fell French Canon', */
+  /* 'Montserrat', */
+  /* 'Playfair Display', */
+  /* 'Bodoni Moda', */
+  /* 'Montserrat', */
+  sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2.7px;
+  font-style: italic;
+}
 
+/* Benin Bronzes */
 .two-horizontal {
   display: flex;
   position: sticky;
@@ -2134,6 +2207,14 @@ img {
     transition: ease-in 1s;
     text-underline-offset: 5%;
     text-decoration: underline;
+  }
+/* PREHISTORIC ORIGINS */
+  .benin-origin-introduction-header-container {
+    /* border: 1px solid white; */
+    display: flex;
+    width: 60vw;
+    height: 30vh;
+    transform: translate(-12%, 70%);
   }
 /* BENIN BRONZES */
   .two-horizontal {
