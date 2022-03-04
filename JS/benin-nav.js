@@ -4,7 +4,7 @@ const tableOfContents = document.querySelector('.nav-return-to-page-container');
 
 function scrollToTableOfContents(event) {
     location.href = '#table-of-contents';
-    preventDefault();
+    // preventDefault();
 
 };
 
@@ -21,7 +21,7 @@ const observeBenin1897 = new IntersectionObserver ((entries) => {
         } else {
             // do something
             navTableBtn.style.transition = '';
-            navTableBtn.style.visibility = ''
+            navTableBtn.style.visibility = '';
         }
     })
 }, viewPort1);
