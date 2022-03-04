@@ -215,6 +215,39 @@ section {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+/* Navigation */
+.nav-return-to-table-of-contents-container {
+  z-index: 10;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 225px;
+  height: 75px;
+  margin: 20px / 2;
+  transform: translate(-20%, -100%) scale(.8);
+  background-color: black;
+  border-radius: 50000px;
+  visibility: hidden;
+}.nav-return-to-table-of-contents-container:hover {
+  cursor: grab;
+  transition: background-color 500ms ease-in;
+  background-color: grey;
+}
+.nav-return-to-table-of-contents-text-container {
+  transform: translate(0%, 115%);
+  text-align: center;
+}
+.nav-return-to-table-of-contents-text {
+  color: white;
+  font-size: 1.45em;
+  letter-spacing: 2.7px;
+  font-family:
+  'junicodeitaliccondensed',
+  'Playfair Display',
+  'Roboto',
+  sans-serif;
+}
 .stolenBronzesContainer {
   /* position */
   width: 100vw;

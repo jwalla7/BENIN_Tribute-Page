@@ -17,8 +17,22 @@
   <title>Benin Project Tribute Page BYjwalla7</title>
 </head>
 
-<body>
+<header>
+  <!-- HEADER -->
+  <nav class="nav-return-to-page-container">
+    <!-- NAVIGATION -->
+    <div class="nav-return-to-table-of-contents-container" onclick="scrollToTableOfContents(); return false;" >
+      <div class="nav-return-to-table-of-contents-text-container">
+        <span class="nav-return-to-table-of-contents-text">
+          Table of Contents
+        </span>
+      </div>
+    </div>
+    <div class="nav-return-to-benin-bronzes-1897-container"></div>
+  </nav>
+</header>
 
+<body>
     <!--BODY-->
   <div class='container'>
     <!--STOLEN BRONZES-->
@@ -50,7 +64,7 @@
       </nav>
     </section>  
     <!-- Table of Contents -->
-    <section class='table-of-contents-container'>
+    <section class='table-of-contents-container' id="table-of-contents">
       <div class="title-container">
         <span class="title-text">Contents</span>
       </div>
@@ -677,6 +691,7 @@
 
 
 <!-- JavaScript Path -->
+<script src='/JS/benin-nav.js'></script>
 <script src='/JS/benin-main-window.js'></script>
 <script src='/JS/benin-section-one.js'></script>
 <script src='/JS/benin-section-two-stolen-bronzes.js'></script>

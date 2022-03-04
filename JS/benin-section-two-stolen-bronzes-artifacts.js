@@ -22,7 +22,7 @@ const artifactsSlideStart = () => {
         elementIndex = 0;
     }
     div[elementIndex - 1].style.display = 'block';
-    artifactsSlide = setTimeout(artifactsSlideStart, 6000);
+    artifactsSlide = setTimeout(artifactsSlideStart, 3500);
 };
 // stop
 const artifactsSlideEnd = () => {
