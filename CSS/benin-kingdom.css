@@ -537,7 +537,7 @@ img {
   visibility: hidden;
 }
 .benin-origin-introduction-text-left {
-  color: rgba(220, 204, 147, 0.878) ;
+  color: rgba(220, 204, 147, 0.878);
   font-family: 
   'Playfair Display',
   'Bodoni Moda',
@@ -1457,6 +1457,7 @@ img {
 .benin-great-wall-header-container {
   position: relative;
   z-index: 1;
+  padding: 1%;
   width: 100vw;
   height: 100vh;
 }
@@ -2579,7 +2580,7 @@ img {
     padding: 2%;
     width: 25vw;
     text-align: justify;
-    transform: translate(20%, 3%);
+    transform: translate(20%, 20%);
   }
   .benin-artifact-leopard-header-text-left {
     font-size: 11em;
@@ -2600,7 +2601,6 @@ img {
     font-size: 1em;
     font-family:
     /* 'Roboto', */
-    /* 'kawoszehmedium', */
     /* 'IM Fell French Canon', */
     /* 'Bodoni Moda', */
     'junicodeitalic',
@@ -2608,6 +2608,7 @@ img {
     /* 'Montserrat', */
     /* 'Playfair Display',    */
     sans-serif;
+    font-weight: lighter;
     letter-spacing: 1.7px;
     color: white;
   }
