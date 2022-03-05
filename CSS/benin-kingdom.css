@@ -1336,7 +1336,6 @@ img {
     width: 20vw;
   height: 100vh;
   background-color: #020101;
-  background-color: #c0b27d ;
 }
 .benin-artifact-leopard-image-container {
   /* border: 1px solid white; */
@@ -1346,7 +1345,7 @@ img {
   width: 80vw;
   height: 80vh;
   text-align: center;
-  transform: translate(25%, -100%);
+  transform: translate(30%, -100%);
 }
 .benin-artifact-leopard-image {
   width: 65%;
@@ -1354,11 +1353,12 @@ img {
   /* transform: translate(25%, 50%); */
 }
 .benin-artifact-leopard-header-text-container {
-  display: flex;
+  /* border: 1px solid white; */
+  /* display: flex; */
   z-index: 0;
-  border: 1px solid white;
-  width: 30vw;
-  height: 80vh;
+  width: 35vw;
+  height: 95vh;
+  padding: 2%;  
   text-align: center;
   transform: translate(0%, 0%);
 }
@@ -1366,10 +1366,14 @@ img {
 
 }
 .benin-artifact-leopard-header-text-right-container {
-
+  /* border: 1px solid greenyellow; */
+  padding: 2%;
+  width: 16vw;
+  text-align: justify;
+  transform: translate(60%, 4%);
 }
 .benin-artifact-leopard-header-text-left {
-  font-size: 10em;
+  font-size: 12em;
   font-family:
   /* 'Roboto', */
   /* 'kawoszehmedium', */
@@ -1390,12 +1394,26 @@ img {
   /* 'kawoszehmedium', */
   /* 'IM Fell French Canon', */
   /* 'Bodoni Moda', */
-  /* 'junicodeitalic', */
+  'junicodeitalic',
   /* 'datalegreyadot', */
-  'Montserrat',
+  /* 'Montserrat', */
   /* 'Playfair Display',    */
   sans-serif;
+  letter-spacing: 1.7px;
   color: white;
+}
+.cite-container-leopard {
+  width: 10vw;
+}
+.benin-artifact-leopard-cite {
+  color: white;
+  font-size: 1em;
+  font-family: 
+  'Roboto',
+  sans-serif;
+}.benin-artifact-leopard-cite:hover {
+  cursor: grab;
+  color: purple;
 }
 .three {
   align-items: center;
@@ -2543,6 +2561,55 @@ img {
     padding: 3%;
     text-align: center;
     transform: translate(-215%, 325%);
+  }
+  /* Leopard Artifact */
+  .benin-artifact-leopard-header-text-container {
+    /* border: 1px solid white; */
+    /* display: flex; */
+    z-index: 0;
+    width: 35vw;
+    height: 95vh;
+    text-align: center;
+    transform: translate(0%, 0%);
+  }
+  .benin-artifact-leopard-header-text-left-container {
+  }
+  .benin-artifact-leopard-header-text-right-container {
+    /* border: 1px solid greenyellow; */
+    padding: 2%;
+    width: 25vw;
+    text-align: justify;
+    transform: translate(20%, 3%);
+  }
+  .benin-artifact-leopard-header-text-left {
+    font-size: 11em;
+    font-family:
+    /* 'Roboto', */
+    /* 'kawoszehmedium', */
+    /* 'IM Fell French Canon', */
+    /* 'Bodoni Moda', */
+    /* 'junicodeitalic', */
+    /* 'datalegreyadot', */
+    /* 'Montserrat', */
+    'Playfair Display',
+    sans-serif;
+    letter-spacing: 1.7px;
+    color: white;
+  }
+  .benin-artifact-leopard-header-text-right {
+    font-size: 1em;
+    font-family:
+    /* 'Roboto', */
+    /* 'kawoszehmedium', */
+    /* 'IM Fell French Canon', */
+    /* 'Bodoni Moda', */
+    'junicodeitalic',
+    /* 'datalegreyadot', */
+    /* 'Montserrat', */
+    /* 'Playfair Display',    */
+    sans-serif;
+    letter-spacing: 1.7px;
+    color: white;
   }
 /* THE PEOPLE */
   .subIntroParaCite {
