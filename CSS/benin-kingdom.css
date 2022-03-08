@@ -1457,7 +1457,7 @@ img {
 .benin-great-wall-header-container {
   position: relative;
   z-index: 1;
-  padding: 1%;
+  padding: 1.5%;
   width: 100vw;
   height: 100vh;
 }
@@ -1480,6 +1480,8 @@ img {
   height: 100vh;
   filter: brightness(40%);
 }
+
+
 .the-great-wall-container {
   width: 100vw;
   height: 100vh;
@@ -1487,9 +1489,9 @@ img {
 }
 
 .the-great-wall-header-text-container {
+  border: 1px solid red;
   position: absolute;
   left: 0;
-  /* border: 1px solid red; */
   transform: translate(-115%, 0);
   width: 50vw;
   height: 100vh;
@@ -1505,7 +1507,7 @@ img {
 .the-great-wall-header-text-right-container {
   position: absolute;
   left: 0;
-  /* border: 1px solid red; */
+  border: 1px solid orange;
   transform: translate(-115%, 10%);
   width: 50vw;
   height: 100vh;
@@ -1531,6 +1533,8 @@ img {
   width: 50vw;
   transform: translate(-4%, 10%);
 }
+
+/* BENIN HEROES */
 .warriors-of-benin-empty-space-container-top {
   /* border: 1px solid grey; */
   position: absolute;
@@ -2640,73 +2644,7 @@ img {
     width: 100vw;
   }
   /* THE GREAT WALL OF BENIN */
-  .the-great-wall-header-text-container {
-    position: absolute;
-    left: 0;
-    /* border: 1px solid red; */
-    transform: translate(-120%, 25%);
-    width: 25vw;
-    height: 30vh;
-    font-size: 5rem;
-    text-align: start;
-    font-weight: 400;
-    font-family: 'Catamaran', sans-serif;
-  }
 
-  .the-great-wall-image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 1%;
-    transform: translate(-230%, 10%);
-    width: 25vw;
-    height: 40vh;
-    border-right: 2px solid black;
-  }
-  .benin-great-wall-image-container {
-    position: absolute;
-    left: 0;
-    margin: 0 0 0 25%;
-    width: 13vw;
-    overflow: hidden;
-  }
-
-  .the-great-wall-content-container-left {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(-105%, -25%);
-    width: 50vw;
-    height: 40vh;
-    border: 1px solid red;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.45em;
-    letter-spacing: 1.7px;
-  }
-  .the-great-wall-content-text {
-  }
-  .the-great-wall-content-text-middle {
-  }
-  .the-great-wall-content-container-right{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(-6.5%, -5%);
-    width: 40vw;
-    height: 91vh;
-    border: 1px solid blue;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.45em;
-    letter-spacing: 1.7px;
-  }
-  .iya-map-container {
-    width: 20vw;
-    float: right;
-    transform: translate(0%, 50%);
-    border: 1px solid black;
-  }
   /* HEROES OF BENIN */
   /* --> Warriors of Benin Text */
   .warriors-of-benin-empty-space-container-top {

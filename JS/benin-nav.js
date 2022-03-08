@@ -16,11 +16,9 @@ const viewPort1 = {
 const observeBenin1897 = new IntersectionObserver ((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // do something
             navTableBtn.style.transition = ' 500ms ease-in';
             navTableBtn.style.visibility = 'visible';
         } else {
-            // do something
             navTableBtn.style.transition = '';
             navTableBtn.style.visibility = 'hidden';
         }
