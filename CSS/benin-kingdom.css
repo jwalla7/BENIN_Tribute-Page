@@ -135,7 +135,9 @@ section {
 .js-scroll.scrolled {
   background-color: aquamarine;
 }
-
+.scroll-container {
+  min-width: 100%;
+}
 .scroll-caption {
   /* animation: fade-in 1s ease-in-out both; */
 }
@@ -267,8 +269,10 @@ section {
   position: absolute;
   transform: scale(1) translateY(-1%);
   z-index: 2;
-  height: 80%;
-  width: 10.55vw;
+  /* height: 80%; */
+  /* width: 10.55vw; */
+  height: 810px;
+  width: 199px;
   padding: 4% 0% 0% 8.5%;
   margin: 2% 0 0 45.4%;
     /* font style */
@@ -297,7 +301,8 @@ section {
 /* Homepage Display */
 .benin-bronze-warrior-container {
   z-index: 2;
-  width: 16vw;
+  /* width: 16vw; */
+  width: 300px;
   position: absolute;
   top: 0;
   left: 0;
@@ -306,7 +311,8 @@ section {
 
 .benin-bronze-woman-container {
   z-index: 1;
-  width: 15vw;
+  /* width: 15vw; */
+  width: 285.5px;
   position: absolute;
   top: 0;
   right: 0;
@@ -2192,76 +2198,6 @@ img {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1440px) {
-  .navHeader {
-    position: absolute;
-    bottom: 0;
-    width: 50vw;
-    height: 10vh;
-    transform: translate(66%, 10%);
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    letter-spacing: 1.7px;
-    /* text-align: end; */
-    /* margin-top: -580px; */
-    /* margin-left: 1451px; */
-    background-color: rgb(255,255,255);
-    /* border: 1px solid red; */
-    z-index: 1;
-  }
-  .navButton {
-    /* position */
-    position: relative;
-    transform: scale(1) translate(0%, 5%);
-    z-index: 2;
-    height: 80%;
-    /* max-width: 100%; */
-    width: 10.55vw;
-    padding: 4%;
-    margin: 2% 0 0 46% ;
-      /* font style */
-    font-family: 'Playfair Display','Roboto', sans-serif;
-    font-size: 175%;
-    letter-spacing: 4.7px;
-    color: rgb(255,255,255);
-    /* font position */
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    text-transform: uppercase;
-    text-align: center;
-    align-items: center;
-    /* border */
-    border-style: solid;
-    border-color: rgb(0,0,0);
-    border-width: 5px 5px 5px 5px;
-    /* background */
-    background-color: rgb(0,0,0);
-  }
-  .nav-button-text-container {
-    font-size: 100%;
-    -moz-transform: translate(-230%, -10%);
-  }
-  .benin-bronze-warrior-container {
-      z-index: 2;
-      width: 20vw;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(164%, 6%); 
-  }
-  .benin-bronze-woman-container {
-      z-index: 1;
-      width: 20vw;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-156%, 6%);
-  }
-
-  .nav-header-text:hover {
-    transition: ease-in 1s;
-    text-underline-offset: 5%;
-    text-decoration: underline;
-  }
 /* PREHISTORIC ORIGINS */
   .benin-origin-introduction-header-container {
     /* border: 1px solid white; */
@@ -2520,7 +2456,7 @@ img {
   #benin-artifact-12 {
     max-width: 40vw;
     max-height: 65vh;
-    transform: translate(0%, -5%)scale(.8);
+    transform: translate(0%, -5%) scale(.8);
   }
   #benin-artifact-18 {
     max-width: 40vw;

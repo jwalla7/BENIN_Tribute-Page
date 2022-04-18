@@ -1,0 +1,201 @@
+@media only screen and (min-width: 0px) and (max-width: 1270px) {
+
+    .navHeader {
+        position: absolute;
+        bottom: 0;
+        width: 50vw;
+        height: 10vh;
+        transform: translate(66%, 10%);
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        letter-spacing: 1.7px;
+        /* text-align: end; */
+        /* margin-top: -580px; */
+        /* margin-left: 1451px; */
+        background-color: rgb(255, 255, 255);
+        /* border: 1px solid red; */
+        z-index: 1;
+    }
+    
+    .benin-bronze-warrior-container {
+        z-index: 2;
+        width: 20vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(164%, 6%);
+    }
+    
+    .benin-bronze-woman-container {
+        z-index: 1;
+        width: 20vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-156%, 6%);
+    }
+    
+    .nav-header-text:hover {
+        transition: ease-in 1s;
+        text-underline-offset: 5%;
+        text-decoration: underline;
+    }
+
+    .navButton {
+        /* position */
+        position: relative;
+        transform: scale(1) translate(0%, 5%);
+        z-index: 2;
+        height: 80%;
+        /* max-width: 100%; */
+        width: 10.55vw;
+        padding: 4%;
+        margin: 2% 0 0 46%;
+        /* font style */
+        font-family: 'Playfair Display', 'Roboto', sans-serif;
+        font-size: 175%;
+        letter-spacing: 4.7px;
+        color: rgb(255, 255, 255);
+        /* font position */
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        text-transform: uppercase;
+        text-align: center;
+        align-items: center;
+        /* border */
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-width: 5px 5px 5px 5px;
+        /* background */
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .nav-button-text-container {
+        font-size: 100%;
+        -moz-transform: translate(-230%, -10%);
+    }
+
+    /* Did You Know */
+    #introParaContainer {
+    max-width: 45%;
+    margin: 15% 0 0 0;
+    height: auto;
+    padding: 20% 1% 1% 3%;
+    }
+    #subIntroPara {
+        max-width: 60%;
+        padding: 5%;
+        margin: -16.5% 0 0 45%;
+        /*font-style*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 175%;
+        letter-spacing: 1.7px;
+        /*font-position*/
+        text-align: justify;
+        /* border */
+        border-style: solid;
+        border-color: rgb(255, 255, 255);
+    }
+    .subIntroParaCite {
+        display: flex;
+        position: absolute;
+        right: 0;
+        transform: translate(-16em, -2.7em);
+        font-size: 65%;
+        opacity: 90%;
+    } 
+    /* BENIN BRONZES */
+    .two-horizontal {
+        display: flex;
+        position: sticky;
+        /* border: 3px solid blue; */
+        /* background-color: black; */
+        width: 100vh;
+        height: 100vw;
+        align-items: center;
+        justify-content: center;
+        /* overflow-y: auto; */
+        overflow-y: inherit;
+        overflow-x: hidden;
+        transform-origin: right top;
+        transform: rotate(-90deg) translate(0%, -49.93%);
+        margin: 0 0 0 -11.19%;
+        perspective: 1px;
+    }
+    .stolen-bronzes-final-container {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        scroll-snap-align: start;
+    }
+    
+    .stolen-bronzes-final-text-container {
+        /* border: 1px solid red; */
+        width: 50vw;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        transform: translate(55%, 35%);
+    }
+    
+    .stolen-bronzes-final-text {
+        font-size: 8.5em;
+        font-family:
+            /* 'jacques_francoisregular', */
+            'junicodeitalic',
+            /* 'deluce_freeitalic', */
+            /* 'deluce_freeregular', */
+            sans-serif;
+        font-weight: bolder;
+    }
+    .cite-container {
+        transform: translate(90%, -80%);
+        width: 50vw;
+        height: 10vh;
+    }
+    /* The Artifacts */
+    .benin-artifacts-display-content-container {
+        /* display: flex; */
+        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 35vw;
+        height: 70vh;
+        /* padding: 2%; */
+        /* column-gap: 5%; */
+        /* row-gap: -50%;  */
+        /* flex-wrap: wrap;  */
+        transform: translate(82%, -6%);
+        /* border: 1px solid red; */
+    }
+    
+    .benin-artifacts-display-right-toggle-button-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* border: 1px solid black; */
+        width: 10vw;
+        height: 15vh;
+        padding: 3%;
+        text-align: center;
+        transform: translate(-230%, 325%);
+    }
+    
+    .benin-artifacts-display-left-toggle-button-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* border: 1px solid black; */
+        width: 10vw;
+        height: 15vh;
+        padding: 3%;
+        text-align: center;
+        transform: translate(200%, 325%);
+    }
+    
+}
