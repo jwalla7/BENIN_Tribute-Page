@@ -1,6 +1,6 @@
 @media only screen and (min-width: 0px) and (max-width: 1270px) {
 
-    .navHeader {
+    #navHeader {
         position: absolute;
         bottom: 0;
         width: 50vw;
@@ -17,22 +17,22 @@
         z-index: 1;
     }
     
-    .benin-bronze-warrior-container {
+    #benin-bronze-warrior-container {
         z-index: 2;
         width: 20vw;
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate(164%, 6%);
+        transform: translate(164%, 12%);
     }
     
-    .benin-bronze-woman-container {
+    #benin-bronze-woman-container {
         z-index: 1;
         width: 20vw;
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-156%, 6%);
+        transform: translate(-156%, 11%);
     }
     
     .nav-header-text:hover {
@@ -41,7 +41,7 @@
         text-decoration: underline;
     }
 
-    .navButton {
+    #navButton {
         /* position */
         position: relative;
         transform: scale(1) translate(0%, 5%);
@@ -70,7 +70,7 @@
         background-color: rgb(0, 0, 0);
     }
     
-    .nav-button-text-container {
+    #nav-button-text-container {
         font-size: 100%;
         -moz-transform: translate(-230%, -10%);
     }
