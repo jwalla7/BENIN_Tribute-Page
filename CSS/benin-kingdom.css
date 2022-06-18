@@ -255,7 +255,7 @@ section {
 
 #stolenBronzesContainer {
   /* border: solid red 1px; */
-  z-index: 1;
+  z-index: 0;
   width: 100vw;
   height: 100vh;
   margin: 0 0 0 0;
@@ -308,6 +308,8 @@ section {
 }
 
 /* Homepage Display */
+#benin-introduction-container {
+}
 #benin-bronze-warrior-container {
   z-index: 1;
 width: 16vw;
@@ -319,6 +321,7 @@ width: 16vw;
 }
 
 #benin-bronze-woman-container {
+  resize: none;
   z-index: 1;
   position: absolute;
   width: 15vw;
@@ -344,6 +347,7 @@ width: 16vw;
 } 
 
 #navHeader {
+  resize: none;
   position: absolute;
   bottom: 0;
   width: 50vw;

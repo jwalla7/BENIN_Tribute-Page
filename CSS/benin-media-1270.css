@@ -16,16 +16,22 @@
         /* border: 1px solid red; */
         z-index: 1;
     }
-    
+
     #benin-bronze-warrior-container {
-        z-index: 2;
+        z-index: 1;
         width: 20vw;
         position: absolute;
         top: 0;
         left: 0;
         transform: translate(164%, 12%);
     }
-    
+    #navButton {
+        z-index: 2;
+        background-color: red;
+        color: red;
+        /* height: 100em; */
+        /* transform: translate(10em, 10em); */
+    }
     #benin-bronze-woman-container {
         z-index: 1;
         width: 20vw;

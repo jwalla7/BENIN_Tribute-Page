@@ -7,7 +7,7 @@ const navHeaderScaleObserver = new ResizeObserver((entries) => {
         }
     }
 })
-navHeaderScaleObserver.observe(navHeaderScaleSet);
+// navHeaderScaleObserver.observe(navHeaderScaleSet);
 
 
 // function resizeSection() {
