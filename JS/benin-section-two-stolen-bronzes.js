@@ -11,7 +11,7 @@ const plaqueTextReveal6 = document.getElementById('text-reveal-6');
 const plaqueTextReveal7 = document.getElementById('text-reveal-7');
 const plaqueTextReveal8 = document.getElementById('text-reveal-8');
 const plaqueTextReveal9 = document.getElementById('text-reveal-9');
-const plaqueTextRevealA = document.getElementById('text-reveal-10');
+const plaqueTextRevealA = document.getElementById('text-reveal-A');
 
 const viewPoint1 = {
     rootMargin: '0% 0% -10% 0%',
@@ -64,6 +64,7 @@ const plaqueView1 = new IntersectionObserver((entries) => {
         } else {
             plaqueTextReveal1.style.visibility = '';
             plaqueTextReveal1.style.animation = '';
+            // plaqueView1.disconnect();
         }
     });
 }, viewPoint1);
@@ -77,6 +78,7 @@ const plaqueView2 = new IntersectionObserver((entries) => {
         } else {
             plaqueTextReveal2.style.visibility = '';
             plaqueTextReveal2.style.animation = '';
+            // plaqueView2.disconnect();
         }
     });
 }, viewPoint2);
@@ -90,6 +92,7 @@ const plaqueView3 = new IntersectionObserver((entries) => {
         } else {
             plaqueTextReveal3.style.visibility = '';
             plaqueTextReveal3.style.animation = '';
+            // plaqueView3.disconnect();
         }
     });
 }, viewPoint3);
@@ -103,6 +106,7 @@ const plaqueView4 = new IntersectionObserver((entries) => {
         } else {
             plaqueTextReveal4.style.visibility = '';
             plaqueTextReveal4.style.animation = '';
+            // plaqueView4.disconnect();
         }
     });
 }, viewPoint4);
@@ -116,6 +120,7 @@ const plaqueView5 = new IntersectionObserver((entries) => {
         } else {
             plaqueTextReveal5.style.visibility = '';
             plaqueTextReveal5.style.animation = '';
+            // plaqueView5.disconnect();
         }
     });
 }, viewPoint5);
@@ -129,6 +134,7 @@ const plaqueView6 = new IntersectionObserver((entries) => {
         } else {
             plaqueTextReveal6.style.visibility = '';
             plaqueTextReveal6.style.animation = '';
+            // plaqueView6.disconnect();
         }
     });
 }, viewPoint6);
@@ -142,6 +148,7 @@ const plaqueView7 = new IntersectionObserver((entries) => {
         } else {
             plaqueTextReveal7.style.visibility = '';
             plaqueTextReveal7.style.animation = '';
+            // plaqueView7.disconnect();
         }
     });
 }, viewPoint7);
@@ -155,6 +162,7 @@ const plaqueView8 = new IntersectionObserver((entries) => {
         } else {
             plaqueTextReveal8.style.visibility = '';
             plaqueTextReveal8.style.animation = '';
+            // plaqueView8.disconnect();
         }
     });
 }, viewPoint8);
@@ -168,6 +176,7 @@ const plaqueView9 = new IntersectionObserver((entries) => {
         } else {
             plaqueTextReveal9.style.visibility = '';
             plaqueTextReveal9.style.animation = '';
+            // plaqueView9.disconnect();
         }
     });
 }, viewPoint9);
@@ -199,9 +208,9 @@ const plaqueViewA = new IntersectionObserver((entries) => {
                 plaqueTextRevealA.style.animation = 'fade-out 1s ease-in';
             }, 1000)
         } else {
-
             plaqueTextRevealA.style.visibility = '';
             plaqueTextRevealA.style.animation = '';
+            // plaqueViewA.disconnect();
         }
     });
 }, viewPointA);

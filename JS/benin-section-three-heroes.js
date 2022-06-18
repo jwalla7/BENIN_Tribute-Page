@@ -1,15 +1,14 @@
-
 // TILT GENERAL OBASOGIE IMAGE 
 const imageOba = document.querySelector('.benin-general-obasogie-image');
 
 // --> Tilt Settings
-const tiltSettings = {
+const tiltSettingsOba = {
     max: 5,
     perspective: 1000,
     scale: 1.3
 };
 // --> Transition Settings
-const setTransition = () => {
+const setTransitionOba = () => {
     imageOba.style.transition = `transform 1000ms cubic-bezier(.03, .98, .52, .99)`;
     setTimeout(() => {
         imageOba.style.transition = '';
@@ -17,7 +16,7 @@ const setTransition = () => {
 };
 // ---> Mouse Enter
 function mouseEnter() {
-    setTransition();
+    setTransitionOba();
 }
 // ----> Mouse Reaction
 function mouseReact(event) {
@@ -27,19 +26,19 @@ function mouseReact(event) {
     const centerY = imageOba.offsetTop + imageHeight / 2;
     const mouseX = event.clientX - centerX;
     const mouseY = event.clientY - centerY;
-    const rotateXUncapped = ((+1) * tiltSettings.max * mouseY / (imageHeight / 2)).toFixed(2);
-    const rotateYUncapped = ((-1) * tiltSettings.max * mouseX / (imageHeight / 2)).toFixed(2);
-    const rotateX = rotateXUncapped < -tiltSettings.max ? -tiltSettings.max :
-                    (rotateXUncapped > tiltSettings.max ? tiltSettings.max : rotateXUncapped);
-    const rotateY = rotateYUncapped < -tiltSettings.max ? -tiltSettings.max :
-                    (rotateYUncapped > tiltSettings.max ? tiltSettings.max : rotateYUncapped);
+    const rotateXUncapped = ((+1) * tiltSettingsOba.max * mouseY / (imageHeight / 2)).toFixed(2);
+    const rotateYUncapped = ((-1) * tiltSettingsOba.max * mouseX / (imageHeight / 2)).toFixed(2);
+    const rotateX = rotateXUncapped < -tiltSettingsOba.max ? -tiltSettingsOba.max :
+                    (rotateXUncapped > tiltSettingsOba.max ? tiltSettingsOba.max : rotateXUncapped);
+    const rotateY = rotateYUncapped < -tiltSettingsOba.max ? -tiltSettingsOba.max :
+                    (rotateYUncapped > tiltSettingsOba.max ? tiltSettingsOba.max : rotateYUncapped);
 
-    imageOba.style.transform = `perspective(${tiltSettings.perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(${tiltSettings.scale}, ${tiltSettings.scale}, ${tiltSettings.scale})`;
+    imageOba.style.transform = `perspective(${tiltSettingsOba.perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(${tiltSettingsOba.scale}, ${tiltSettingsOba.scale}, ${tiltSettingsOba.scale})`;
 }
 // -----> Mouse Leave
 function mouseLeave() {
     imageOba.style.transition = `transform 1000ms cubic-bezier(.03, .98, .52, .99)`;
-    imageOba.style.transform = `perspective(${tiltSettings.perspective}px) rotateX(${0}deg) rotateY(${0}deg) scale3d(1, 1, 1)`;
+    imageOba.style.transform = `perspective(${tiltSettingsOba.perspective}px) rotateX(${0}deg) rotateY(${0}deg) scale3d(1, 1, 1)`;
 }
 
 // ------> Event Listeners

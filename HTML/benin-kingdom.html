@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/CSS/benin-kingdom.css">
+  <link rel="stylesheet" href="/CSS/benin-legacy-animation.css">
+  <link rel="stylesheet" href="/CSS/benin-media-1440.css">
+  <link rel="stylesheet" href="/CSS/benin-media-1270.css">
+  <link rel="stylesheet" href="/CSS/benin-media-1207.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Catamaran&family=Old+Standard+TT&family=Open+Sans&family=Playfair+Display:wght@100;300;400;500;600;700;800&family=Playfair+Display+SC&family=Roboto&display=swap" rel="stylesheet">
@@ -36,33 +41,35 @@
     <!--BODY-->
   <div class='container'>
     <!--STOLEN BRONZES-->
-    <section class='scroll-container'>
-      <div class='stolenBronzesContainer'>
-        <div class='scroll-caption'>
-          <div class='benin-bronze-warrior-container'>
-            <img id='benin-bronze-warrior' src='/assets/images/beninbronzewarrior-small.jpg'>
-          </div>
-          <div class='benin-bronze-woman-container'>
-            <img id='benin-bronze-woman' src='/assets/images/beninbronzewoman-small.jpg'>
-          </div>
-          <div class='stolenBronzesTextContainer'>
-            <div class= "navButton">
-              <div class='nav-button-text-container'>
-                <p>Benin Legacy</p>
+    <section class='benin-legacy' id="benin-legacy-container">
+      <div class='benin-legacy' id='stolenBronzesContainer'>
+        <!-- <div class='benin-legacy'> -->
+          <div class="benin-legacy" id="benin-faces-container">
+            <div class='benin-legacy' id="benin-bronze-warrior-container">
+              <img class='benin-legacy-man' id='benin-bronze-warrior' src='/assets/images/beninbronzewarrior-small.jpg'>
+            </div>
+            <div class='benin-legacy' id='benin-bronze-woman-container'>
+              <img class='benin-legacy-woman' id='benin-bronze-woman' src='/assets/images/beninbronzewoman-small.jpg'>
+            </div>
+          </div>  
+          <!-- <div class='benin-legacy' id='benin-introduction-container'> -->
+            <div class='benin-legacy' id="navButton">
+              <div class='benin-legacy' id='nav-button-text-container'>
+                <span>Benin Legacy</span>
               </div>
             </div>
-          </div>
-        </div>
+          <!-- </div> -->
+        <!-- </div> -->
       </div>
-      <nav class= "navHeader">
+      <nav class='benin-legacy' id= "navHeader">
         <ul>
-          <li class=''><a href="#the-people" class='nav-header-text'>The People</a></li>
-          <li class=''><a href="#" class='nav-header-text'>Benin Marvels</a></li>
-          <li class=''><a href="#" class='nav-header-text'>Architecture</a></li>
-          <li class=''><a href="#" class='nav-header-text'>Life in Ancient Benin</a></li>
+          <li class='benin-legacy'><a href="#the-people" class='nav-header-text'>The People</a></li>
+          <li class='benin-legacy'><a href="#" class='nav-header-text'>Benin Marvels</a></li>
+          <li class='benin-legacy'><a href="#" class='nav-header-text'>Architecture</a></li>
+          <li class='benin-legacy'><a href="#" class='nav-header-text'>Life in Ancient Benin</a></li>
         </ul>
       </nav>
-    </section>  
+    </section>
     <!-- Table of Contents -->
     <section class='table-of-contents-container' id="table-of-contents">
       <div class="title-container">
@@ -139,11 +146,16 @@
             <li class="table-of-contents-list-content"><a href="#" class="table-of-contents-list-content-text">Credits</a>
               &nbsp;<div class="table-of-contents-numerical-text">15</div>
             </li>
+            <br>
+            <br>
+            <li class="table-of-contents-list-content"><a href="#" class="table-of-contents-list-content-text" id="table-of-contents-input"></a>
+              &nbsp;<div class="table-of-contents-numerical-text">16</div>
+            </li>
           </ul>
         </div>
       </div>
     </section>
-    <!-- 1 -->
+    <!-- Introduction -->
     <section class='one'>
       <div id='introParaContainer'>
         <div id= "introPara">
@@ -169,7 +181,7 @@
       </div>
     </section>
     </section>
-    <!-- 1.1 -->
+    <!-- Pre-Historic Origins -->
     <section class="one-one" id="benin-origins">
       <div class="benin-origin-introduction-container">
         <div class="benin-origin-introduction-header-container">
@@ -182,6 +194,7 @@
         </div>
       </div>
     </section>
+    <!-- Edo Migration -->
     <!-- 2 -->  
     <section class='two' id="benin-bronzes">
       <div class="two-horizontal">
@@ -763,7 +776,9 @@
 
 <!-- JavaScript Path -->
 <script src='/JS/benin-nav.js'></script>
-<script src='/JS/benin-main-window.js'></script>
+<script src='/JS/benin-legacy-window.js'></script>
+<script src='/JS/benin-legacy-container.js'></script>
+<script src='/JS/benin-legacy-scale.js'></script>
 <script src='/JS/benin-section-one.js'></script>
 <script src='/JS/benin-section-one-origins.js'></script>
 <script src='/JS/benin-section-two-stolen-bronzes.js'></script>
