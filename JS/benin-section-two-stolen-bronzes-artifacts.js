@@ -18,7 +18,7 @@ const artifactsSlideStart = () => {
     }
     elementIndex++;
     console.log(elementIndex);
-    if (elementIndex > div.length) {
+    if (elementIndex > div.length - 1) {
         elementIndex = 0;
     }
     div[elementIndex - 1].style.display = 'block';
@@ -28,7 +28,6 @@ const artifactsSlideStart = () => {
 const artifactsSlideEnd = () => {
     clearTimeout(artifactsSlide);
 };
-// artifactsSlideStart();
 //  left button
 const previousArtifact = () => {
     reset();
