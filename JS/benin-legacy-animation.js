@@ -2,7 +2,7 @@
 const beninWarriorImage = document.querySelector('.benin-legacy-man');
 const beninWomanImage = document.querySelector('.benin-legacy-woman');
 
-// ---> Statue Class
+// --> Statue Class
 class StatueImage {
     constructor(target) {
         this.target = target;
@@ -53,18 +53,21 @@ function mouseReaction(event) {
     const w_rotateY = m_rotateY;
 
     m.target.style.transform = `perspective(${tiltSettings.perspective}px)
-                                    rotateX(${m_rotateX}deg) 
-                                    rotateY(${m_rotateY}deg) 
+                                    rotateX(${m_rotateX}deg)
+                                    rotateY(${m_rotateY}deg)
                                     scale3d(${tiltSettings.scale}, ${tiltSettings.scale}, ${tiltSettings.scale})`;
     w.target.style.transform = m.target.style.transform;
 };
-
+// --> Mouse Leave
 function mouseLeave(target) {
-    console.log(`just left`);
+    console.log(`Target exited`);
     target.style.transition = `transform 1000ms cubic-bezier(.03, .98, .52, .99)`;
-    target.style.transform = `perspective(${tiltSettings.perspective}px) rotateX(${0}deg) rotateY(${0}deg) scale3d(1,1,1)`;
+    target.style.transform = `perspective(${tiltSettings.perspective}px) 
+                                rotateX(${0}deg)
+                                rotateY(${0}deg)
+                                scale3d(1,1,1)`;
 };
-
+// --> Event Listeners
 beninWarriorImage.addEventListener('mousemove', mouseEnter);
 beninWomanImage.addEventListener('mousemove', mouseEnter);
 beninWarriorImage.addEventListener('mousemove', mouseReaction);
