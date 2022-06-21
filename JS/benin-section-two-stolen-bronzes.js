@@ -258,9 +258,9 @@ const statuetteMove = new IntersectionObserver((entries) => {
             artifactsImageContainer.style.animation = 'fade-in 1s ease-in';
 
             setTimeout(() => {
-                artifactsSlideStart();
                 artifactsImageContainer.style.animation = 'fade-in 1s ease-in';
                 artifactsImageContainer.style.visibility = 'visible';
+                artifactsSlideStart();
             }, 1000)
         } else {
             reset();
