@@ -5,7 +5,7 @@
     }
 
     #nav-button-text-container {
-        transform: translate(-215%, 0%);
+        transform: translate(-215%, 0%) scale(.95);
     }
 
     #benin-faces-container {

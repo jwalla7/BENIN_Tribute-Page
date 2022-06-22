@@ -1474,11 +1474,36 @@ img {
 }
 /* BENIN GREAT WALL */
 .benin-great-wall-header-container {
+  display: flex;
   position: relative;
   z-index: 1;
   padding: 1.5%;
   width: 100vw;
   height: 100vh;
+}
+.benin-great-wall-header-text-container-left {
+  width: 30%;
+  letter-spacing: -8px;
+  border: 1px solid red;
+  padding: 1px;
+  overflow: visible;
+}
+.benin-great-wall-header-text-container-center {
+  width: 45%;
+  border: 1px solid white;
+  text-align: left;
+  padding: 0 0 0 4%;
+}
+.benin-great-wall-header-text-container-right {
+  width: 25%;
+  border: 1px solid greenyellow;
+  text-align: right;
+  overflow: visible;
+}
+.benin-great-wall-text-container-left {
+  width: 90%;
+  padding: 1px;
+  border: 1px solid yellow;
 }
 .benin-great-wall-header-image-container {
   position: relative;
@@ -1492,7 +1517,27 @@ img {
   color: rgb(255, 255, 255);
   font-family: 
   sans-serif;
-  font-size: 9.2rem;
+  font-size: 8rem;
+}
+.benin-great-wall-header-text-tight {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 8rem;
+  letter-spacing: -10px;
+}
+.benin-great-wall-header-text-bottom {
+  color: rgb(255, 255, 255);
+  font-family: 
+  sans-serif;
+  font-size: 8rem;
+  letter-spacing: -5px;
+  transform: translateY(60vh);
+}
+.benin-great-wall-text {
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: normal;
+  font-size: .95em;
 }
 .benin-great-wall-image {
   width: 100vw;
