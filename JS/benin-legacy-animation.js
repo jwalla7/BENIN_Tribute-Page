@@ -36,21 +36,15 @@ function mouseReaction(event) {
     const w = new StatueImage(beninWomanImage);
 
     const m_mouseX = event.clientX - m.centerX;
-    const w_mouseX = m_mouseX;
     const m_mouseY = event.clientY - m.centerY;
-    const w_mouseY = m_mouseY;
-    
+
     const m_rotateXUncapped = ((+1) * tiltSettings.max * m_mouseY / (m.imageHeight / 2)).toFixed(2);
-    const w_rotateXUncapped = m_rotateXUncapped;
     const m_rotateYUncapped = ((-1) * tiltSettings.max * m_mouseX / (m.imageHeight / 2)).toFixed(2);
-    const w_rotateYUncapped = m_rotateYUncapped;
 
     const m_rotateX = m_rotateXUncapped < -tiltSettings.max ? -tiltSettings.max :
                         (m_rotateXUncapped > tiltSettings.max ? tiltSettings.max : m_rotateXUncapped);
-    const w_rotateX = m_rotateX;
     const m_rotateY = m_rotateYUncapped < -tiltSettings.max ? -tiltSettings.max :
                         (m_rotateYUncapped > tiltSettings.max ? tiltSettings.max : m_rotateYUncapped);
-    const w_rotateY = m_rotateY;
 
     m.target.style.transform = `perspective(${tiltSettings.perspective}px)
                                     rotateX(${m_rotateX}deg)
