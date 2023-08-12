@@ -77,8 +77,9 @@
     }
     
     #nav-button-text-container {
-        font-size: 100%;
-        -moz-transform: translate(-230%, -10%);
+        transform: translate(7%, 0%);
+        /* font-size: 100%; */
+        /* -moz-transform: translate(-230%, -10%); */
     }
 
     /* Did You Know */

@@ -1,3 +1,17 @@
 @media only screen and (min-width: 0px) and (max-width: 1207px) {
-
+    #navButton {
+        /* transform: translate(-5%, 0%); */
+    }
+    
+    #nav-button-text-container {
+        transform: translate(7%, 0%);
+    }
+    
+    #benin-faces-container {
+        /* transform: translate(-1.1%, 2.5em) scale(1.1); */
+    }
+    
+    #navHeader {
+        /* transform: translate(65%, 0%); */
+    }
 }
