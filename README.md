@@ -2,7 +2,7 @@
 Benin Marvels, quick facts about Ancient Benin
 
 ## Preview
-![benin-preview](
+[![Watch the video](
 https://github.com/jwalla7/BENIN_Tribute-Page/assets/89559981/742ce634-a886-449c-a44d-5f2c31925b49)
 
 ## Homepage
