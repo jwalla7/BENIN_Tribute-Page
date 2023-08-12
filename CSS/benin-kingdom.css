@@ -523,6 +523,7 @@ img {
 }
 .two {
   scroll-snap-align: scroll;
+  margin-left: -28.124px;
 }
 /* Pre-Historic Origins */
 .benin-origin-introduction-container {
@@ -646,7 +647,7 @@ img {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  transform: translate(-50%,0%);
+  transform: translate(-51%,0%);
   /* margin-top: 5%; */
   text-align: center;
   /* perspective: 1px; */
